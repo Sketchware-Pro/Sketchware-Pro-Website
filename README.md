@@ -37,4 +37,4 @@ This command generates static content into the `build` directory and can be serv
 ### Contributing
 We will most likely accept changes which do not change style or design of the website. You shouldn't need to edit any other folder except `/docs`.
 
-<b>Website, and Documentation made by [NiceSapien](https://nicesapien.is-a.dev).</b>
+Website, and Documentation made by [NiceSapien](https://nicesapien.is-a.dev)(view his [GitHub](https://github.com/NiceSapien).
