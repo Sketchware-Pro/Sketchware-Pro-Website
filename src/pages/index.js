@@ -30,7 +30,7 @@ export default function Home() {
   const {siteConfig} = useDocusaurusContext();
   return (
     <Layout
-      title={`${siteConfig.title}`}
+      title="Home"
       description="Sketchware Pro's official website">
       <HomepageHeader />
       <main>
