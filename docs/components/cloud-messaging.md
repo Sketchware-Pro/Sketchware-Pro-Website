@@ -1,5 +1,5 @@
 ---
-sidebar_position: 1
+sidebar_position: 2
 ---
 # Cloud Messaging
 Welcome! This is a simple and easy guide to use Firebase Cloud Messaging in Sketchware Pro.
@@ -10,9 +10,11 @@ As you might already know, Firebase is developed by Google. It is a service for 
 First of all, you will probably need to **connect your app to Firebase**. To do so, see that guide on official Sketchware's docs. Make sure you have downloaded and **install**ed **the latest version of Sketchware Pro.**
 
 1. Add the Component
+
 First, create a new project(or use one you already have). Then, open it and open component manager. From there, click on the `+` button which is on the bottom right of the screen. Then, click on `Cloud Message`. Here enter any name for the component.
-![[Screenshot_20220715-211013_Sketchware Pro.jpg]]
+![Cloud Message component](/img/cloud_message.jpg)
 2. Compile, run
+
 Wait, **that's it**? Well, yes! That's true! Implementing Firebase Cloud Messaging is as simple as that!
 
 # Sending a Notification
