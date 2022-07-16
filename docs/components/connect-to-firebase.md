@@ -2,42 +2,28 @@
 sidebar_position: 1
 ---
 
-# Create a Page
+# Connect Firebase
 
-Add **Markdown or React** files to `src/pages` to create a **standalone page**:
+This tutorial explains how to connect Sketchware Pro project to Firebase.
 
-- `src/pages/index.js` → `localhost:3000/`
-- `src/pages/foo.md` → `localhost:3000/foo`
-- `src/pages/foo/bar.js` → `localhost:3000/foo/bar`
+## Create a Firebase app/project
 
-## Create your first React Page
+First, open [Firebase console](https://console.firebase.google.com/) on your device.
+![Firebase Console](/img/firebase_console.jpg)
+Here, you will see a interface like shown above. You can open a existing project(except the demo one), or create a new project by clicking `Create a project`.
+After that, click on the Add App button, and select Android from there. Then, you will need to enter the package name of your project(you can find it in Sketchware Pro).
+It is written here:
+![How to find package name](/img/package_name.jpg)
+In this image, `com.my.newproject29` is the package name of this project. Type this exact same package name in Firebase. Then click on `Next`.
+![Download Google Services](/img/google_services_json.jpg)
+On this screen, click on `Download google-services.json`.
+After downloading, just close your browser.
+# Connect to Sketchware Pro project
+Now you will need to open your project in Sketchware Pro.
+After opening a project, click on three dots on top right corner.
+![three dots image](/img/three_dots.jpg)
 
-Create a file at `src/pages/my-react-page.js`:
-
-```jsx title="src/pages/my-react-page.js"
-import React from 'react';
-import Layout from '@theme/Layout';
-
-export default function MyReactPage() {
-  return (
-    <Layout>
-      <h1>My React page</h1>
-      <p>This is a React page</p>
-    </Layout>
-  );
-}
-```
-
-A new page is now available at [http://localhost:3000/my-react-page](http://localhost:3000/my-react-page).
-
-## Create your first Markdown Page
-
-Create a file at `src/pages/my-markdown-page.md`:
-
-```mdx title="src/pages/my-markdown-page.md"
-# My Markdown page
-
-This is a Markdown page
-```
-
-A new page is now available at [http://localhost:3000/my-markdown-page](http://localhost:3000/my-markdown-page).
+Then click on Library option on top.
+Select Firebase > import google-services.json
+and select the file we just downloaded from Firebase console. Then enable Firebase from the switch.
+And that's all! Your app is connected to Firebase! Now you can start using Firebase DB, Auth, Storage, Dynamic Links, Cloud messaging and more.
