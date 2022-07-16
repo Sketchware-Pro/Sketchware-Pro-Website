@@ -1,5 +1,5 @@
 ---
-sidebar_position: 2
+sidebar_position: 1
 ---
 # Cloud Messaging
 Welcome! This is a simple and easy guide to use Firebase Cloud Messaging in Sketchware Pro.
