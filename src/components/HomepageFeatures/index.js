@@ -5,7 +5,7 @@ import styles from './styles.module.css';
 const FeatureList = [
   {
     title: 'Easy to Use',
-    Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
+    Svg: require('@site/static/img/mountain.svg').default,
     description: (
       <>
         Sketchware Pro was designed from the ground up to be easily installed and
@@ -15,7 +15,7 @@ const FeatureList = [
   },
   {
     title: 'Focus on What Matters',
-    Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
+    Svg: require('@site/static/img/tree.svg').default,
     description: (
       <>
         Sketchware Pro lets you focus on your apps, and we&apos;ll do the chores. Go
@@ -25,7 +25,7 @@ const FeatureList = [
   },
   {
     title: 'Free and Open-Source',
-    Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
+    Svg: require('@site/static/img/freelancer.svg').default,
     description: (
       <>
         Sketchware Pro is completely free. Sketchware Pro's source code is available on our GitHub repository.
