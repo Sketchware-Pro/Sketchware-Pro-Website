@@ -2,7 +2,7 @@
 sidebar_position: 1
 ---
 
-# Connect Firebase
+# Connect Project to Firebase
 
 This tutorial explains how to connect Sketchware Pro project to Firebase.
 
@@ -27,3 +27,15 @@ Then click on Library option on top.
 Select Firebase > import google-services.json
 and select the file we just downloaded from Firebase console. Then enable Firebase from the switch.
 And that's all! Your app is connected to Firebase! Now you can start using Firebase DB, Auth, Storage, Dynamic Links, Cloud messaging and more.
+
+# Frequently asked questions
+## What is Firebase
+Firebase is backed by Google. Firebase has many services for app developers, like Database, Storage and Authentication, all without need of any server.
+## Firebase pricing
+For small apps, **Firebase is free to use**, but If you've reached the limits, you can upgrade and pay for only what you use.
+## Why use Firebase
+There are many reasons to use Firebase, and the main ones are:
+1. Firebase is fast.
+2. Firebase works for Android, IOS, and even web.
+3. Firebase is free
+4. Firebase is easy to use.

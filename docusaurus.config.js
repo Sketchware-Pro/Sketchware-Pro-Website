@@ -7,7 +7,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'Sketchware Pro',
-  tagline: 'Sketchware Pro is a cool app',
+  tagline: 'Official website of Sketchware Pro.',
   url: 'https://sketchware-pro.vercel.app',
   baseUrl: '/',
   onBrokenLinks: 'throw',
@@ -108,7 +108,7 @@ const config = {
             ],
           },
         ],
-        copyright: `Official Sketchware Pro website. Built with Docusaurus.`,
+        copyright: `© 2022 Sketchware Pro. Built with Docusaurus.`,
       },
       prism: {
         theme: lightCodeTheme,
