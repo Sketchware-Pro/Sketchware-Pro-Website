@@ -113,7 +113,7 @@ const config = {
             ],
           },
         ],
-        copyright: `© 2022 Sketchware Pro. Built with Docusaurus.`,
+        copyright: "This mod was not meant for any harmful purposes, such as harming Sketchware; It was made to keep Sketchware alive by the community for the community. Please use it at your own discretion and be a Patreon backer of them, if possible.",
       },
       prism: {
         theme: lightCodeTheme,
