@@ -76,7 +76,7 @@ const config = {
             position: 'right',
           },
           {
-            href: 'https://github.com/Sketchware-Pro/Sketchware-Pro',
+            href: 'https://github.com/Sketchware-Pro/Sketchware-Pro/releases',
             label: 'Download Sketchware Pro',
            position: 'right',
           },
