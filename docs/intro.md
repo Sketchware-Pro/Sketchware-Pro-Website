@@ -36,7 +36,7 @@ To make your apps more powerful, you can use [Components](category/components).
 
 6. View
 
-The layout(design) of your app.
+The layout(design) of your app is in the [view](category/views) section.
 
 7. Save button
 
