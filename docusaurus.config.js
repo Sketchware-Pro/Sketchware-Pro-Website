@@ -65,6 +65,11 @@ const config = {
         },
         items: [
           {
+            href: 'https://sketchware-pro.vercel.app/',
+            label: 'Home',
+            position: 'left',
+          },
+          {
             type: 'doc',
             docId: 'intro',
             position: 'left',
