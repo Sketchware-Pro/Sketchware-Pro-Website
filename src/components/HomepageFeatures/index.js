@@ -8,7 +8,7 @@ const FeatureList = [
     Svg: require('@site/static/img/mountain.svg').default,
     description: (
       <>
-        Sketchware Pro was designed from the ground up to be easily installed and
+        Sketchware Pro was designed to be easily installed and
         used to get your app up and running quickly.
       </>
     ),
@@ -24,7 +24,7 @@ const FeatureList = [
     ),
   },
   {
-    title: 'Free and Open-Source',
+    title: 'Free Forever',
     Svg: require('@site/static/img/freelancer.svg').default,
     description: (
       <>
