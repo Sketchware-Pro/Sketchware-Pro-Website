@@ -75,6 +75,11 @@ const config = {
             label: 'GitHub',
             position: 'right',
           },
+          {
+            href: 'https://github.com/Sketchware-Pro/Sketchware-Pro',
+            label: 'Download Sketchware Pro',
+           position: 'right',
+          },
         ],
       },
       footer: {
