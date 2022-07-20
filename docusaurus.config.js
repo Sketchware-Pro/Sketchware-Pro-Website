@@ -95,7 +95,7 @@ const config = {
             items: [
               {
                 label: 'View',
-                to: '/docs/intro',
+                to: '/docs',
               },
             ],
           },
