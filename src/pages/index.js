@@ -10,19 +10,34 @@ import styles from './index.module.css';
 function HomepageHeader() {
   const {siteConfig} = useDocusaurusContext();
   return (
-    <header className={clsx('hero hero--primary', styles.heroBanner)}>
+    <div className={styles.hero} data-theme="dark">
+    <img
+            alt={{message: 'Sketchware Pro with Keytar'}}
+            className={styles.heroLogo}
+            src={('/img/logo.png')}
+            width="200"
+            height="200"
+          />
+          
       <div className="container">
-        <h1 className="hero__title">{siteConfig.title}</h1>
-        <p className="hero__subtitle">{siteConfig.tagline}</p>
-        <div className={styles.buttons}>
+        <h1 className={styles.heroProjectTagline}><p className={styles.heroTitleTextHtml}>Build <b>Android</b> Apps <b>quickly</b>, focus on your <b>content</b></p></h1>
+
+        <div className={styles.indexCtas}>
           <Link
-            className="button button--secondary button--lg"
-            to="/docs/intro">
+            className="button button--primary"
+            to="/docs">
             Get Started
+          </Link>
+          
+          
+                    <Link
+            className="button button--info"
+            to="https://github.com/Sketchware-Pro/Sketchware-Pro/releases">
+            Try for Free
           </Link>
         </div>
       </div>
-    </header>
+    </div>
   );
 }
 

@@ -2,6 +2,7 @@
 title: Indroduction
 description: Indroducing Sketchware Pro! Create Android apps on your smartphone, without writing even a single line of code.
 sidebar_position: 1
+slug: /
 ---
 
 # Sketchware Pro
