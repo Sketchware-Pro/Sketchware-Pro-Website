@@ -18,16 +18,17 @@ Here is the layout of Sketchware Pro.
 
 From here you can change properties of a View. Width, Height, Padding etc. are some properties.
 
-2. All Views
-
-From here you can add a view to your app's layout. It can be a button, TextView, EditText or any other supported view.
-
-3. Layout Preview
+2. Layout Preview
 
 This is the preview of your app's layout(design).
 :::danger Notice
-This is not exact same preview, it can be different after compilation.
+This is not exact same preview, your app's design can be different after compilation.
 :::
+
+3. All Views
+
+From here you can add a view to your app's layout. It can be a button, TextView, EditText or any other supported view.
+
 
 4. Events
 

@@ -21,7 +21,6 @@ Wait, **that's it**? Well, yes! That's true! Implementing Firebase Cloud Messagi
 
 ## Component events
 ### onCompleteRegister
-Available options:
 
   | Name | Type | Use |
   | ---- | ---- | --- |

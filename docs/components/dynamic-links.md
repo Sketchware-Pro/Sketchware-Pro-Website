@@ -38,15 +38,11 @@ The above code will toast the dynamic link which was opened before your app open
 ## Component events
 ### onSuccess
 
-Available options:
-
   | Name | Type | Use |
   | ---- | ---- | --- |
   | link | string | The dynamic link using which the app was opened |
 
 ### onFailure
-
-Available options:
 
   | Name | Type | Use |
   | ---- | ---- | --- |
