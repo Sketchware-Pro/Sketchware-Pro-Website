@@ -118,7 +118,7 @@ const config = {
             ],
           },
         ],
-        copyright: "This mod was not meant for any harmful purposes, such as harming Sketchware; It was made to keep Sketchware alive by the community for the community. Please use it at your own discretion and be a Patreon backer of them, if possible.",
+        copyright: "Built by NiceSapien.",
       },
       prism: {
         additionalLanguages: ['java'],
