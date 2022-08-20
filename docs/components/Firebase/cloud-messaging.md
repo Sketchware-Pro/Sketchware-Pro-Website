@@ -1,7 +1,7 @@
 ---
 title: Firebase Cloud Messaging
 description: This is a simple and easy guide to use Firebase Cloud Messaging in Sketchware Pro.
-sidebar_position: 1
+sidebar_position: 2
 ---
 # Firebase Cloud Messaging
 Welcome! This is a simple and easy guide to use Firebase Cloud Messaging in Sketchware Pro.
