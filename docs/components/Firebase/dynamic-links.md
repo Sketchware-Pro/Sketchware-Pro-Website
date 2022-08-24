@@ -7,7 +7,7 @@ sidebar_position: 3
 # Firebase Dynamic Links
 Firebase Dynamic Links allow app developers to send their Android or IOS users to right place in their app using a simple web link. If the app is not installed, redirect the user to Google Play Store on Android, and Apple App Store on iOS. Desktop users will get redirected to your specified website.
 ## Configuration - Firebase
-First, make sure your Android Sketchware Pro project is [connected to Firebase](/docs/connect-to-firebase).
+First, make sure your Android Sketchware Pro project is [connected to Firebase](connect-to-firebase).
 
 1. Open the [Firebase console](http://console.firebase.google.com/).
 2. Open a project.
