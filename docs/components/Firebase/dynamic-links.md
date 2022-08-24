@@ -20,7 +20,7 @@ First, make sure your Android Sketchware Pro project is [connected to Firebase](
 8. Copy the Dynamic Link URL.
 ## Configuration - Sketchware Pro
 1. Open a Project.
-2. Ensure It is [connected to Firebase](/docs/connect-to-firebase).
+2. Ensure It is [connected to Firebase](connect-to-firebase).
 3. Open components tab.
 4. Create a new component.
 5. Select `Dynamic links` from the list.
