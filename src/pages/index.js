@@ -33,20 +33,26 @@ function HomepageHeader() {
                     <Link
             className="button button--info"
             to="https://github.com/Sketchware-Pro/Sketchware-Pro/releases">
-            Try for Free
+            Download Now
           </Link>
         </div>
       </div>
     </div>
   );
 }
-
 export default function Home() {
   const {siteConfig} = useDocusaurusContext();
   return (
     <Layout
       title="Home"
       description="Sketchware Pro's official website">
+              <div>
+          <div className={styles.banner}>
+                    <p id="homepage.banner.link">
+                      Sketchware Pro is a mod. <Link to="/">Tap to read more.
+                   </Link> </p>
+          </div>
+        </div>
       <HomepageHeader />
       <main>
         <HomepageFeatures />

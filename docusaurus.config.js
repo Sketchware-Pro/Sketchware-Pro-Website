@@ -81,6 +81,11 @@ const config = {
             position: 'right',
           },
           {
+            href: 'https://discord.gg/QcrNGVGQRV',
+            label: 'Join us on Discord',
+            position: 'right',
+          },
+          {
             href: 'https://github.com/Sketchware-Pro/Sketchware-Pro/releases',
             label: 'Download Sketchware Pro',
            position: 'right',
