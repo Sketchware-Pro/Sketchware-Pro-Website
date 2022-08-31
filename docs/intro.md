@@ -12,8 +12,7 @@ You can download Sketchware Pro from [here](https://github.com/Sketchware-Pro/Sk
 ## What Sketchware Pro is
 Sketchware Pro is a Android IDE which works on Android. You can create Android apps without writing even a single line of code.
 ## Layout
-Here is the layout of Sketchware Pro.
-![Sketchware Pro's layout](components/img/layout.jpg)
+
 1. View editor
 
 From here you can change properties of a View. Width, Height, Padding etc. are some properties.
