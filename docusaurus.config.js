@@ -120,6 +120,10 @@ const config = {
                 label: 'GitHub',
                 href: 'https://github.com/Sketchware-Pro/Sketchware-Pro',
               },
+              {
+                label: 'Disclaimer',
+                href: '/about',
+              },
             ],
           },
         ],
