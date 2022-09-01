@@ -49,7 +49,7 @@ export default function Home() {
               <div>
           <div className={styles.banner}>
                     <p id="homepage.banner.link">
-                      Sketchware Pro is a mod. <Link to="/">Tap to read more.
+                      Sketchware Pro is a mod. <Link to="/about">Tap to read more.
                    </Link> </p>
           </div>
         </div>
