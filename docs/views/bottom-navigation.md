@@ -2,6 +2,8 @@
 title: Bottom Navigation View
 description: Bottom Navigation View is a part of Material Design library. Sketchware Pro supports it out of the box.
 sidebar_position: 1
+tags:
+ - Material Design
 ---
 # Bottom Navigation
 Bottom Navigation View is a part of Material Design library. Sketchware Pro supports it out of the box.
