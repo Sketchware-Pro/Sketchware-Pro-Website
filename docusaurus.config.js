@@ -37,8 +37,8 @@ const config = {
         redirects: [
           // /docs/oldDoc -> /docs/newDoc
           {
-            to: '/docs/components/Firebase/connect-to-firebase/',
-            from: '/docs/connect-to-firebase/',
+            to: '/docs/components/Firebase/connect-to-firebase',
+            from: '/docs/connect-to-firebase',
           },
           // Redirect from multiple old paths to the new path
 
