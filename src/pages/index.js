@@ -32,7 +32,7 @@ function HomepageHeader() {
           
                     <Link
             className="button button--info"
-            to="https://github.com/Sketchware-Pro/Sketchware-Pro/releases">
+            to="/download">
             Download Now
           </Link>
         </div>

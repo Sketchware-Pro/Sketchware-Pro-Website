@@ -19,7 +19,7 @@ const FeatureList = [
     description: (
       <>
         Sketchware Pro lets you focus on your apps, and we&apos;ll do the chores. Go
-        ahead and move your IDE into Sketchware Pro.
+        ahead and get started.
       </>
     ),
   },
