@@ -27,58 +27,7 @@ const config = {
     locales: ['en'],
   },
 
-Docusaurus
-Plugins📦 plugin-client-redirects
-Version: 2.1.0
-On this page
-📦 plugin-client-redirects
-Docusaurus Plugin to generate client-side redirects.
 
-This plugin will write additional HTML pages to your static site that redirect the user to your existing Docusaurus pages with JavaScript.
-
-PRODUCTION ONLY
-This plugin is always inactive in development and only active in production because it works on the build output.
-
-CAUTION
-It is better to use server-side redirects whenever possible.
-
-Before using this plugin, you should look if your hosting provider doesn't offer this feature.
-
-Installation
-npm
-Yarn
-npm install --save @docusaurus/plugin-client-redirects
-
-
-Configuration
-Accepted fields:
-
-Option	Type	Default	Description
-fromExtensions	string[]	[]	The extensions to be removed from the route after redirecting.
-toExtensions	string[]	[]	The extensions to be appended to the route after redirecting.
-redirects	RedirectRule[]	[]	The list of redirect rules.
-createRedirects	CreateRedirectsFn	undefined	A callback to create a redirect rule. Docusaurus query this callback against every path it has created, and use its return value to output more paths.
-NOTE
-This plugin will also read the siteConfig.onDuplicateRoutes config to adjust its logging level when multiple files will be emitted to the same location.
-
-Types
-RedirectRule
-type RedirectRule = {
-  to: string;
-  from: string | string[];
-};
-
-NOTE
-The idea of "from" and "to" is central in this plugin. "From" means a path that you want to create, i.e. an extra HTML file that will be written; "to" means a path to want to redirect to, usually a route that Docusaurus already knows about.
-
-This is why you can have multiple "from" for the same "to": we will create multiple HTML files that all redirect to the same destination. On the other hand, one "from" can never have more than one "to": the written HTML file needs to have a determinate destination.
-
-CreateRedirectsFn
-// The parameter `path` is a route that Docusaurus has already created. It can
-// be seen as the "to", and your return value is the "from". Returning a falsy
-// value will not create any redirect pages for this particular path.
-type CreateRedirectsFn = (path: string) => string[] | string | null | undefined;
-module.exports = {
   plugins: [
     [
       '@docusaurus/plugin-client-redirects',
@@ -97,7 +46,6 @@ module.exports = {
       },
     ],
   ],
-};
   presets: [
     [
       'classic',
