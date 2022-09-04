@@ -117,10 +117,14 @@ const config = {
         style: 'dark',
         links: [
           {
-            title: 'Docs',
+            title: 'Sketchware Pro',
             items: [
               {
-                label: 'View',
+                label: 'Download',
+                to: '/download',
+              },
+              {
+                label: 'Documentation',
                 to: '/docs',
               },
             ],
@@ -131,6 +135,10 @@ const config = {
               {
                 label: 'Discord',
                 href: 'https://discord.gg/Dc8ZDBRK5V',
+              },
+              {
+                label: 'Github Discussions',
+                href: 'https://github.com/Sketchware-Pro/Sketchware-Pro/discussions',
               },
             ],
           },
