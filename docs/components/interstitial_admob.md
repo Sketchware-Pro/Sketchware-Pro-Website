@@ -17,5 +17,7 @@ You work hard on your app. AdMob makes earning revenue easy with in-app ads, act
 ## Getting started
 First we'll need to connect our app to admob. You can view that guide on their(Sketchware's) [official website](https://docs.sketchware.io/docs/admob-getting-started.html).
 ## In-Sketchware configuration
-First add a admob component.
+1. First add a admob component.
 ![Admob in Sketchware](/img/IMG_20220905_131356.jpg)
+Give it a name, and click on `Add`.
+2. Initialisation
