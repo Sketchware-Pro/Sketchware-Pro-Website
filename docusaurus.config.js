@@ -42,7 +42,7 @@ const config = {
           },
           {
             to: 'https://youtu.be/dQw4w9WgXcQ',
-            from: 'freecash',
+            from: '/freecash',
           },
           // Redirect from multiple old paths to the new path
 
