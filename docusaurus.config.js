@@ -40,10 +40,6 @@ const config = {
             to: '/docs/components/Firebase/connect-to-firebase',
             from: '/docs/connect-to-firebase',
           },
-          {
-            to: 'https://youtu.be/dQw4w9WgXcQ',
-            from: '/freecash',
-          },
           // Redirect from multiple old paths to the new path
 
         ],
