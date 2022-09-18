@@ -1,8 +1,8 @@
 {
-  "rewrites": [
+  "redirects": [
     {
       "source": "/freecash",
-      "destination": "https://youtu.be/dQw4w9WgXcQ",
-    },
-    ],
+      "destination": "https://youtu.be/dQw4w9WgXcQ"
+    }
+    ]
 }
