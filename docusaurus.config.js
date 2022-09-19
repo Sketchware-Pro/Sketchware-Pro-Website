@@ -8,7 +8,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 const config = {
   title: 'Sketchware Pro',
   tagline: 'Official website of Sketchware Pro.',
-  url: 'https://sketchware-pro.vercel.app',
+  url: 'https://sketchware-pro.ga',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -40,7 +40,6 @@ const config = {
             to: '/docs/components/Firebase/connect-to-firebase',
             from: '/docs/connect-to-firebase',
           },
-          // Redirect from multiple old paths to the new path
 
         ],
       },
@@ -163,6 +162,29 @@ const config = {
         theme: lightCodeTheme,
         darkTheme: darkCodeTheme,
       },
+      algolia: {
+      // The application ID provided by Algolia
+      appId: 'KCVJ3D0QG2',
+
+      // Public API key: it is safe to commit it
+      apiKey: '5c1048c6a358fa420ff8c7c4da32b4bf',
+
+      indexName: 'sketchware-pro',
+
+      // Optional: see doc section below
+      contextualSearch: true,
+
+      // Optional: Specify domains where the navigation should occur through window.location instead on history.push. Useful when our Algolia config crawls multiple documentation sites and we want to navigate with window.location.href to them.
+      externalUrlRegex: 'external\\.com|domain\\.com',
+
+      // Optional: Algolia search parameters
+      searchParameters: {},
+
+      // Optional: path for search page that enabled by default (`false` to disable it)
+      searchPagePath: 'search',
+
+      //... other Algolia params
+    },
     }),
 };
 
