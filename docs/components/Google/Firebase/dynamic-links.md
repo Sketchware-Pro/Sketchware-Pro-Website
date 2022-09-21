@@ -2,6 +2,9 @@
 title: Firebase Dynamic Links
 description: Send your user to the right place in your app. Send them to Play Store if they don't have your app installed.
 sidebar_position: 3
+tags:
+  - Google
+  - Firebase
 ---
 
 # Firebase Dynamic Links

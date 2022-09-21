@@ -1,0 +1,8 @@
+{
+  "label": "Google",
+  "position": 2,
+  "link": {
+    "type": "generated-index",
+    "description": "Android is built by Google, so Google has built many products for Android App developers. Sketchware Pro supports many Google-built tools out of the box."
+  }
+}

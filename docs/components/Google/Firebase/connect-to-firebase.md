@@ -2,6 +2,9 @@
 title: Connecting to Firebase
 description: This tutorial explains how to connect Sketchware Pro project to Firebase.
 sidebar_position: 1
+tags:
+  - Google
+  - Firebase
 ---
 
 # Connect Project to Firebase
