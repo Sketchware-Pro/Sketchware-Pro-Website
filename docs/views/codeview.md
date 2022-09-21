@@ -1,7 +1,7 @@
 ---
 title: Codeview
 description: Codeview is used to highlight code in your app so it looks cool.
-sidebar_position: 2
+sidebar_position: 3
 ---
 
 ## Blocks
