@@ -10,8 +10,11 @@ TextView is a part of android framework.
 
 ## Using it
 First, add it to your Activity.
-![BottomNavigation add item block](img/textview property.png)
-![BottomNavigation add item block](img/textview property2.png)
+
+![](img/textview property.png)
+
+![](img/textview property2.png)
+
 
  As you see there are many properties for TextView and for using them :
  
