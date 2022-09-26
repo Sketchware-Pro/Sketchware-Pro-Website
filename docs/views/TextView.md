@@ -11,9 +11,9 @@ TextView is a part of android framework.
 ## Using it
 First, add it to your Activity.
 
-![](img/textview property.png)
+![image](https://github.com/abodinagdat16/website/blob/main/docs/views/img/textview%20property.png?raw=true)
+![image](https://github.com/abodinagdat16/website/blob/main/docs/views/img/textview%20property2.png?raw=true)
 
-![](img/textview property2.png)
 
 
  As you see there are many properties for TextView and for using them :
