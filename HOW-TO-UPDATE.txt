@@ -1,0 +1,4 @@
+yarn upgrade @docusaurus/core@latest @docusaurus/preset-classic@latest is what you gotta run.
+.... or replace everything that starts with @docusaurus with new version.
+
+BTW, https://docusaurus.io/docs/installation#updating-your-docusaurus-version

@@ -35,6 +35,6 @@ $ npm build
 This command generates static content into the `build` directory and can be served using any static contents hosting service.
 
 ### Contributing
-We will most likely accept changes which do not change style or design of the website. You shouldn't need to edit any other folder except `/docs`.
+We will mostly accept changes which do not change style or design of the website. You shouldn't need to edit any other folder except `/docs`, but you can if you think a important change is needed.
 
 Website, and Documentation made by [NiceSapien](https://nicesapien.is-a.dev)(view his [GitHub](https://github.com/NiceSapien)).
