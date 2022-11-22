@@ -13,4 +13,4 @@ You can download Sketchware Pro from [here](/download).
 Sketchware Pro is a Android IDE which works on Android. You can create Android apps without writing even a single line of code.
 
 ## Full docs
-You can find full introduction on the [official Sketchware docs website](https://docs.sketchware.io/docs/basic-creating-new-project.html/).
+You can find full introduction on the [official Sketchware docs website](https://sketchware-docs.vercel.app/docs/getting-started.html/).

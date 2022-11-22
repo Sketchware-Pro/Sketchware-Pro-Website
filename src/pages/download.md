@@ -15,11 +15,11 @@ You can download latest releases of Sketchware Pro from here.
 <details>
 <summary> Assets </summary>
 
-> [**Sketchware.Pro.v6.4.0-rc04-minApi21.apk**](https://github.com/Sketchware-Pro/Sketchware-Pro/releases/download/v6.4.0-rc04/Sketchware.Pro.v6.4.0-rc04-minApi21.apk)
+> [**Sketchware.Pro.v6.4.0-rc04-minApi21.apk**](https://github.com/Sketchware-Pro/Sketchware-Pro/releases/download/v6.4.0-rc05/Sketchware.Pro.v6.4.0-rc05-minApi21.apk)
 
-> [**Sketchware.Pro.v6.4.0-rc04-minApi26.apk**](https://github.com/Sketchware-Pro/Sketchware-Pro/releases/download/v6.4.0-rc04/Sketchware.Pro.v6.4.0-rc04-minApi26.apk)
+> [**Sketchware.Pro.v6.4.0-rc04-minApi26.apk**](https://github.com/Sketchware-Pro/Sketchware-Pro/releases/download/v6.4.0-rc05/Sketchware.Pro.v6.4.0-rc05-minApi26.apk)
 
-> [**Source Code** (zip)](https://github.com/Sketchware-Pro/Sketchware-Pro/archive/refs/tags/v6.4.0-rc04.zip)
+> [**Source Code** (zip)](https://github.com/Sketchware-Pro/Sketchware-Pro/archive/refs/tags/v6.4.0-rc05.zip)
 
 </details>
 
@@ -27,13 +27,12 @@ You can download latest releases of Sketchware Pro from here.
 # What's new
 In short,
 <ul>
-<li>Reading debug logs from projects. A new activity for that, the Logcat Reader, was added, and to start seeing logs there, run your project and open the Logcat Reader in Sketchware Pro.</li>
-<li>Symbol pair auto-completion in the code editor can now be turned off.</li>
-<li>Upgrade to sora-editor v0.14.0.</li>
-<li>Upgrade to Iyxan23/zipalign-java:96fd6b30c928015847264b27b0d2dd407f3e8895.</li>
-<li>Some performance improvements to the DEX merging step.</li>
-<li>Using resource strings in the text and hint property of Views now works! Set e.g. @string/greeting as text or hint, and the View code will use the resource string, not escape the @.</li>
-<li>You can now tweak the filename of SWB backups.</li>
+<li>Java 1.9, 10, and 11 compile support! This only works in minApi26 builds though</li>
+<li>Syntax highlighting for Kotlin and even XML files.</li>
+<li>When Sketchware Pro crashes, you can now send the error message to us. It's fully optional though, so please make sure to send them if you want to help us fix bugs!</li>
+<li>New features using root access: Auto-installing of projects, and also launching of projects if auto-install is enabled and worked.</li>
+<li>You can now use e.g. <code>tools:replace="android:id"</code> in a View's inject property to remove <code>android:id</code> from its XML code. This is a replacement for XML Command Blocks that change tiny things like these. </li>
+<li>Add new docs and update exisiting ones by <a href="https://github.com/NiceSapien">@NiceSapien</a> in <a href="https://github.com/Sketchware-Pro/Sketchware-Pro/pull/557">#557</a></li>
 </ul>
 
-Want full details? See them [here](https://github.com/Sketchware-Pro/Sketchware-Pro/releases/tag/v6.4.0-rc04/).
+Want full details? See them [here](https://github.com/Sketchware-Pro/Sketchware-Pro/releases/tag/v6.4.0-rc05).
