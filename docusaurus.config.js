@@ -7,7 +7,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'Sketchware Pro',
-  tagline: 'Official website of Sketchware Pro.',
+  tagline: 'Website of Sketchware Pro.',
   url: 'https://sketchware-pro.ga',
   baseUrl: '/',
   onBrokenLinks: 'throw',
@@ -16,8 +16,8 @@ const config = {
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'Sketchware-Pro', // Usually your GitHub org/user name.
-  projectName: 'website', // Usually your repo name.
+  organizationName: 'NiceSapien', // Usually your GitHub org/user name.
+  projectName: 'swpro-website', // Usually your repo name.
 
   // Even if you don't use internalization, you can use this field to set useful
   // metadata like html lang. For example, if your site is Chinese, you may want
@@ -57,16 +57,16 @@ const config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/Sketchware-Pro/website/tree/main/',
+            'https://github.com/NiceSapien/swpro-website/tree/dev/',
         },
-        blog: false,
-   /*     blog: {
+      //  blog: true,
+        blog: {
           showReadingTime: true,
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/Sketchware-Pro/website/tree/main/',
-        }, */
+            'https://github.com/nicesapien/swpro-website/tree/dev/',
+        },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
         },
@@ -76,7 +76,9 @@ const config = {
 
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
+    
     ({
+      metadata: [{name: 'keywords', content: 'blog, ide, programming, coding, docs, sketchware, pro'}],
       navbar: {
         title: 'Sketchware Pro',
         logo: {
@@ -85,16 +87,12 @@ const config = {
         },
         items: [
           {
-            href: '/',
-            label: 'Home',
-            position: 'left',
-          },
-          {
             type: 'doc',
             docId: 'intro',
             position: 'left',
-            label: 'Documentation',
+            label: 'Docs',
           },
+          {to: 'blog', label: 'Blog', position: 'left'}, // or position: 'right'
           {
             href: 'https://github.com/Sketchware-Pro/Sketchware-Pro',
             label: 'GitHub',
@@ -106,9 +104,9 @@ const config = {
             position: 'right',
           },
           {
-            href: 'https://github.com/Sketchware-Pro/Sketchware-Pro/releases',
-            label: 'Download Sketchware Pro',
-           position: 'right',
+            href: '/download',
+            label: 'Download',
+           position: 'left',
           },
         ],
       },
@@ -132,11 +130,19 @@ const config = {
             title: 'Community',
             items: [
               {
-                label: 'Discord',
+                label: 'Discord(website)',
+                href: 'https://discord.gg/Th9FP25TsK'            
+            },
+              {
+                label: 'Discord(IDE)',
                 href: 'https://discord.gg/Dc8ZDBRK5V',
               },
               {
-                label: 'Github Discussions',
+                label: 'GitHub issues(website)',
+                href: 'https://github.com/nicesapien/swpro-website/issues'
+              },
+              {
+                label: 'Github Discussions(IDE)',
                 href: 'https://github.com/Sketchware-Pro/Sketchware-Pro/discussions',
               },
             ],

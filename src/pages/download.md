@@ -23,6 +23,7 @@ You can download latest releases of Sketchware Pro from here.
 
 </details>
 
+We've made a few changes to the Logic Editor. **Please make sure to make a backup of your entire .sketchware folder before you try this beta out**! There might be bugs in the editor, and they could corrupt your projects. Please check in the Issues section before you report any.
 
 # What's new
 In short,
