@@ -1,5 +1,5 @@
 # Website
-This is the source code of official Sketchware Pro website(and docs)!
+This is the source code of Sketchware Pro website(and docs)!
 ### Installation
 This website/documentation is built with amazing [docusaurus](https://docusaurus.io)
 ```
