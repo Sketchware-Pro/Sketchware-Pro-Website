@@ -40,7 +40,8 @@ Firebase is backed by Google. Firebase has many services for app developers, lik
 For small apps, **Firebase is free to use**, but If you've reached the limits, you can upgrade and pay for only what you use.
 ### Why use Firebase
 There are many reasons to use Firebase, and the main ones are:
-1. Firebase is fast.
+1. Firebase is fast and secure by using firebase rules.
 2. Firebase works for Android, IOS, and even web.
-3. Firebase is free
+3. Firebase is free to use for small applications under [Firebase limit](https://firebase.google.com/pricing).
 4. Firebase is easy to use.
+5. Firebase is developed by google hence you can use Google Analytics and also connect AdMob to firebase.
