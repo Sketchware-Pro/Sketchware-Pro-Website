@@ -17,7 +17,8 @@
 			"destination": "/docs/components/Google/Firebase/dynamic-links"
     },
 		{
-    	"source" : "/docs/Block/import-blocks.md"
+    	"source" : "/docs/Block/import-blocks",
+    	"destination" : "/docs/Block/import-blocks"
     }
     ]
 }
