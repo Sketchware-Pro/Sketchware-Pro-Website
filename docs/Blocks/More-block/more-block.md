@@ -8,7 +8,7 @@ tags:
 # What is Sketchware more Block?
 More Block is a feature of Sketchware which easily helps developer to define a method in activity by using drag and drop.
 
-![Structure](/docs/Block/more-Block/assets/structure.png)
+![Structure](assets/structure.png)
 
 ### Parameters provided by Sketchware pro
    1. In Variable
@@ -79,30 +79,30 @@ Step 1 : Open any project in which you want to create more Block.
 
 Step 2 : Click on Event.
 
-![Click on event](/docs/Block/more-Block/assets/clickon-event.jpg)
+![Click on event](assets/clickon-event.jpg)
 
 Step 3 : Click on more Block
 
-![ClickOnMoreBlock](/docs/Block/more-Block/assets/clickonmoreBlock.jpg)
+![ClickOnMoreBlock](assets/clickonmoreBlock.jpg)
 
 Step 4 : Click on add icon
 
-![CreateMoreBlock](/docs/Block/more-Block/assets/create-more-Block.jpg)
+![CreateMoreBlock](assets/create-more-Block.jpg)
 
 Info : For example I am creating a Block that will display a toast message.
 
 Step 5 : Give more Block name as `Toast` ,choose more Block type as Void(If not selected) and then click on add.
 
-![AddMoreBlock](/docs/Block/more-Block/assets/add-more-Block.jpg)
+![AddMoreBlock](assets/add-more-Block.jpg)
 
 Step 6 : Open your created More Block and do as following.
 
-![DoAsShown](/docs/Block/more-block/assets/DoAsShown.jpg)
+![DoAsShown](assets/DoAsShown.jpg)
 
 Step 7 : Put this More Block on any part of activity and then run it.
 
 Info : I am putting this more block on `onCreate`,So my toast message will be visible when the app starts.
-![putMoreBlockOnActivity](/docs/Block/more-block/assets/putMoreBlockOnActivity.jpg)
+![putMoreBlockOnActivity](assets/putMoreBlockOnActivity.jpg)
 
 Step 8 : Run project and install app.
 
