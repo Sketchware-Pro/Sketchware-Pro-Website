@@ -87,13 +87,13 @@ Step 3 : Click on more Block
 
 Step 4 : Click on add icon
 
-![CreateMoreBlock](assets/create-more-Block.jpg)
+![CreateMoreBlock](assets/create-more-block.jpg)
 
 Info : For example I am creating a Block that will display a toast message.
 
 Step 5 : Give more Block name as `Toast` ,choose more Block type as Void(If not selected) and then click on add.
 
-![AddMoreBlock](assets/add-more-Block.jpg)
+![AddMoreBlock](assets/add-more-block.jpg)
 
 Step 6 : Open your created More Block and do as following.
 
