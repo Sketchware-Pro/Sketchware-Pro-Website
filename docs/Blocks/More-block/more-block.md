@@ -5,8 +5,8 @@ sidebar_position: 1
 tags:
   - More Block
 ---
-:::caution
-This doc is based on Sketchware Pro v6.4.0 test build 5 If the Sketchware Pro updates the following documentation may be valid on not
+ :::caution
+This doc is fully valid for `Sketchware Pro v6.4.0 test build 05` version of Sketchware Pro.If further updates are published then this documentation may be valid or may be not valid.
 :::
 # What is Sketchware more Block?
 More Block is a feature of Sketchware which easily helps developer to define a method in activity by using drag and drop.
