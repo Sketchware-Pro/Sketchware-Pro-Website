@@ -83,7 +83,7 @@ Step 2 : Click on Event.
 
 Step 3 : Click on more Block
 
-![ClickOnMoreBlock](assets/clickonmoreBlock.jpg)
+![ClickOnMoreBlock](assets/clickonmoreblock.jpg)
 
 Step 4 : Click on add icon
 
