@@ -1,7 +1,7 @@
 ---
 title: Import blocks
 description: This is a guide for importing blocks in Sketchware pro.
-sidebar_position: 1
+sidebar_position: 2
 ---
 # Import blocks in Sketchware
 :::caution
@@ -20,16 +20,16 @@ Step 2 : Go to developer tools
 Step 3 : Select Block manager
 ![Block manager](assets/block-manager.jpg)
 
-Step 4 : Click on ![Add icon](assets/ic_add_white.png) icon.
+Step 4 : Click on Add icon.
 ![Add block](assets/Add-block.jpg)
 
 Step 5 : Enter a name for palette name as you want and select color by clicking on color icon and then click on save.
-![Creating palette](assets/creating-palette.jpg)
+![Creating palette](assets/creating-palette2.jpg)
 
 Step 6 : Here at the bottom a palette has been created successfully just click it and it will open a new screen.
 ![Palette Created](assets/palette-created.jpg)
 
-Step 7 : Click on ![Menu icon](assets/ic_menu_black.png).
+Step 7 : Click on Menu icon.
 ![Import-block](assets/import-block.jpg)
 
 Step 8 : Click on Import block.This will open a file selector.Navigate to your block file and then click on Select.
