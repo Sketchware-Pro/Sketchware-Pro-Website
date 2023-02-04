@@ -6,7 +6,7 @@ tags:
   - More Block
 ---
  :::caution
-This doc is fully valid for `Sketchware Pro v6.4.0 test build 05` version of Sketchware Pro.If further updates are published then this documentation may be valid or may be not valid.
+This doc is fully valid for the `Sketchware Pro v6.4.0 test build 05` version of Sketchware Pro. If further updates are published then this documentation may be valid or may be not valid.
 :::
 # What is Sketchware more Block?
 More Block is a feature of Sketchware which easily helps developer to define a method in activity by using drag and drop.
@@ -65,7 +65,7 @@ More Block is a feature of Sketchware which easily helps developer to define a m
       20. TimePickerDialog.
       21. Notification
 
-### More Block type provided by Sketchware provided
+### More Block types provided by Sketchware provided
 1. Void(Return nothing)
 2. String
 3. Number
@@ -75,46 +75,46 @@ More Block is a feature of Sketchware which easily helps developer to define a m
 7. List Map
 8. View
 
-Note : You can't add More Block type rather than above
+Note: You can't add More Block type rather than above
 
 # Get Started
 ## Creating first More Block
-Step 1 : Open any project in which you want to create more Block.
+Step 1: Open any project in which you want to create More Block.
 
-Step 2 : Click on Event.
+Step 2: Click on Event.
 
 ![Click on event](assets/clickon-event.jpg)
 
-Step 3 : Click on more Block
+Step 3: Click on more Block
 
 ![ClickOnMoreBlock](assets/clickonmoreblock.jpg)
 
-Step 4 : Click on add icon
+Step 4: Click on the add icon
 
 ![CreateMoreBlock](assets/create-more-block.jpg)
 
-Info : For example I am creating a Block that will display a toast message.
+Info: For example, I am creating a Block that will display a toast message.
 
-Step 5 : Give more Block name as `Toast` ,choose more Block type as Void(If not selected) and then click on add.
+Step 5: Give More Block name as `Toast`, choose more Block type as Void(If not selected), and then click on add.
 
 ![AddMoreBlock](assets/add-more-block.jpg)
 
-Step 6 : Open your created More Block and do as following.
+Step 6: Open your created More Block and do as follow.
 
 ![DoAsShown](assets/DoAsShown.jpg)
 
-Step 7 : Put this More Block on any part of activity and then run it.
+Step 7: Put this More Block on any part of the activity and then run it.
 
-Info : I am putting this more block on `onCreate`,So my toast message will be visible when the app starts.
+Info: I am putting this more block on `onCreate`, So my toast message will be visible when the app starts.
 ![putMoreBlockOnActivity](assets/putMoreBlockOnActivity.jpg)
 
-Step 8 : Run project and install app.
+Step 8: Run the project and install the app.
 
-Info : I placed block on `onCreate`,So my toast is visible when the app starts.
+Info: I placed More Block on `onCreate`, So my toast is visible when the app starts.
 
 ## Frequently asked questions
 ### Can I place More Block inside a More Block?
-No,It will give you error's while compiling project.
+No, It will give you errors while compiling the project.
 ### Where Sketchware pro will add More Block code?
 ```java
 package....;
@@ -138,7 +138,7 @@ public class MainActivity extends Activity {
 	}
 	//More Block code goes here
 	public void _Toast() {
-		SketchwareUtil.showMessage(getApplicationContext(), "Type you message here");
+		SketchwareUtil.showMessage(getApplicationContext(), "Type your message here");
 	}
 }
 ```

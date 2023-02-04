@@ -5,7 +5,7 @@ authors: [devkumar]
 ---
 # Contributors
 
-List of contributiors of Sketchware Pro.
+List of contributors of Sketchware Pro.
 <!--truncate-->
 Those who helped to make Sketchware alive are : 
 
