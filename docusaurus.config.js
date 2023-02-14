@@ -28,7 +28,7 @@ const config = {
   },
 
 
-  plugins: [
+  plugins: ['docusaurus-plugin-google-adsense',
     [
       '@docusaurus/plugin-client-redirects',
       {
@@ -78,6 +78,9 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     
     ({
+      googleAdsense: {
+      dataAdClient: 'ca-pub-2093114452213843',
+    },
       metadata: [{name: 'keywords', content: 'blog, ide, programming, coding, docs, sketchware, pro'}],
       navbar: {
         title: 'Sketchware Pro',
