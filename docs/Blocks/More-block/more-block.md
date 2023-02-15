@@ -6,13 +6,14 @@ tags:
   - More Block
 slug: started
 ---
-# What is Sketchware more Block?
+
+### What is Sketchware more Block?
 
 More Block is a feature of Sketchware which easily helps developer to define a method in activity by using drag and drop.
 
 ![Structure](assets/structure.png)
 
-### Parameters provided by Sketchware pro
+#### Parameters provided by Sketchware pro
 
 1. In Variable
    1. String
@@ -65,7 +66,7 @@ More Block is a feature of Sketchware which easily helps developer to define a m
    20. TimePickerDialog.
    21. Notification
 
-### More Block types provided by Sketchware provided
+#### More Block types provided by Sketchware provided
 
 1. Void(Return nothing)
 2. String
@@ -78,9 +79,9 @@ More Block is a feature of Sketchware which easily helps developer to define a m
 
 Note: You can't add More Block type rather than above
 
-# Get Started
+## Get Started
 
-## Creating first More Block
+### Creating first More Block
 
 Step 1: Open any project in which you want to create More Block.
 
@@ -115,13 +116,13 @@ Step 8: Run the project and install the it.
 
 Info: I placed More Block on `onCreate`, So my toast is visible when the app starts.
 
-## Frequently asked questions
+### Frequently asked questions
 
-### Can I place More Block inside a More Block?
+#### Can I place More Block inside a More Block?
 
 No, It will give you errors while compiling the project.
 
-### Where Sketchware pro will add More Block code?
+#### Where Sketchware pro will add More Block code?
 
 ```java
 package....;
