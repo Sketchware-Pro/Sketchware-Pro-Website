@@ -4,68 +4,69 @@ description: Get started with More Block in Sketchware.
 sidebar_position: 1
 tags:
   - More Block
+slug: started
 ---
- :::caution
-This doc is fully valid for the `Sketchware Pro v6.4.0 test build 05` version of Sketchware Pro. If further updates are published then this documentation may be valid or may be not valid.
-:::
 # What is Sketchware more Block?
+
 More Block is a feature of Sketchware which easily helps developer to define a method in activity by using drag and drop.
 
 ![Structure](assets/structure.png)
 
 ### Parameters provided by Sketchware pro
-   1. In Variable
-      1. String
-      2. Number
-      3. Boolean
-      4. Map
-      5. List Number
-      6. List String
-      7. List Map
-   2. In View
-      1. View(All types of view available in layout)
-      2. ImageView
-      3. TextView
-      4. CheckBox
-      5. Switch
-      6. ListView
-      7. Spinner Webview
-      8. SeekBar
-      9. ProgressBar
-      10. CalendarView
-      11. RadioButton
-      12. RatingBar
-      13. VideoView
-      14. SearchView
-      15. GridView
-      16. AutoComplete(EditText)
-      17. MultiAutoComplete(EditText)
-      18. ViewPager
-      19. BadgeView
-   3. In Component
-      1. Intent
-      2. SharedPreferences
-      3. Calendar
-      4. Vibrator
-      5. Timer
-      6. Dialog
-      7. MediaPlayer
-      8. SoundPool
-      9. ObjectAnimator
-      10. Firebase DB
-      11. Firebase Auth
-      12. Firebase Storage
-      13. Camera
-      14. FilePicker
-      15. RequestNetwork
-      16. TextToSpeech
-      17. LocationManager
-      18. VideoAd
-      19. ProgressDialog
-      20. TimePickerDialog.
-      21. Notification
+
+1. In Variable
+   1. String
+   2. Number
+   3. Boolean
+   4. Map
+   5. List Number
+   6. List String
+   7. List Map
+2. In View
+   1. View(All types of view available in layout)
+   2. ImageView
+   3. TextView
+   4. CheckBox
+   5. Switch
+   6. ListView
+   7. Spinner Webview
+   8. SeekBar
+   9. ProgressBar
+   10. CalendarView
+   11. RadioButton
+   12. RatingBar
+   13. VideoView
+   14. SearchView
+   15. GridView
+   16. AutoComplete(EditText)
+   17. MultiAutoComplete(EditText)
+   18. ViewPager
+   19. BadgeView
+3. In Component
+   1. Intent
+   2. SharedPreferences
+   3. Calendar
+   4. Vibrator
+   5. Timer
+   6. Dialog
+   7. MediaPlayer
+   8. SoundPool
+   9. ObjectAnimator
+   10. Firebase DB
+   11. Firebase Auth
+   12. Firebase Storage
+   13. Camera
+   14. FilePicker
+   15. RequestNetwork
+   16. TextToSpeech
+   17. LocationManager
+   18. VideoAd
+   19. ProgressDialog
+   20. TimePickerDialog.
+   21. Notification
 
 ### More Block types provided by Sketchware provided
+
 1. Void(Return nothing)
 2. String
 3. Number
@@ -78,7 +79,9 @@ More Block is a feature of Sketchware which easily helps developer to define a m
 Note: You can't add More Block type rather than above
 
 # Get Started
+
 ## Creating first More Block
+
 Step 1: Open any project in which you want to create More Block.
 
 Step 2: Click on Event.
@@ -108,14 +111,18 @@ Step 7: Put this More Block on any part of the activity and then run it.
 Info: I am putting this more block on `onCreate`, So my toast message will be visible when the app starts.
 ![putMoreBlockOnActivity](assets/putMoreBlockOnActivity.jpg)
 
-Step 8: Run the project and install the app.
+Step 8: Run the project and install the it.
 
 Info: I placed More Block on `onCreate`, So my toast is visible when the app starts.
 
 ## Frequently asked questions
+
 ### Can I place More Block inside a More Block?
+
 No, It will give you errors while compiling the project.
+
 ### Where Sketchware pro will add More Block code?
+
 ```java
 package....;
 import ....;
@@ -129,10 +136,10 @@ public class MainActivity extends Activity {
 		initialize(_savedInstanceState);
 		initializeLogic();
 	}
-		
+
 	private void initialize(Bundle _savedInstanceState) {
 	}
-		
+
 	private void initializeLogic() {
 		_Toast();
 	}
