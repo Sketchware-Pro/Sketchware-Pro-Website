@@ -45,7 +45,7 @@ export default function Home() {
   return (
     <Layout
       title="Home"
-      description="Sketchware Pro's official website">
+      description="Sketchware Pro's website">
               <div>
           <div className={styles.banner}>
                     <p id="homepage.banner.link">
