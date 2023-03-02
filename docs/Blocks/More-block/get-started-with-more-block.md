@@ -120,7 +120,7 @@ Info: I placed More Block on `onCreate`, So my toast is visible when the app sta
 
 #### Can I place More Block inside a More Block?
 
-No, It will give you errors while compiling the project.
+Yes, you can place More Block inside a more block but placing the same block inside itself will give errors.
 
 #### Where Sketchware pro will add More Block code?
 
