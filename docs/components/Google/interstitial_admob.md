@@ -1,6 +1,6 @@
 ---
 title: Admob Interstitial Ads
-description: This is a simple and easy guide to use Admob Interstitial ads in Sketchware Pro.
+description: This is a simple and easy guide for using Admob Interstitial ads in Sketchware Pro.
 sidebar_position: 1
 tags:
   - Built-in blocks
@@ -8,18 +8,26 @@ tags:
 slug: admob
 ---
 
-## What is Admob
+## What is AdMob?
 AdMob is a mobile advertising subsidiary of Google, originally founded by Omar Hamoui. The name AdMob is a portmanteau for "advertising on mobile". It was incorporated on April 10, 2006 while Hamoui was in business school at Wharton School. The company is based in Mountain View, California. [Wikipedia](https://en.m.wikipedia.org/wiki/AdMob)
 
-## Why use admob
-Using admob, you can Earn more revenue with your apps.
+## Why use Admob?
+Using AdMob, you can Earn more revenue with your apps.
 You work hard on your app. AdMob makes earning revenue easy with in-app ads, actionable insights, and powerful, easy-to-use tools that grow your app business.
 
 ## Getting started
-First we'll need to connect our app to admob. You can view that guide on their(Sketchware's) [official website](https://docs.sketchware.io/docs/admob-getting-started.html).
+First, we'll need to connect our app to AdMob. You can view that guide on [Sketchware's official website](https://sketchware-docs.vercel.app/docs/admob-getting-started.html).
 ## In-Sketchware configuration
+
+:::caution
+
+You will see test ads until you `SIGN APK`.
+
+:::
+
+
 ### Add Admob component
-First add a admob component.
+First, add an AdMob component.
 ![Admob in Sketchware](/img/IMG_20220905_131356.jpg)
 Give it a name, and click on `Add`.
 ### Initialisation
