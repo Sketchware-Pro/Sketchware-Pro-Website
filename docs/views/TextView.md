@@ -6,9 +6,6 @@ tags:
  - View
 ---
 
-## TextView
-
-
 ### Introduction
 A TextView is a simple piece of text that can be displayed on the screen in your Sketchware Pro project. You can use a TextView to display messages, labels, or even just plain text. You can also style your TextView to change its appearance.
 In this documentation, we'll cover everything you need to know about using TextViews in Sketchware Pro. We'll start with the basics of what a TextView is, and then move on to creating and styling your own TextViews. We'll also share some tips and tricks for using TextViews in your projects. So let's get started!
