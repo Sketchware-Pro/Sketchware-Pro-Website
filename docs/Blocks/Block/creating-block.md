@@ -51,7 +51,7 @@ Step 8: Fill in the fields as your need and click on Save.
 | --- | --- | --- |
 | [Name](#name) | This is a unique name of your Block. Sketchware uses this to identify different Blocks. This field should not be the same as other blocks. | Yes |
 | [Type](#type) | Please enter value according to your block code(Eg. Void,If-then,If-else etc). | Yes |
-| [Type Name](#type-name) | Read [Type Name](#type-name) | If [Type](#type) is `p` then this field is required. |
+| [Type Name](#type-name) | Read [Type Name](#type-name) | If [Type](#type) is `c` then this field is required. |
 
 ### Name
 This is a unique name for a block. Sketchware pro uses this as the id of the block. If you use a Block in a project then Sketchware pro will use this property to identify each block and its code. This property cannot be the same for other blocks because it may cause errors.
