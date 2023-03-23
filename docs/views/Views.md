@@ -1,5 +1,5 @@
 ---
-title: View
+title: View 
 description: Explained what are view in Sketchware pro.
 sidebar_position: 1
 tags:

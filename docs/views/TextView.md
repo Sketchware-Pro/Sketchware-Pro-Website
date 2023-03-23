@@ -1,7 +1,7 @@
 ---
 title: TextView
 description: Explained what are TextView in Sketchware pro.
-sidebar_position: 1
+sidebar_position: 2
 tags:
  - View
 ---
