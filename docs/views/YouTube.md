@@ -10,7 +10,7 @@ tags:
 YouTube player is used to show YouTube videos in your app.
 
 :::danger AppCompat required 
-To use YouTube Pla, you must enable AppCompat first, otherwise, you will see an error.
+To use YouTube Player, you must enable AppCompat first, otherwise, you will see an error.
 :::
 
 ## When to use YouTube player
