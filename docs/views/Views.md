@@ -1,6 +1,6 @@
 ---
 title: View
-description: Explained what are Biew in Sketchware pro.
+description: Explained what are view in Sketchware pro.
 sidebar_position: 1
 tags:
  - View
