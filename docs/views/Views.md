@@ -15,6 +15,6 @@ Overall, Views in Sketchware Pro are an essential tool for creating visually app
 
 Here is some documentation on Sketchware Pro Views:
 
-[TextView](TextView)
-[YouTube Player View](YouTube)
-[YouTube Player View](bottom-navigation)
+- [TextView](TextView)
+- [YouTube Player View](YouTube)
+- [Bottom Navigation](bottom-navigation)
