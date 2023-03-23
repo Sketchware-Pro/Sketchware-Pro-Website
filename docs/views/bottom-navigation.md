@@ -4,7 +4,8 @@ description: Bottom Navigation View is a part of Material Design library. Sketch
 sidebar_position: 1
 tags:
  - Material Design
- - Google
+ - Google 
+ - View
 ---
 
 ## Bottom Navigation 

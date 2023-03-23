@@ -3,7 +3,8 @@ title: YouTube Player
 description: YouTube player is used to show YouTube videos in your app.
 sidebar_position: 2
 tags:
-- Google
+- Google 
+- View
 ---
 # YouTube Player
 YouTube player is used to show YouTube videos in your app.
