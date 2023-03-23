@@ -9,7 +9,11 @@ tags:
 
 ## Bottom Navigation 
 Bottom navigation is a common UI design pattern that allows users to navigate between different sections of an app by selecting one of the items on a bar at the bottom of the screen.
-Bottom Navigation View is a part of Material Design library. Sketchware Pro supports it out of the box.
+Bottom Navigation View is a part of the Material Design library. Sketchware Pro supports it out of the box.
+
+:::danger AppCompat required
+To use Bottom Navigation, you must enable AppCompat first, otherwise, you will see an error.
+:::
 
 ## Using it
 First, add it in the bottom of the Activity.
