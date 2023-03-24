@@ -1,10 +1,8 @@
 ---
-title: Sketchware is a Revolution
+title: Sketchware Pro is a Revolutionary App
 description: Sketchware Pro is a Revolutionary App
 authors: [devkumar]
 ---
-
-## Sketchware Pro is a Revolutionary App
 
 If you're a coder or aspire to be one, you know that there are a lot of different coding languages out there. Some popular ones include Java, Python, and C++. While these languages are all fine and dandy, they can be pretty difficult to learn, especially if you're starting from scratch. This is where Sketchware pro comes in.
 <!--truncate-->
