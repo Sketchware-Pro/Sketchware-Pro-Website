@@ -10,7 +10,7 @@ If you're a coder or aspire to be one, you know that there are a lot of differen
 
 Sketchware pro is a modded version of the original Sketchware app. While the original Sketchware app was created as a way to teach people how to code simply and straightforwardly, as the Original Sketchware server has shut down so Sketchaware pro was created to keep Sketchware alive. Sketchware pro takes things one step further. With Sketchware pro, you can create professional-grade apps without having to learn any complicated coding languages.
 
-## Working of Sketchware
+## Working of Sketchware pro
 
 So, how does it work? Sketchware pro uses a drag-and-drop interface that makes creating apps a breeze. You simply drag and drop the different elements that you want to include in your app, and then Sketchware pro will do the rest. It's really that simple.
 
