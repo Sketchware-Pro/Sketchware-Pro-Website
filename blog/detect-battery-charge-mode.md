@@ -32,9 +32,11 @@ IntentFilter ifilter = new IntentFilter(Intent.ACTION_BATTERY_CHANGED); Intent b
 
 boolean usbCharge = chargePlug == BatteryManager.BATTERY_PLUGGED_USB; boolean acCharge = chargePlug == BatteryManager.BATTERY_PLUGGED_AC; if(usbCharge){
 /*BATTERY CHARGING THROUGH USB*/
- } else if(acCharge) {/*BATTERY CHARGING THROUGH AC*/
-  } else {
-/*DEVICE NOT CHARGING*/
+} else if(acCharge) {
+	/* BATTERY CHARGING THROUGH AC* /
+} else {
+	/ *DEVICE NOT CHARGING */
+}
 ```
 BOOM! I have mentioned conditions in those code comments, so handle it yourself.
 That's all for today(or for this post, I'd say). Thanks for reading.
