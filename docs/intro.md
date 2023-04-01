@@ -11,15 +11,11 @@ Sketchware Pro is an app builder tool that allows users to create Android apps w
 
 ## Features
 
-- Drag-and-drop interface
-- Visual editor
-- Built-in components
-- Code editor
-- Java support
-- Kotlin code support
-- Additional components
-- Improved UI
-- Bug fixes
+- Custom Blocks: The Pro version allows users to create, use and share custom blocks.
+- Local Library: This feature allows developers to download and use local libraries in their projects.
+- No Ads: The Pro version does not contain ads and is free to use.
+- Additional Components: There are various extra components added in the pro version such as Google Login, Notification, Phone Auth, Rewarded Video Ad and more.
+- Kotlin Code Support: The most significant new feature of this release is Kotlin code support! Compiling Kotlin code still needs an Android 8+ device though, so only the -minApi26 version supports Kotlin.
 
 ## How to Use
 
