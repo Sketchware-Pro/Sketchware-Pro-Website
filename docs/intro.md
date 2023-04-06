@@ -24,6 +24,22 @@ Sketchware Pro is an app builder tool that allows users to create Android apps w
 3. Add components and customize your app
 4. Build and run your app
 
+## Sketchware Pro - the rhyming poem
+Sketchware Pro, it's the way to go
+With its simple flow, let your ideas grow
+Build stunning apps, without any woes
+Just drag and drop, and watch it take shape like a pro
+
+Create Android apps, with just a tap
+No need to code, no need to unwrap
+With Sketchware Pro, the possibilities are vast
+From games to utilities, your app will outlast
+
+So download Sketchware Pro, and get started today
+Unlock your creativity, and let your imagination play
+Make your app stand out, in every way
+Sketchware Pro, it's the perfect way to slay!
+
 ## Conclusion
 
 Sketchware Pro is a great tool for anyone looking to create Android apps without any programming knowledge. With its drag-and-drop interface and built-in components, it's easy to create professional-looking apps in no time.
