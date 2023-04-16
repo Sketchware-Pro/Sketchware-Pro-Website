@@ -7,6 +7,7 @@ authors: [nicesapien]
 Hey! How's everybody? Hope y'all fine.
 
 Today we'll learn how to detect user's battery charging mode. Sometimes we're building a app for detecting details of the client device. This SIMPLE code can sometimes come handy in such cases.
+<!--truncate-->
 ## Detecting in a Toast
 So basically what you have to do is add a button in your app. Style it as you want and stuff.
 In the onClick event of the button, paste this code with a add source directly block.
