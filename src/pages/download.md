@@ -15,9 +15,9 @@ You can download latest releases of Sketchware Pro from here.
 <details>
 <summary> Assets </summary>
 
-> [**Sketchware.Pro.v6.4.0-rc04-minApi21.apk**](https://github.com/Sketchware-Pro/Sketchware-Pro/releases/download/v6.4.0-rc05/Sketchware.Pro.v6.4.0-rc05-minApi21.apk)
+> [**Sketchware.Pro.v6.4.0-rc05-minApi21.apk**](https://github.com/Sketchware-Pro/Sketchware-Pro/releases/download/v6.4.0-rc05/Sketchware.Pro.v6.4.0-rc05-minApi21.apk)
 
-> [**Sketchware.Pro.v6.4.0-rc04-minApi26.apk**](https://github.com/Sketchware-Pro/Sketchware-Pro/releases/download/v6.4.0-rc05/Sketchware.Pro.v6.4.0-rc05-minApi26.apk)
+> [**Sketchware.Pro.v6.4.0-rc05-minApi26.apk**](https://github.com/Sketchware-Pro/Sketchware-Pro/releases/download/v6.4.0-rc05/Sketchware.Pro.v6.4.0-rc05-minApi26.apk)
 
 > [**Source Code** (zip)](https://github.com/Sketchware-Pro/Sketchware-Pro/archive/refs/tags/v6.4.0-rc05.zip)
 
