@@ -8,7 +8,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 const config = {
   title: 'Sketchware Pro',
   tagline: 'Website of Sketchware Pro.',
-  url: 'https://sketchware-pro.ga',
+  url: 'https://sketchware-pro.vercel.app',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',

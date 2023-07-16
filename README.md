@@ -1,4 +1,5 @@
-# Website
+# Websiteb[![Better Uptime Badge](https://betteruptime.com/status-badges/v1/monitor/okx8.svg)](https://sketchware-pro.betteruptime.com/?utm_source=status_badge)
+
 This is the source code of Sketchware Pro website(and docs)!
 ### Installation
 This website/documentation is built with amazing [docusaurus](https://docusaurus.io)
