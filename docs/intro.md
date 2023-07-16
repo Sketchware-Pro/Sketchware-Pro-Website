@@ -7,9 +7,13 @@ slug: /
 
 # Sketchware Pro
 
-Sketchware Pro is an app builder tool that allows users to create Android apps without any programming knowledge. The app is designed to be easy to use and includes a variety of features to help users create professional-looking apps.
+Let's discover **Sketchware Pro in less than 5 minutes**.
+You can download Sketchware Pro from [here](/download).
+## What Sketchware Pro is?
+Sketchware Pro is the ultimate Android app builder for developers of all skill levels. With its simple drag-and-drop method, you can create stunning apps with ease. And the best part? Sketchware Pro is completely free! That's right, from starting to end, you can build your dream app without spending a dime. And, if you're feeling adventurous, Sketchware Pro is also an open-source project on GitHub, so you can tweak and customize it to your heart's content. So why wait? Start building your dream app today with Sketchware Pro!
+From designing to programming, you can create a completely native Android application by simply drag and dropping.
 
-## Features
+### Features
 
 - Custom Blocks: The Pro version allows users to create, use and share custom blocks.
 - Local Library: This feature allows developers to download and use local libraries in their projects.
@@ -17,12 +21,8 @@ Sketchware Pro is an app builder tool that allows users to create Android apps w
 - Additional Components: There are various extra components added in the pro version such as Google Login, Notification, Phone Auth, Rewarded Video Ad and more.
 - Kotlin Code Support: The most significant new feature of this release is Kotlin code support! Compiling Kotlin code still needs an Android 8+ device though, so only the -minApi26 version supports Kotlin.
 
-## How to Use
-
-1. Download and install Sketchware Pro from our website [here](https://sketchware-pro.ga/download)
-2. Create a new project
-3. Add components and customize your app
-4. Build and run your app
+### Completely PC-Independent 
+From setting up to publishing your first Android application, you can handle all the process without leaving your smartphone.
 
 ## Sketchware Pro - the rhyming poem
 Sketchware Pro, it's the way to go
@@ -40,9 +40,29 @@ Unlock your creativity, and let your imagination play
 Make your app stand out, in every way
 Sketchware Pro, it's the perfect way to slay!
 
+## How to Use
+
+1. Download and install Sketchware Pro from our website [here](https://sketchware-pro.ga/download)
+2. Create a new project
+3. Add components and customize your app
+4. Build and run your app
+
 ## Conclusion
 
 Sketchware Pro is a great tool for anyone looking to create Android apps without any programming knowledge. With its drag-and-drop interface and built-in components, it's easy to create professional-looking apps in no time.
+
+## Wanna contribute to Sketchware Pro?
+To contribute to Sketchware Pro, you can follow these steps:
+
+1.  Fork the Sketchware Pro repository on GitHub.
+2.  Clone your forked repository to your local machine.
+3.  Make changes to the code on your local machine.
+4.  Test your changes to ensure they work as intended.
+5.  Commit your changes to your local repository.
+6.  Push your changes to your forked repository on GitHub.
+7.  Create a pull request to merge your changes into the main Sketchware Pro repository.
+
+You can also contribute by reporting issues, suggesting new features, and helping to answer questions in the Sketchware Pro community.
 
 ## Full docs
 Click the next button to see more docs, and if you can't find any, try finding it on this clone of [official Sketchware docs website](https://sketchware-docs.vercel.app/docs/getting-started.html/).
