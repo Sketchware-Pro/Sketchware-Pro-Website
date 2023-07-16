@@ -51,7 +51,7 @@ Sketchware Pro, it's the perfect way to slay!
 
 Sketchware Pro is a great tool for anyone looking to create Android apps without any programming knowledge. With its drag-and-drop interface and built-in components, it's easy to create professional-looking apps in no time.
 
-## Wanna contribute to Sketchware pro?
+## Wanna contribute to Sketchware Pro?
 To contribute to Sketchware Pro, you can follow these steps:
 
 1.  Fork the Sketchware Pro repository on GitHub.
