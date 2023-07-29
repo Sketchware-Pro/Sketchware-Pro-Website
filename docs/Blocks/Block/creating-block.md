@@ -3,7 +3,7 @@ title: Creating Block
 description: This is a guide for creating blocks in Sketchware pro.
 sidebar_position: 1
 ---
-To create Block in Sketchware pro you need to know some terms of Block.
+To create a Block in Sketchware Pro, you need to know some terms related to Blocks.
 
 ## Create a Block in Sketchware
 Step 1: Go to Sketchware and click on 3 dots.
@@ -46,51 +46,63 @@ Step 8: Fill in the fields as your need and click on Save.
 ![block_fields](assets/creating-block/fields.png)
 
 
-## Block fields
+## Properties
 | Field | Explanation | Required |
 | --- | --- | --- |
-| [Name](#name) | This is a unique name of your Block. Sketchware uses this to identify different Blocks. This field should not be the same as other blocks. | Yes |
+| [Name](#name) | This is a unique name for your Block. Sketchware uses this to identify different Blocks. The name should not be the same as other blocks. | Yes |
 | [Type](#type) | Please enter value according to your block code(Eg. Void,If-then,If-else etc). | Yes |
 | [Type Name](#type-name) | Read [Type Name](#type-name) | If [Type](#type) is `c` then this field is required. |
 
 ### Name
-This is a unique name for a block. Sketchware pro uses this as the id of the block. If you use a Block in a project then Sketchware pro will use this property to identify each block and its code. This property cannot be the same for other blocks because it may cause errors.
+This is a unique name for a block in Sketchware pro. It functions as the ID of the block. When you use a Block in a project, Sketchware pro uses this property to identify each block and its associated code. The name should not be the same as other blocks to prevent potential errors.
 ### Type
-Study the below data.
+Study the data below:
 - regular
 
 ![type-regular](assets/creating-block/block-shapes/type-regular.png)
-- c(if block)
+- c (if block)
 
 ![type-c](assets/creating-block/block-shapes/type-c.png)
-- e(if-else block)
+- e (if-else block)
 
 ![type-e](assets/creating-block/block-shapes/type-e.png)
-- s(String)
+- s (String)
 
 ![block-type-shape](assets/creating-block/block-shapes/type-string.png)
-- b(Boolean)
+- b (Boolean)
 
 ![type-b](assets/creating-block/block-shapes/type-b.png)
-- d(Number)
+- d (Number)
 
 ![type-d](assets/creating-block/block-shapes/type-d.png)
-- v(Variable)
+- v (Variable)
 
 ![block-type-shape](assets/creating-block/block-shapes/type-string.png)
-- a(Map)
+- a (Map)
 
 ![block-type-shape](assets/creating-block/block-shapes/type-string.png)
-- f(stop block)
+- f (stop block)
 
 ![type-f](assets/creating-block/block-shapes/type-f.png)
-- l(List)
+- l (List)
 
 ![block-type-shape](assets/creating-block/block-shapes/type-string.png)
-- c(Component)
+- p (Component)
 
 ![block-type-shape](assets/creating-block/block-shapes/type-string.png)
 
 ### Type Name
-This field is not required until the [Type Name](#type-name) is `c`.
-This property tells Sketchware pro that the block is related to a component that is defined in the **Type Name** property.
+This field is required only if the Type Name is `"p"`. It indicates that the block is related to a component defined in the Type Name property.
+
+## Design
+| Field | Explanation | Required |
+| --- | --- | --- |
+| Color | This field determines the color of your block. | Yes |
+| Block Spec | This property is used to design your block. | Yes |
+
+### Color
+The color property allows you to set the desired color for your block, enabling customization and enhancing its visual appearance.
+
+### Block Spec
+The Block Spec is a versatile tool that helps you design and structure block content. It supports various data types such as text, strings, code, numbers, booleans, and more. This empowers you to create customized blocks tailored to your specific requirements. Additionally, you can effortlessly add additional properties to expand the capabilities of the Block Spec, aligning it perfectly with your unique needs.
+
