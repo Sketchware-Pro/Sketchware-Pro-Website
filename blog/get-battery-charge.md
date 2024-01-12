@@ -38,7 +38,7 @@ Toast.makeText(getApplicationContext(),"Device is fully charged",Toast.LENGTH_LO
 
 Toast.makeText(getApplicationContext(),"Device is not fully charged",Toast.LENGTH_LONG).show(); }
 ```
-Apart from BATTERY_STATUS_FULL, other battery status integers which can be used include
+Apart from BATTERY_STATUS_FULL, other battery status integers which can be detected include
 
 BATTERY_STATUS_CHARGING
 

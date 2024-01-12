@@ -81,7 +81,7 @@ const config = {
       googleAdsense: {
       dataAdClient: 'ca-pub-2093114452213843',
     },
-      metadata: [{name: 'keywords', content: 'blog, ide, programming, coding, docs, sketchware, pro'}],
+      metadata: [{name: 'keywords', content: 'blog, ide, programming, coding, docs, sketchware, pro, android'}],
       navbar: {
         title: 'Sketchware Pro',
         logo: {

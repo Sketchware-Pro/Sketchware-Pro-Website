@@ -11,6 +11,7 @@ So the first thing that you're gonna have to do is to download [Sketchware Pro](
 
 Then, you'll have to allow the "Access all files" permission and then create a project.
 Click on the plus(+) icon on the bottom to create a project.
+
 ![Add icon](/img/Plus_icon.jpg)
 
 Then enter project info.
@@ -61,4 +62,5 @@ This block tells the intent component to do its job.
 Now you're done. Click the `Run` button on the bottom right to compile your very first app and use it.
 
 Final output app:
+
 ![Output app gif](/gif/final_output.gif)
