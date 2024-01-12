@@ -1,15 +1,16 @@
 ---
 title: YouTube Player
 description: YouTube player is used to show YouTube videos in your app.
-sidebar_position: 2
+sidebar_position: 3
 tags:
-- Google
+- Google 
+- View
 ---
 # YouTube Player
 YouTube player is used to show YouTube videos in your app.
 
-:::danger AppCompat required
-To use YouTube player, you must enable AppCompat first, otherwise you will see a error.
+:::danger AppCompat required 
+To use YouTube Player, you must enable AppCompat first, otherwise, you will see an error.
 :::
 
 ## When to use YouTube player
