@@ -16,8 +16,12 @@ So, how does it work? Sketchware pro uses a drag-and-drop interface that makes c
 
 ## Affordability
 
-Not only is Sketchware pro incredibly easy to use, but it's also end-to-end free. While other app development platforms can cost hundreds or even thousands of dollars, Sketchware Pro is free to use with no hidden charges. That's a pretty price for an app that can help you create professional-grade apps.
+Not only is Sketchware pro incredibly easy to use, but it's also end-to-end free. While other app development platforms can cost hundreds or even thousands of dollars, Sketchware Pro is free to use with no hidden charges. That's a pretty price for an app that can help you create professional-grade apps on your __mobile phone__.
 
 ## Try Sketchware pro today
 
 If you're looking for a way to create professional-grade apps without having to learn a complicated coding language, Sketchware pro is the perfect solution. It's easy to use, free of cost, and you can get started right away. So what are you waiting for? Give Sketchware pro a try today!
+
+To make your work easier, here's a getting started guide along with download links!
+
+[Download Sketchware Pro](/download)
