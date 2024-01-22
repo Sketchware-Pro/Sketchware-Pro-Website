@@ -4,13 +4,13 @@ description: Story of Sketchware Pro written by Dev Kumar.
 authors: [devkumar]
 ---
 
-:::caution 
-Please be advised that the information provided here is written by Dev Kumar(TechnicalStudioDeveloper) and may not be entirely accurate. It is recommended that you verify any information before relying on it.
-:::
 
 Once upon a time, in the world of Android app development, there lived a small but powerful app development tool called Sketchware. Sketchware was created with the goal of making app development accessible for everyone, regardless of their technical background. It was built to enable anyone, even those without any coding experience, to create their own custom Android apps.
 
 <!--truncate-->
+:::caution 
+Please be advised that the information provided here is written by Dev Kumar(TechnicalStudioDeveloper) and may not be entirely accurate. It is recommended that you verify any information before relying on it.
+:::
 
 The beginnings of Sketchware can be traced back to 2015, when a small team of developers in South Korea saw a need for an app development tool that was simple and intuitive enough for non-technical users to use. They set out to create a new kind of app development environment, one that would offer easy-to-use drag-and-drop interfaces and pre-built components that could be easily combined to create custom Android apps.
 
