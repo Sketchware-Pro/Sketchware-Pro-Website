@@ -7,7 +7,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'Sketchware Pro',
-  tagline: 'Website of Sketchware Pro.',
+  tagline: 'The official website of Sketchware Pro.',
   url: 'https://sketchware-pro.vercel.app',
   baseUrl: '/',
   onBrokenLinks: 'throw',
@@ -17,7 +17,7 @@ const config = {
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
   organizationName: 'NiceSapien', // Usually your GitHub org/user name.
-  projectName: 'swpro-website', // Usually your repo name.
+  projectName: 'Sketchware-Pro-website', // Usually your repo name.
 
   // Even if you don't use internalization, you can use this field to set useful
   // metadata like html lang. For example, if your site is Chinese, you may want
@@ -57,7 +57,7 @@ const config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/NiceSapien/swpro-website/tree/dev/',
+            'https://github.com/Sketchware-Pro/Sketchware-Pro-website/tree/dev/',
         },
       //  blog: true,
         blog: {
@@ -65,7 +65,7 @@ const config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/nicesapien/swpro-website/tree/dev/',
+            'https://github.com/Sketchware-Pro/Sketchware-Pro-website/tree/dev/',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
@@ -127,25 +127,29 @@ const config = {
                 label: 'Documentation',
                 to: '/docs',
               },
+              {
+                label: 'Blog',
+                to: '/blog',
+              }
             ],
           },
           {
             title: 'Community',
             items: [
               {
-                label: 'Discord(website)',
-                href: 'https://discord.gg/Th9FP25TsK'            
-            },
-              {
-                label: 'Discord(IDE)',
+                label: 'Discord',
                 href: 'https://discord.gg/Dc8ZDBRK5V',
               },
               {
-                label: 'GitHub issues(website)',
-                href: 'https://github.com/nicesapien/swpro-website/issues'
+                label: 'Telegram',
+                href: 'https://t.me/sketchwarepro',
               },
               {
-                label: 'Github Discussions(IDE)',
+                label: 'GitHub issues',
+                href: 'https://github.com/Sketchware-Pro/Sketchware-Pro/issues'
+              },
+              {
+                label: 'Github Discussions',
                 href: 'https://github.com/Sketchware-Pro/Sketchware-Pro/discussions',
               },
             ],
@@ -156,6 +160,10 @@ const config = {
               {
                 label: 'GitHub',
                 href: 'https://github.com/Sketchware-Pro/Sketchware-Pro',
+              },
+              {
+                label: 'Website GitHub',
+                href: 'https://github.com/Sketchware-Pro/Sketchware-Pro-website',
               },
               {
                 label: 'Disclaimer',
