@@ -5,7 +5,7 @@ import styles from './styles.module.css';
 const FeatureList = [
   {
     title: 'Easy to Use',
-    Svg: require('@site/static/img/mountain.svg').default,
+    img: require('@site/static/img/index/woman_laying_down.png').default,
     description: (
       <>
         Sketchware Pro was designed to be easily installed and
@@ -15,7 +15,7 @@ const FeatureList = [
   },
   {
     title: 'Focus on What Matters',
-    Svg: require('@site/static/img/tree.svg').default,
+    img: require('@site/static/img/index/focus_on_matter.png').default,
     description: (
       <>
         Sketchware Pro lets you focus on your apps, and we&apos;ll do the chores. Go
@@ -25,7 +25,7 @@ const FeatureList = [
   },
   {
     title: 'Free Forever',
-    Svg: require('@site/static/img/freelancer.svg').default,
+    img: require('@site/static/img/index/free_forever.png').default,
     description: (
       <>
         Sketchware Pro is completely free. Sketchware Pro's source code is available on our GitHub repository.
@@ -34,11 +34,11 @@ const FeatureList = [
   },
 ];
 
-function Feature({Svg, title, description}) {
+function Feature({ img, title, description }) {
   return (
     <div className={clsx('col col--4')}>
       <div className="text--center">
-        <Svg className={styles.featureSvg} role="img" />
+        <img className={styles.featureSvg} role="img" src={img} alt="Easy to Use" />
       </div>
       <div className="text--center padding-horiz--md">
         <h3>{title}</h3>
