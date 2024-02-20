@@ -1,0 +1,45 @@
+html {
+    font-family: "Gabarito", sans-serif;
+  }
+  body {
+  }
+  h1 {
+    font-family: "Rubik", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 4em;
+    margin-bottom: 15px;
+  }
+  p {
+    
+    font-size: 1.3em;
+  }
+  #home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 300px;
+    width: 100%;
+    height: 50%;
+  }
+  #one {
+display: none;
+  }
+/* For tablets */
+ @media screen and (min-width: 900px) and (max-width: 3000px) {
+    body {
+      display: flex;
+      flex-direction: row;
+    }
+    #home {
+      height: 100%;
+      width: 60%;
+    }
+    #one {
+      display: unset;
+      width: fit-content;
+      height: 650px;
+      margin-top: 200px;
+    }
+}
