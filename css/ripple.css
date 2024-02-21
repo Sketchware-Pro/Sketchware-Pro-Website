@@ -2,9 +2,10 @@
     background-position: center;
     transition: background 0.8s;
     font-family: "Karla", sans-serif;
-    font-optical-sizing: auto;
     font-weight: 600;
     font-style: normal;
+    font-size: 1.5vw;
+    padding: 1.5vw;
   }
   .btn:hover {
     background: #448AFF radial-gradient(circle, transparent 1%, #448AFF 1%) center/15000%;
@@ -20,11 +21,15 @@
   .btn {
     width: 100%;
     border: none;
-    border-radius: 8px;
+    border-radius: 1vw;
     padding: 12px 18px;
-    font-size: 16px;
   cursor: pointer;
     color: white;
     background-color: #448AFF;
     box-shadow: 0 0 4px #999;
+  }
+  @media (min-width: 320px) and (max-width: 999px) {
+    .btn {
+      font-size: 20px;
+    }
   }

@@ -21,13 +21,14 @@ div.logo {
 #main {
   display: flex;
   flex-direction: row;
+  width: 100%;
 }
 h1 {
   font-family: "Rubik", sans-serif;
   font-optical-sizing: auto;
   font-weight: 700;
   font-style: normal;
-  font-size: 4em;
+  font-size: 4vw;
   margin-bottom: 15px;
   width: 80%;
 }
@@ -35,28 +36,29 @@ h1 {
   margin-top: 0px;
   padding-left: 0px;
   width: 80%;
-  font-size: 1.3em;
+  font-size: 1.5vw;
 }
 #sec1Text {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: left;
   margin-top: 300px;
-  width: 60%;
+  width: 80%;
   height: 100%;
 }
 #rocket {
-  width: fit-content;
-  height: 650px;
+  width: 35%;
+  height: fill;
   margin-top: 200px;
 }
 header {
   background-color: white;
   position: fixed;
-  font-size: x-large;
+  font-size: 1.3vw;
   left: 0;
   right: 0;
-  height: 64px;
+  height: 3.5vw;
   display: flex;
   align-items: center;
   box-shadow: 0 2px 8px 0 rgba(32,33,36,.08);
@@ -75,7 +77,7 @@ header li {
 }
 header li a {
   color: #5f6368;
-  font-size: large;
+  font-size: 1vw;
   text-decoration: none;
   border-color: white;
   border-width: medium;
@@ -92,6 +94,18 @@ header li a:active {
 #menu_img {
   display: none;
 }
+#sec2 {
+  display: flex;
+  justify-content: center;
+  width: max-content;
+  font-size: 1em;
+  width: 100%;
+  padding: 0px;
+  margin: 0px;
+}
+.logo img {
+  width: 2.5vw; height: fit-content;
+}
 @media (min-width: 320px) and (max-width: 999px) {
   div.logo {
     width: max-content;
@@ -104,7 +118,12 @@ header li a:active {
     font-size: 1.1em;
   }
   header {
-    font-size: large;
+    font-size: larger;
+    height: 64px;
+  }
+  .logo img {
+    width: 42px;
+    height: fit-content;
   }
   header li a {
     display: none;
