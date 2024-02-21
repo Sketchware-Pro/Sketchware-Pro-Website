@@ -3,15 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com%22%3E/" />
-    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Gabarito&display=swap"
-      rel="stylesheet"
-    />
-    <link href="https://fonts.googleapis.com/css2?family=Lilita+One&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gabarito:wght@400..900&family=Karla:ital,wght@0,200..800;1,200..800&family=Lilita+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/ripple.css">
+    <script src="script/ripple.js"></script>
+    <script src="script/index.js"></script>
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/gh//Design-and-Code/css-buttons/buttons/buttons.css"
@@ -19,21 +17,41 @@
     <title>Sketchware Pro</title>
 </head>
 <body>
-    <div id="home">
-        <h1 style="width: 600px;">Sketchware <a style="color: #448AFF">Pro</a>. Epic. <a style="color: #448AFF">Inside</a> out.</h1>
-        <p style="margin-top: 0px; padding-left: 0px; width: 600px;">
+  <header>  
+  <nav>
+    <div class="header-container">
+    <div class="logo">
+      <img src="https://avatars.githubusercontent.com/u/81916613?s=42&v=4" alt="SW Pro Logo">
+      <p style="margin-left: 8px; color: #434649;">Sketchware Pro</p>
+    </div>
+    <ul class="nav-links">
+      <li><a href="https://sketchware-pro.vercel.app/download">Download</a></li>
+      <li><a href="https://sketchware-pro.vercel.app/docs">Docs</a></li>
+      <li><a href="https://sketchware-pro.vercel.app/blog">Blog</a></li>
+      <li><a href="https://sketchware-pro.vercel.app/about">About</a></li>
+    </ul>
+    <div id="menu_img_div">
+    <img id="menu_img" height="24px" src="img/menu.png" alt="menu" onclick="openNav()">
+  </div>
+  </div>
+  </nav>
+  </header>
+  <div id="main">
+    <div id="sec1Text">
+        <h1>Sketchware <a style="color: #448AFF">Pro</a>. Epic. <a style="color: #448AFF">Inside</a> out.</h1>
+        <p>
             No code, all awesome. Craft epic apps with Sketchware Pro's magical blocks.
         </p>
-        <a href="fix.html">
+        <a href="https://sketchware-pro.vercel.app/docs">
           <button
-            class="button-def button-6"
-            style="background-color: cornflowerblue"
+            class="btn" style="font-size: larger;"
           >
-            <span>Get Started</span>
+            Get Started
           </button></a
         >
       </div>
-      <video id="one" src="img/main.webm" alt="rocket_animation"  autoplay muted loop>
-    </body>
+      <video id="rocket" src="img/main.webm" alt="rocket_animation"  autoplay muted loop>
+    </div>
+      </body>
 </body>
 </html>
