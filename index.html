@@ -1,4 +1,4 @@
-
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -21,7 +21,7 @@
   <nav>
     <div class="header-container">
     <div class="logo">
-      <img src="https://avatars.githubusercontent.com/u/81916613?s=100&v=4" alt="SW Pro Logo">
+      <img src="img/logo.png" alt="SW Pro Logo">
       <p style="margin-left: 8px; color: #434649;">Sketchware Pro</p>
     </div>
     <ul class="nav-links">
@@ -50,7 +50,10 @@
           </button></a
         >
       </div>
-      <video id="rocket" src="img/main.webm" alt="rocket_animation"  autoplay muted loop>
+      <video class="rocket" alt="rocket_animation"  autoplay muted loop>
+        <source src="img/main.webm" type="video/webm">
+      </video>
+      <img class="fallback-image" src="img/main.png" alt="Video not supported" style="display: none;">
     </div>
   <!----  <div id="sec2">
       <h1>Sketchware <a style="color: #448AFF">Pro</a>, compared to <a style="color: #5ac639;">Android</a> Studio</h1>
