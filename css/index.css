@@ -22,8 +22,12 @@ div.logo {
   display: flex;
   flex-direction: row;
   width: 100%;
+  height: 100vh;
+  background-image: url(/img/bg3.png);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
-h1 {
+#main h1 {
   font-family: "Rubik", sans-serif;
   font-optical-sizing: auto;
   font-weight: 700;
@@ -61,7 +65,7 @@ header {
   height: 3.5vw;
   display: flex;
   align-items: center;
-  box-shadow: 0 2px 8px 0 rgba(32,33,36,.08);
+  box-shadow: 0 2px 8px 0 rgba(32, 33, 36, 0.08);
 }
 .header-container {
   display: flex;
@@ -73,7 +77,7 @@ header * {
   display: inline;
 }
 header li {
-  margin: 5px;
+  margin: 5px 0px 5px 0px;
 }
 header li a {
   color: #5f6368;
@@ -89,19 +93,63 @@ header li a:hover {
   color: black;
 }
 header li a:active {
-  border-color: #448AFF;
+  border-color: #448aff;
 }
 #menu_img {
   display: none;
 }
+#main-2 {
+  margin: 0px 25px 12px 25px;
+}
 #sec2 {
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  width: max-content;
-  font-size: 1em;
+  font-size: 2vw;
   width: 100%;
+  text-align: center;
+  background-color: #cbdcec;
+  border-radius: 12px;
+  border-width: 2px;
+  box-shadow: 0px 4px 4px 4px rgba(0, 0, 0, 0.08);
+}
+#sec2 a {
+  mix-blend-mode: multiply;
+}
+#sec2 p {
+  margin-top: 0px;
+  padding-top: 0px;
+  font-size: 1vw;
+  color: #3e4146;
+}
+#sec2 h4 {
+  font-size: 2vw;
+  margin-bottom: 4px;
+}
+#comparison {
+  display: flex;
+  flex-direction: row;
+  padding: 12px;
+}
+#sec3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 2vw;
+  width: 100%;
+  text-align: center;
+}
+.editor {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
   padding: 0px;
   margin: 0px;
+}
+.editor img {
+  border-radius: 12px;
 }
 .logo img {
   width: 2.5vw;
@@ -153,5 +201,30 @@ header li a:active {
   }
   #menu_img_div {
     justify-content: right;
+  }
+  #sec2 {
+    font-size: 5vw;
+    text-align: center;
+  }
+  #sec2 h4 {
+    font-size: 6vw;
+    margin-bottom: 4px;
+  }
+  #sec2 p {
+    margin-top: 0px;
+    padding-top: 0px;
+    font-size: 3vw;
+    color: #3e4146;
+  }
+  #comparison {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+  .editor img {
+    width: 170%;
+    height: auto;
   }
 }
