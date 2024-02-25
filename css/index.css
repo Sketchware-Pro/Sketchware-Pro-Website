@@ -1,10 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 /* @media (prefers-color-scheme: dark) {
   body {
   background-color: #212121;
   color: white;
   }
 } */
-
+/* @keyframes comparison {
+  0% {
+    margin: 12px;
+    border-radius: 0px;
+    border-width: 0px;
+    box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.08);
+  }
+  40% {
+    margin: 12px 15px 4px 15px;
+    border-radius: 7px;
+    border-width: 1px;
+    box-shadow: 0px 2px 2px 2px rgba(0, 0, 0, 0.08);
+  }
+  70% {
+    margin: 12px 25px 12px 25px;
+    border-radius: 12px;
+    border-width: 2px;
+    box-shadow: 0px 4px 4px 4px rgba(0, 0, 0, 0.08);
+  }
+} */
+@keyframes comparison {
+  0% {
+    margin: 12px 80px 12px 80px;
+    border-radius: 12px;
+    border-width: 2px;
+    box-shadow: 0px 4px 4px 4px rgba(0, 0, 0, 0.08);
+  }
+  30% {
+    margin: 12px 40px 4px 40px;
+    border-radius: 7px;
+    border-width: 1px;
+    box-shadow: 0px 2px 2px 2px rgba(0, 0, 0, 0.08);
+  }
+  35% {
+    height: 85vh;
+    margin: 12px 0px 40px 0px; /* Adjust padding here if needed */
+  }
+  42% {
+    height: 95vh;
+    margin: 12px 0px 40px 0px; /* Adjust padding here if needed */
+  }
+  50% {
+    height: 120vh;
+    margin: 12px 0px 40px 0px; /* Adjust padding here if needed */
+  }
+  60% {
+    /* No height change, maintain padding */
+    margin: 12px 20px 12px 20px; /* Adjust padding here if needed */
+  }
+  70% {
+    height: 100vh;
+    margin: 12px 40px 12px 40px;
+    transition: margin-bottom 0.5s ease-in-out; /* Adjust duration and timing as needed */
+  }
+}
 html {
   font-family: "Gabarito", sans-serif;
 }
@@ -26,13 +81,23 @@ div.logo {
   background-image: url(/img/bg3.png);
   background-repeat: no-repeat;
   background-size: cover;
+  min-height: 800px;
+}
+#main-2 {
+  min-height: 300px;
+  height: 80vh;
+  word-wrap: break-word;
+  margin: 12px 30px 12px 30px;
+  border-radius: 12px;
+  border-width: 2px;
+  box-shadow: 0px 1px 1px 1px rgba(0, 0, 0, 0.08);
 }
 #main h1 {
   font-family: "Rubik", sans-serif;
   font-optical-sizing: auto;
   font-weight: 700;
   font-style: normal;
-  font-size: 4vw;
+  font-size: 70px;
   margin-bottom: 15px;
   width: 80%;
 }
@@ -40,7 +105,7 @@ div.logo {
   margin-top: 0px;
   padding-left: 0px;
   width: 80%;
-  font-size: 1.5vw;
+  font-size: 24px;
 }
 #sec1Text {
   display: flex;
@@ -48,21 +113,21 @@ div.logo {
   align-items: center;
   justify-content: left;
   margin-top: 300px;
-  width: 80%;
+  width: 75%;
   height: 100%;
 }
 .rocket {
-  width: 35%;
-  height: fill;
+  width: 560px;
+  height: fit-content;
   margin-top: 200px;
 }
 header {
   background-color: white;
   position: fixed;
-  font-size: 1.3vw;
+  font-size: 24px;
   left: 0;
   right: 0;
-  height: 3.5vw;
+  height: 64px;
   display: flex;
   align-items: center;
   box-shadow: 0 2px 8px 0 rgba(32, 33, 36, 0.08);
@@ -81,13 +146,13 @@ header li {
 }
 header li a {
   color: #5f6368;
-  font-size: 1vw;
+  font-size: 18px;
   text-decoration: none;
   border-color: white;
   border-width: medium;
   border-style: solid;
   border-radius: 12px;
-  padding: 10px;
+  padding: 10px 6px 10px 0px;
 }
 header li a:hover {
   color: black;
@@ -98,44 +163,43 @@ header li a:active {
 #menu_img {
   display: none;
 }
-#main-2 {
-  margin: 0px 25px 12px 25px;
-}
 #sec2 {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  flex-wrap: wrap;
   justify-content: center;
-  font-size: 2vw;
+  align-content: center;
+  font-size: 38px;
   width: 100%;
+  height: 100%;
+  border-radius: 12px;
   text-align: center;
   background-color: #cbdcec;
-  border-radius: 12px;
   border-width: 2px;
-  box-shadow: 0px 4px 4px 4px rgba(0, 0, 0, 0.08);
-}
-#sec2 a {
-  mix-blend-mode: multiply;
+  box-shadow: 0px 2px 2px 2px rgba(0, 0, 0, 0.08);
+  padding: 8px;
 }
 #sec2 p {
   margin-top: 0px;
   padding-top: 0px;
-  font-size: 1vw;
-  color: #3e4146;
+  font-size: 22px;
+  color: gray;
+  width: 80%;
 }
 #sec2 h4 {
-  font-size: 2vw;
+  font-size: 38px;
   margin-bottom: 4px;
 }
 #comparison {
   display: flex;
   flex-direction: row;
-  padding: 12px;
+  padding: 8px;
 }
 #sec3 {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  font-size: 2vw;
+  font-size: 38px;
   width: 100%;
   text-align: center;
 }
@@ -150,12 +214,46 @@ header li a:active {
 }
 .editor img {
   border-radius: 12px;
+  height: 306px;
+  width: 542px;
 }
 .logo img {
-  width: 2.5vw;
+  width: 48px;
   height: fit-content;
 }
-@media (min-width: 320px) and (max-width: 999px) and (-webkit-min-device-pixel-ratio: 2) {
+.feature_img {
+  width: 200px;
+  height: auto;
+}
+.feature {
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.feature p {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  text-align: center;
+  color: #1c1e21;
+  width: 80%;
+}
+#features {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
+  font-size: 18px;
+  margin: 12px;
+}
+#features h4 {
+  font-size: 40px;
+  margin-bottom: 4px;
+}
+@media (min-width: 100px) and (max-width: 1024px) {
   div.logo {
     width: max-content;
   }
@@ -203,28 +301,69 @@ header li a:active {
     justify-content: right;
   }
   #sec2 {
-    font-size: 5vw;
+    font-size: 20px;
+    display: flex;
+
     text-align: center;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-direction: row;
   }
-  #sec2 h4 {
-    font-size: 6vw;
-    margin-bottom: 4px;
+  #main-2 h4 {
+    font-size: 24px;
+    margin-top: 20%;
   }
   #sec2 p {
     margin-top: 0px;
     padding-top: 0px;
-    font-size: 3vw;
+    font-size: 16px;
     color: #3e4146;
+    width: 100%;
+  }
+  #sec2 h2 {
+    padding: 12px;
   }
   #comparison {
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
     align-items: center;
     justify-content: center;
     width: 100%;
   }
+  #main-2 {
+    animation: none !important;
+    min-height: 300px;
+    height: auto;
+    margin-left: 18px;
+  }
+  .editor {
+    width: 55%;
+    margin-right: 18px;
+    align-items: center;
+    text-align: center;
+  }
   .editor img {
-    width: 170%;
+    width: 280px;
     height: auto;
   }
+  #features {
+    display: flex;
+    flex-direction: column;
+    font-size: 18px;
+  }
+  #sec3 h2 {
+    font-size: 36px;
+  }
+  #sec3 h4 {
+    font-size: 30px;
+  }
 }
+@media only screen and (min-width: 1500px) {
+  #main-2 {
+
+  animation: comparison linear;
+  animation-timeline: scroll(root block);
+  }
+} 
