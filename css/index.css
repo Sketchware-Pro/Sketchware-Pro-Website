@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 /* @media (prefers-color-scheme: dark) {
   body {
   background-color: #212121;
@@ -62,10 +62,18 @@
 }
 html {
   font-family: "Gabarito", sans-serif;
+  background-color: #f9f9ff;
 }
 body {
   padding: 0;
   margin: 0;
+}
+.fallback-image {
+  width: 90%;
+  height: auto;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  display: none;
 }
 div.logo {
   margin-left: 4px;
@@ -90,7 +98,6 @@ div.logo {
   margin: 12px 30px 12px 30px;
   border-radius: 12px;
   border-width: 2px;
-  box-shadow: 0px 1px 1px 1px rgba(0, 0, 0, 0.08);
 }
 #main h1 {
   font-family: "Rubik", sans-serif;
@@ -174,26 +181,25 @@ header li a:active {
   height: 100%;
   border-radius: 12px;
   text-align: center;
-  background-color: #cbdcec;
+  background-color: #d5e3ff;
   border-width: 2px;
-  box-shadow: 0px 2px 2px 2px rgba(0, 0, 0, 0.08);
   padding: 8px;
 }
 #sec2 p {
   margin-top: 0px;
   padding-top: 0px;
   font-size: 22px;
-  color: gray;
+  color: #555f71;
   width: 80%;
 }
 #sec2 h4 {
   font-size: 38px;
   margin-bottom: 4px;
+  color: #001b3c;
 }
 #comparison {
   display: flex;
   flex-direction: row;
-  padding: 8px;
 }
 #sec3 {
   display: flex;
@@ -208,7 +214,7 @@ header li a:active {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 50%;
+  width: 70%;
   padding: 0px;
   margin: 0px;
 }
@@ -254,6 +260,9 @@ header li a:active {
   margin-bottom: 4px;
 }
 @media (min-width: 100px) and (max-width: 1024px) {
+  .fallback-image {
+    display: block;
+  }
   div.logo {
     width: max-content;
   }
@@ -271,6 +280,7 @@ header li a:active {
   .logo img {
     width: 42px;
     height: 42px;
+    margin-left: 10px;
   }
   header li a {
     display: none;
@@ -287,12 +297,16 @@ header li a:active {
     margin-top: 0px;
     height: 100%;
     width: 100%;
+    display: none;
   }
   #main {
     display: flex;
     flex-direction: column-reverse;
     padding-top: 64px;
     margin-left: 4px;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
   }
   #menu_img {
     display: none;
@@ -303,13 +317,14 @@ header li a:active {
   #sec2 {
     font-size: 20px;
     display: flex;
-
     text-align: center;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
     justify-content: space-between;
     flex-direction: row;
+    padding: 0px;
+    margin: 0px;
   }
   #main-2 h4 {
     font-size: 24px;
@@ -321,6 +336,7 @@ header li a:active {
     font-size: 16px;
     color: #3e4146;
     width: 100%;
+    margin-bottom: 32px;
   }
   #sec2 h2 {
     padding: 12px;
@@ -330,22 +346,20 @@ header li a:active {
     flex-direction: column-reverse;
     align-items: center;
     justify-content: center;
-    width: 100%;
+    text-align: center;
   }
   #main-2 {
     animation: none !important;
     min-height: 300px;
     height: auto;
-    margin-left: 18px;
   }
   .editor {
-    width: 55%;
-    margin-right: 18px;
+    width: 80%;
     align-items: center;
     text-align: center;
   }
   .editor img {
-    width: 280px;
+    width: 95%;
     height: auto;
   }
   #features {
@@ -355,6 +369,7 @@ header li a:active {
   }
   #sec3 h2 {
     font-size: 36px;
+    padding: 12px;
   }
   #sec3 h4 {
     font-size: 30px;
