@@ -133,20 +133,17 @@ header {
   position: fixed;
   font-size: 24px;
   left: 0;
-  border-radius: 128px;
-  height: 30px;
-  margin: 12px;
-  padding: 18px;
+  right: 0;
+  height: 64px;
   display: flex;
   align-items: center;
-  justify-content: center;
+  box-shadow: 0 2px 8px 0 rgba(32, 33, 36, 0.08);
   z-index: 2;
   color: var(--md-sys-color-on-primary-container);
 }
 .header-container {
   display: flex;
   justify-content: center;
-  text-align: center;
   align-items: center; /* optional for vertical centering */
 }
 
@@ -161,12 +158,13 @@ header li a {
   font-size: 18px;
   text-decoration: none;
   border-radius: 12px;
-  padding-left: 6px;
-  padding-right: 2px;
-  height: 100%;
+  padding: 10px 6px 10px 0px;
 }
 header li a:hover {
   color: var(--md-sys-color-tertiary);
+}
+header li a:active {
+  border-color: #448aff;
 }
 #menu_img {
   display: none;
