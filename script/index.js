@@ -1,3 +1,11 @@
+// index.js
+import '@material/web/button/filled-button.js';
+  // This example uses anchor as an ID reference
+  const anchorEl = document.body.querySelector('.usage-anchor[0]');
+  const menuEl = document.body.querySelector('#usage-menu');
+
+  anchorEl.addEventListener('click', () => { menuEl.open = !menuEl.open; });
+
 function openNav() {
     document.getElementsByClassName("nav-links[0]").style.width = "70%";
     document.getElementById("main").style.display = "block";

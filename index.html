@@ -7,21 +7,25 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Gabarito:wght@400..900&family=Karla:ital,wght@0,200..800;1,200..800&family=Lilita+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">    <link rel="stylesheet" href="css/index.css" />
     <link rel="stylesheet" href="css/ripple.css">
+    <link rel="stylesheet" href="css/light.css">
+
+    <link rel="stylesheet" href="css/dark.css">
     <script src="script/ripple.js"></script>
     <script src="script/index.js"></script>
+    <script src="script/bundle.js"></script>
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/gh//Design-and-Code/css-buttons/buttons/buttons.css"
     />
     <title>Sketchware Pro</title>
 </head>
-<body>
+<body class="light">
   <header>  
   <nav>
     <div class="header-container">
     <div class="logo">
       <img src="img/logo.png" alt="SW Pro Logo">
-      <p style="margin-left: 8px; color: #434649;">Sketchware Pro</p>
+      <p style="margin-left: 8px;">Sketchware Pro</p>
     </div>
     <ul class="nav-links">
       <li><a href="https://sketchware-pro.vercel.app/download">Download</a></li>
@@ -30,23 +34,22 @@
       <li><a href="https://sketchware-pro.vercel.app/about">About</a></li>
     </ul>
     <div id="menu_img_div">
-    <img id="menu_img" height="24px" src="img/menu.png" alt="menu" onclick="openNav()">
+      <img id="menu_img" height="24px" src="img/menu.png" alt="menu">
   </div>
   </div>
   </nav>
   </header>
   <div id="main">
     <div id="sec1Text">
-        <h1 style="font-family: 'Inter'; font-weight: 900;">Sketchware <a style="color: #3e5f90">Pro</a>. Epic. Inside</u> out.</h1>
+        <h1>Sketchware <a style="color: var(--md-sys-color-primary)">Pro</a>. Epic. Inside</u> out.</h1>
         <p>
             No code, all awesome. Craft epic apps with Sketchware Pro's magical blocks.
         </p>
         <a href="https://sketchware-pro.vercel.app/docs">
-          <button
-            class="btn"
-          >
+          <md-filled-button
+           style="z-index: 1;">
             Get Started
-          </button></a
+          </md-filled-button></a
         >
       </div>
       <video class="rocket" alt="rocket_animation"  autoplay muted loop>
@@ -56,7 +59,7 @@
     </div>
     <div id="main-2">
    <div id="sec2">
-      <h2 style="color: #001b3c;">Fast & Easy Apps: Sketchware <a style="color: #357fff">Pro</a> vs. <a style="color: #6f5675;">Android</a> Studio</h2><br>
+      <h2>Fast & Easy Apps: Sketchware <a style="color: var(--md-sys-color-primary);">Pro</a> vs. <a style="color: var(--md-sys-color-tertiary);">Android</a> Studio</h2><br>
       <div id="comparison">
       <div class="editor">
       <img src="img/Screenshot from 2024-02-24 13-42-19.png" alt="Android Studio">
@@ -66,22 +69,22 @@
     <div class="editor">
       <img src="img/new_swpro.png" alt="Sketchware Pro">
       <h4>Sketchware Pro</h4>
-      <p>Sketchware auto-adds events. You just drag and drop simple blocks, and you're done.</p>
+      <p>Sketchware Pro auto-adds events. You just drag and drop simple blocks. That's it. Done.</p>
     </div>
     </div>
     </div>
   </div>
  <div id="main-3">
 <div id="sec3">
-  <h2>Apptastic Features: Sketchware <a style="color: #357fff">Pro</a>'s Toolkit for <u>Success</u><a style="color: #357fff;">.</a></h2>
+  <h2>Apptastic Features: Sketchware <a style="color: var(--md-sys-color-primary);">Pro</a>'s Toolkit for <u>Success</u><a style="color: var(--md-sys-color-primary);">.</a></h2>
   <div id="features">
     <div class="feature">
-      <img src="https://sketchware-pro.vercel.app/assets/images/woman_laying_down-358394bd78d90736f68548d4b3cfd9fa.png" alt="Free" class="feature_img">
+      <img src="https://sketchware-pro.vercel.app/assets/images/woman_laying_down-358394bd78d90736f68548d4b3cfd9fa.png" alt="Easy to use" class="feature_img">
       <h4>Easy to use</h4>
       <p>Sketchware Pro was designed to be easily installed and used to get your app up and running quickly.</p>
     </div>
     <div class="feature">
-      <img src="https://sketchware-pro.vercel.app/assets/images/focus_on_matter-e8efd3d072b811190e18fdcdbbc9f283.png" alt="Free" class="feature_img">
+      <img src="https://sketchware-pro.vercel.app/assets/images/focus_on_matter-e8efd3d072b811190e18fdcdbbc9f283.png" alt="Focus on what matters" class="feature_img">
       <h4>Focus on what matters</h4>
       <p>Sketchware Pro lets you focus on your apps, and we'll do the chores. Go ahead and get started.</p>
     </div>

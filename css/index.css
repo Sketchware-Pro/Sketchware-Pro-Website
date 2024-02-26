@@ -1,10 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-/* @media (prefers-color-scheme: dark) {
-  body {
-  background-color: #212121;
-  color: white;
-  }
-} */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
 /* @keyframes comparison {
   0% {
     margin: 12px;
@@ -28,13 +24,12 @@
 @keyframes comparison {
   0% {
     margin: 12px 80px 12px 80px;
-    border-radius: 12px;
+    border-radius: 64px;
     border-width: 2px;
     box-shadow: 0px 4px 4px 4px rgba(0, 0, 0, 0.08);
   }
   30% {
     margin: 12px 40px 4px 40px;
-    border-radius: 7px;
     border-width: 1px;
     box-shadow: 0px 2px 2px 2px rgba(0, 0, 0, 0.08);
   }
@@ -47,6 +42,7 @@
     margin: 12px 0px 40px 0px; /* Adjust padding here if needed */
   }
   50% {
+    border-radius: 0px;
     height: 120vh;
     margin: 12px 0px 40px 0px; /* Adjust padding here if needed */
   }
@@ -62,11 +58,13 @@
 }
 html {
   font-family: "Gabarito", sans-serif;
-  background-color: #f9f9ff;
 }
 body {
   padding: 0;
   margin: 0;
+  overflow-x: hidden;
+  background-color: var(--md-sys-color-background);
+  color: var(--md-sys-color-on-background);
 }
 .fallback-image {
   width: 90%;
@@ -84,6 +82,7 @@ div.logo {
 #main {
   display: flex;
   flex-direction: row;
+  align-items: center;
   width: 100%;
   height: 100vh;
   background-image: url(/img/bg3.png);
@@ -96,19 +95,22 @@ div.logo {
   height: 80vh;
   word-wrap: break-word;
   margin: 12px 30px 12px 30px;
-  border-radius: 12px;
+  border-radius: 64px;
   border-width: 2px;
+  background-color: var(--md-sys-color-primary-container);
 }
 #main h1 {
-  font-family: "Rubik", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 700;
+  font-family: "Roboto", sans-serif;
+  font-weight: 800;
   font-style: normal;
-  font-size: 70px;
-  margin-bottom: 15px;
+  font-size: 60px;
+  margin-bottom: 10px;
   width: 80%;
 }
 #sec1Text p {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
   margin-top: 0px;
   padding-left: 0px;
   width: 80%;
@@ -118,30 +120,33 @@ div.logo {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: left;
-  margin-top: 300px;
+  justify-content: center;
   width: 75%;
   height: 100%;
 }
 .rocket {
   width: 560px;
   height: fit-content;
-  margin-top: 200px;
 }
 header {
-  background-color: white;
+  background-color: var(--md-sys-color-primary-container);
   position: fixed;
   font-size: 24px;
   left: 0;
-  right: 0;
-  height: 64px;
+  border-radius: 128px;
+  height: 30px;
+  margin: 12px;
+  padding: 18px;
   display: flex;
   align-items: center;
-  box-shadow: 0 2px 8px 0 rgba(32, 33, 36, 0.08);
+  justify-content: center;
+  z-index: 2;
+  color: var(--md-sys-color-on-primary-container);
 }
 .header-container {
   display: flex;
   justify-content: center;
+  text-align: center;
   align-items: center; /* optional for vertical centering */
 }
 
@@ -152,20 +157,16 @@ header li {
   margin: 5px 0px 5px 0px;
 }
 header li a {
-  color: #5f6368;
+  color: var(--md-sys-color-on-primary-container);
   font-size: 18px;
   text-decoration: none;
-  border-color: white;
-  border-width: medium;
-  border-style: solid;
   border-radius: 12px;
-  padding: 10px 6px 10px 0px;
+  padding-left: 6px;
+  padding-right: 2px;
+  height: 100%;
 }
 header li a:hover {
-  color: black;
-}
-header li a:active {
-  border-color: #448aff;
+  color: var(--md-sys-color-tertiary);
 }
 #menu_img {
   display: none;
@@ -179,23 +180,29 @@ header li a:active {
   font-size: 38px;
   width: 100%;
   height: 100%;
-  border-radius: 12px;
+  border-radius: 64px;
   text-align: center;
-  background-color: #d5e3ff;
+  background-color: var(--md-sys-color-primary-container);
   border-width: 2px;
   padding: 8px;
+}
+#sec2 h2 {
+  padding: 12px;
+  color: var(--md-sys-color-on-primary-container);
+
 }
 #sec2 p {
   margin-top: 0px;
   padding-top: 0px;
   font-size: 22px;
-  color: #555f71;
+  color: var(--md-sys-color-outline);
   width: 80%;
+  margin-bottom: 64px;
 }
 #sec2 h4 {
   font-size: 38px;
   margin-bottom: 4px;
-  color: #001b3c;
+  color: var(--md-sys-color-on-primary-container);
 }
 #comparison {
   display: flex;
@@ -244,7 +251,7 @@ header li a:active {
   font-weight: 500;
   font-style: normal;
   text-align: center;
-  color: #1c1e21;
+  color: var(--md-sys-color-outline);
   width: 80%;
 }
 #features {
@@ -275,15 +282,29 @@ header li a:active {
   }
   header {
     font-size: larger;
-    height: 64px;
+    height: 50px;
+    border-radius: 128px;
+    background-color: var(--md-sys-color-primary-container);
+    color: var(--md-sys-color-on-primary-container);
+    margin: 8px;
+    position: inherit;
+    margin-bottom: 0px;
+    box-shadow: 0px;
   }
   .logo img {
-    width: 42px;
-    height: 42px;
+    width: 20px;
+    height: 20px;
     margin-left: 10px;
+    content: url(/img/menu.png);
   }
   header li a {
     display: none;
+  }
+  .header-container {
+    display: flex;
+    justify-content: center;
+    align-items: center; /* optional for vertical centering */
+    width: max-content;
   }
   body {
     width: 100%;
@@ -307,11 +328,15 @@ header li a:active {
     height: 100vh;
     align-items: center;
     justify-content: center;
+    background-image: none;
   }
   #menu_img {
     display: none;
+    height: 18px;
+
   }
   #menu_img_div {
+    display: flex;
     justify-content: right;
   }
   #sec2 {
@@ -325,16 +350,16 @@ header li a:active {
     flex-direction: row;
     padding: 0px;
     margin: 0px;
+    border-radius: 50px;
   }
   #main-2 h4 {
     font-size: 24px;
-    margin-top: 20%;
+    margin-top: 24px;
   }
   #sec2 p {
     margin-top: 0px;
     padding-top: 0px;
     font-size: 16px;
-    color: #3e4146;
     width: 100%;
     margin-bottom: 32px;
   }
@@ -361,6 +386,7 @@ header li a:active {
   .editor img {
     width: 95%;
     height: auto;
+    margin-bottom: 0px
   }
   #features {
     display: flex;
@@ -382,3 +408,8 @@ header li a:active {
   animation-timeline: scroll(root block);
   }
 } 
+@media (prefers-color-scheme: dark) {
+  #main {
+    background-image: none;
+  }
+}
