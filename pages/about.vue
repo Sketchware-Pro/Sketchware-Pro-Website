@@ -12,7 +12,7 @@
 
                 <CardContent>
 
-                    <CardDescription class=" dark:text-gray-300 text-lg md:text-xl leading-relaxed">
+                    <CardDescription class=" dark:text-gray-300 text-lg md:text-xl leading-loose">
                         Sketchware Pro is a modified version of Sketchware, an Android app development platform. It was
                         created to enhance the functionality and features of the original Sketchware app. Sketchware Pro is
                         an open-source project that is maintained by a community of contributors. The goal of Sketchware Pro
@@ -28,23 +28,23 @@
                     <Card class="px-4 mt-8">
                         <Accordion type="single" collapsible>
                             <AccordionItem value="item-1">
-                                <AccordionTrigger>Is it safe?</AccordionTrigger>
-                                <AccordionContent>
+                                <AccordionTrigger class="text-xl">Is it safe?</AccordionTrigger>
+                                <AccordionContent class="text-gray-400 text-lg">
                                     Yes. Sketchware Pro is safe to use. It is an open-source project, and its source code is
                                     available for review on GitHub.
                                 </AccordionContent>
                             </AccordionItem>
                             <AccordionItem value="item-2">
-                                <AccordionTrigger>How is it different from the original Sketchware?</AccordionTrigger>
-                                <AccordionContent>
+                                <AccordionTrigger class="text-xl">How is it different from the original Sketchware?</AccordionTrigger>
+                                <AccordionContent class="text-gray-400 text-lg">
                                     Sketchware Pro offers additional features, improvements, and customization options
                                     compared to the original Sketchware app. It is an open-source project that is maintained
                                     by a community of contributors.
                                 </AccordionContent>
                             </AccordionItem>
                             <AccordionItem value="item-3">
-                                <AccordionTrigger>How can I contribute to Sketchware Pro?</AccordionTrigger>
-                                <AccordionContent>
+                                <AccordionTrigger class="text-xl">How can I contribute to Sketchware Pro?</AccordionTrigger>
+                                <AccordionContent class="text-gray-400 text-lg">
                                     You can contribute to Sketchware Pro by fixing bugs, adding new features, and improving
                                     the platform. The source code is available on GitHub, and you can submit pull requests to
                                     contribute to its development.

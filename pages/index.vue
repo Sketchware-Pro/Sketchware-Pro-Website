@@ -7,14 +7,14 @@
     <div class="flex flex-col gap-16 px-4 py-8 md:p-16">
 
       <div class="flex flex-col gap-8 rounded-3xl items-center text-center md:p-16 p-8 md:px-64 text-white" style="background-image: url(&quot;https://lh3.googleusercontent.com/2OrUzHCRSI-V46Z1qJBh90usG6OkKwCbXN80FbrjkWoQz4VfoJjNAoQHLHPQRZWH7dI_m5I1gi48h6xMJ5pK6kkdXmUnXPe4VqwvEdo4QeWRjLV9Oew=w2400-rj&quot;);  background-size: cover;">
-          <h1 class="font-semibold md:font-bold text-4xl md:text-8xl text-gray-800 md:tracking-wide">Sketchware Pro</h1>
-          <p class="text-lg md:text-2xl text-gray-600 tracking-tight md:tracking-wide">
+          <h1 class="font-semibold md:font-bold text-4xl md:text-8xl text-gray-800">Sketchware Pro</h1>
+          <p class="text-lg md:text-2xl text-gray-600 tracking-tight md:tracking-normal">
             Sketchware Pro is a powerful Android app that allows you to create apps on your phone or tablet. It is a
             visual programming language that is easy to learn and use.
           </p>
 
  
-          <Button class="bg-blue-600 hover:bg-blue-700 rounded-full p-6 md:p-8 text-xl md:text-2xl tracking-widest font-semibold text-gray-50" onclick="
+          <Button class="bg-blue-600 hover:bg-blue-700 rounded-full p-6 md:p-8 text-xl md:text-2xl tracking-wide font-semibold text-gray-50" onclick="
           window.open('/docs/getting-started');
           ">Get Started</Button>
 

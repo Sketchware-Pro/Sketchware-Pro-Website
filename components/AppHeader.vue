@@ -7,7 +7,7 @@
                     src="https://raw.githubusercontent.com/Sketchware-Pro/Sketchware-Pro/main/assets/Sketchware-Pro.png"
                     alt="Logo" />
                 <a href="/"
-                    class="scroll-m-20 text-2xl md:text-4xl font-semibold tracking-wide transition-colors text-[#2394FF] hover:underline">Sketchware
+                    class="scroll-m-20 text-2xl md:text-4xl transition-colors text-[#2394FF] hover:underline">Sketchware
                     <span class="scroll-m-20 text-2xl md:text-3xl font-medium text-gray-700 dark:text-gray-300">Pro</span>
                 </a>
             </div>
