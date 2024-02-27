@@ -1,27 +1,57 @@
 // index.js
-import '@material/web/button/filled-button.js';
-  // This example uses anchor as an ID reference
-  const anchorEl = document.body.querySelector('.usage-anchor[0]');
-  const menuEl = document.body.querySelector('#usage-menu');
+import "@material/web/button/filled-button.js";
+// Get the user's preferred color scheme
+let colorScheme = window.matchMedia('(prefers-color-scheme: dark)');
 
-  anchorEl.addEventListener('click', () => { menuEl.open = !menuEl.open; });
+// Define a function to toggle the body's class
+function toggleBodyClass(e) {
+  // If the user prefers dark mode, add the 'dark' class to the body
+  if (e.matches) {
+    document.body.classList.add('dark');
+  } else {
+    // Otherwise, remove the 'dark' class from the body
+    document.body.classList.remove('dark');
+  }
+}
+
+// Call the function once to set the initial class
+toggleBodyClass(colorScheme);
+
+// Add an event listener to the color scheme media query
+// This will call the function whenever the user changes their preference
+colorScheme.addListener(toggleBodyClass);
+
+
+// Optional: Event listener for dynamic changes
+window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', (event) => {
+  bodi.classList.remove('light');  // Always remove "light" first
+  if (event.matches) {
+    bodi.classList.add('dark');
+  } else {
+    // No need to explicitly remove "dark" here
+  }
+});
+
 
 function openNav() {
-    document.getElementsByClassName("nav-links[0]").style.width = "70%";
-    document.getElementById("main").style.display = "block";
+  document.getElementsByClassName("nav-links[0]").style.width = "70%";
+  document.getElementById("main").style.display = "block";
 }
-window.addEventListener('DOMContentLoaded', function() {
-    const rocket = document.querySelector('.rocket'); // Use querySelector
-  
-    if (navigator.userAgent.indexOf('iPhone') > -1 || navigator.userAgent.indexOf('iPad') > -1) {
-      rocket.style.display = 'none'; // Access style directly after selection
-      document.querySelector('.fallback-image').style.display = 'block';
-    } else {
-      console.log('Not an iPhone or iPad');
-    }
-  });
+window.addEventListener("DOMContentLoaded", function () {
+  const rocket = document.querySelector(".rocket"); // Use querySelector
 
- /* function reveal() {
+  if (
+    navigator.userAgent.indexOf("iPhone") > -1 ||
+    navigator.userAgent.indexOf("iPad") > -1
+  ) {
+    rocket.style.display = "none"; // Access style directly after selection
+    document.querySelector(".fallback-image").style.display = "block";
+  } else {
+    console.log("Not an iPhone or iPad");
+  }
+});
+
+/* function reveal() {
     var reveals = document.querySelectorAll("#main2");
     for (var i = 0; i < reveals.length; i++) {
       var windowHeight = window.innerHeight;

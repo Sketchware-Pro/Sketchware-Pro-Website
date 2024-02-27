@@ -116,7 +116,7 @@ class Elevation extends s {
   * Copyright 2022 Google LLC
   * SPDX-License-Identifier: Apache-2.0
   */
-const styles$7 = i$3 `:host{display:flex;pointer-events:none}:host,.shadow,.shadow::before,.shadow::after{border-radius:inherit;inset:0;position:absolute;transition-duration:inherit;transition-property:inherit;transition-timing-function:inherit}.shadow::before,.shadow::after{content:"";transition-property:box-shadow,opacity;--_level: var(--md-elevation-level, 0);--_shadow-color: var(--md-elevation-shadow-color, var(--md-sys-color-shadow, #000))}.shadow::before{box-shadow:0px calc(1px*(clamp(0,var(--_level),1) + clamp(0,var(--_level) - 3,1) + 2*clamp(0,var(--_level) - 4,1))) calc(1px*(2*clamp(0,var(--_level),1) + clamp(0,var(--_level) - 2,1) + clamp(0,var(--_level) - 4,1))) 0px var(--_shadow-color);opacity:.3}.shadow::after{box-shadow:0px calc(1px*(clamp(0,var(--_level),1) + clamp(0,var(--_level) - 1,1) + 2*clamp(0,var(--_level) - 2,3))) calc(1px*(3*clamp(0,var(--_level),2) + 2*clamp(0,var(--_level) - 2,3))) calc(1px*(clamp(0,var(--_level),4) + 2*clamp(0,var(--_level) - 4,1))) var(--_shadow-color);opacity:.15}/*# sourceMappingURL=elevation-styles.css.map */
+const styles$5 = i$3 `:host{display:flex;pointer-events:none}:host,.shadow,.shadow::before,.shadow::after{border-radius:inherit;inset:0;position:absolute;transition-duration:inherit;transition-property:inherit;transition-timing-function:inherit}.shadow::before,.shadow::after{content:"";transition-property:box-shadow,opacity;--_level: var(--md-elevation-level, 0);--_shadow-color: var(--md-elevation-shadow-color, var(--md-sys-color-shadow, #000))}.shadow::before{box-shadow:0px calc(1px*(clamp(0,var(--_level),1) + clamp(0,var(--_level) - 3,1) + 2*clamp(0,var(--_level) - 4,1))) calc(1px*(2*clamp(0,var(--_level),1) + clamp(0,var(--_level) - 2,1) + clamp(0,var(--_level) - 4,1))) 0px var(--_shadow-color);opacity:.3}.shadow::after{box-shadow:0px calc(1px*(clamp(0,var(--_level),1) + clamp(0,var(--_level) - 1,1) + 2*clamp(0,var(--_level) - 2,3))) calc(1px*(3*clamp(0,var(--_level),2) + 2*clamp(0,var(--_level) - 2,3))) calc(1px*(clamp(0,var(--_level),4) + 2*clamp(0,var(--_level) - 4,1))) var(--_shadow-color);opacity:.15}/*# sourceMappingURL=elevation-styles.css.map */
 `;
 
 /**
@@ -131,7 +131,7 @@ const styles$7 = i$3 `:host{display:flex;pointer-events:none}:host,.shadow,.shad
  */
 let MdElevation = class MdElevation extends Elevation {
 };
-MdElevation.styles = [styles$7];
+MdElevation.styles = [styles$5];
 MdElevation = __decorate([
     t$3('md-elevation')
 ], MdElevation);
@@ -355,7 +355,7 @@ const HANDLED_BY_FOCUS_RING = Symbol('handledByFocusRing');
   * Copyright 2022 Google LLC
   * SPDX-License-Identifier: Apache-2.0
   */
-const styles$6 = i$3 `:host{animation-delay:0s,calc(var(--md-focus-ring-duration, 600ms)*.25);animation-duration:calc(var(--md-focus-ring-duration, 600ms)*.25),calc(var(--md-focus-ring-duration, 600ms)*.75);animation-timing-function:cubic-bezier(0.2, 0, 0, 1);box-sizing:border-box;color:var(--md-focus-ring-color, var(--md-sys-color-secondary, #625b71));display:none;pointer-events:none;position:absolute}:host([visible]){display:flex}:host(:not([inward])){animation-name:outward-grow,outward-shrink;border-end-end-radius:calc(var(--md-focus-ring-shape-end-end, var(--md-focus-ring-shape, var(--md-sys-shape-corner-full, 9999px))) + var(--md-focus-ring-outward-offset, 2px));border-end-start-radius:calc(var(--md-focus-ring-shape-end-start, var(--md-focus-ring-shape, var(--md-sys-shape-corner-full, 9999px))) + var(--md-focus-ring-outward-offset, 2px));border-start-end-radius:calc(var(--md-focus-ring-shape-start-end, var(--md-focus-ring-shape, var(--md-sys-shape-corner-full, 9999px))) + var(--md-focus-ring-outward-offset, 2px));border-start-start-radius:calc(var(--md-focus-ring-shape-start-start, var(--md-focus-ring-shape, var(--md-sys-shape-corner-full, 9999px))) + var(--md-focus-ring-outward-offset, 2px));inset:calc(-1*var(--md-focus-ring-outward-offset, 2px));outline:var(--md-focus-ring-width, 3px) solid currentColor}:host([inward]){animation-name:inward-grow,inward-shrink;border-end-end-radius:calc(var(--md-focus-ring-shape-end-end, var(--md-focus-ring-shape, var(--md-sys-shape-corner-full, 9999px))) - var(--md-focus-ring-inward-offset, 0px));border-end-start-radius:calc(var(--md-focus-ring-shape-end-start, var(--md-focus-ring-shape, var(--md-sys-shape-corner-full, 9999px))) - var(--md-focus-ring-inward-offset, 0px));border-start-end-radius:calc(var(--md-focus-ring-shape-start-end, var(--md-focus-ring-shape, var(--md-sys-shape-corner-full, 9999px))) - var(--md-focus-ring-inward-offset, 0px));border-start-start-radius:calc(var(--md-focus-ring-shape-start-start, var(--md-focus-ring-shape, var(--md-sys-shape-corner-full, 9999px))) - var(--md-focus-ring-inward-offset, 0px));border:var(--md-focus-ring-width, 3px) solid currentColor;inset:var(--md-focus-ring-inward-offset, 0px)}@keyframes outward-grow{from{outline-width:0}to{outline-width:var(--md-focus-ring-active-width, 8px)}}@keyframes outward-shrink{from{outline-width:var(--md-focus-ring-active-width, 8px)}}@keyframes inward-grow{from{border-width:0}to{border-width:var(--md-focus-ring-active-width, 8px)}}@keyframes inward-shrink{from{border-width:var(--md-focus-ring-active-width, 8px)}}@media(prefers-reduced-motion){:host{animation:none}}/*# sourceMappingURL=focus-ring-styles.css.map */
+const styles$4 = i$3 `:host{animation-delay:0s,calc(var(--md-focus-ring-duration, 600ms)*.25);animation-duration:calc(var(--md-focus-ring-duration, 600ms)*.25),calc(var(--md-focus-ring-duration, 600ms)*.75);animation-timing-function:cubic-bezier(0.2, 0, 0, 1);box-sizing:border-box;color:var(--md-focus-ring-color, var(--md-sys-color-secondary, #625b71));display:none;pointer-events:none;position:absolute}:host([visible]){display:flex}:host(:not([inward])){animation-name:outward-grow,outward-shrink;border-end-end-radius:calc(var(--md-focus-ring-shape-end-end, var(--md-focus-ring-shape, var(--md-sys-shape-corner-full, 9999px))) + var(--md-focus-ring-outward-offset, 2px));border-end-start-radius:calc(var(--md-focus-ring-shape-end-start, var(--md-focus-ring-shape, var(--md-sys-shape-corner-full, 9999px))) + var(--md-focus-ring-outward-offset, 2px));border-start-end-radius:calc(var(--md-focus-ring-shape-start-end, var(--md-focus-ring-shape, var(--md-sys-shape-corner-full, 9999px))) + var(--md-focus-ring-outward-offset, 2px));border-start-start-radius:calc(var(--md-focus-ring-shape-start-start, var(--md-focus-ring-shape, var(--md-sys-shape-corner-full, 9999px))) + var(--md-focus-ring-outward-offset, 2px));inset:calc(-1*var(--md-focus-ring-outward-offset, 2px));outline:var(--md-focus-ring-width, 3px) solid currentColor}:host([inward]){animation-name:inward-grow,inward-shrink;border-end-end-radius:calc(var(--md-focus-ring-shape-end-end, var(--md-focus-ring-shape, var(--md-sys-shape-corner-full, 9999px))) - var(--md-focus-ring-inward-offset, 0px));border-end-start-radius:calc(var(--md-focus-ring-shape-end-start, var(--md-focus-ring-shape, var(--md-sys-shape-corner-full, 9999px))) - var(--md-focus-ring-inward-offset, 0px));border-start-end-radius:calc(var(--md-focus-ring-shape-start-end, var(--md-focus-ring-shape, var(--md-sys-shape-corner-full, 9999px))) - var(--md-focus-ring-inward-offset, 0px));border-start-start-radius:calc(var(--md-focus-ring-shape-start-start, var(--md-focus-ring-shape, var(--md-sys-shape-corner-full, 9999px))) - var(--md-focus-ring-inward-offset, 0px));border:var(--md-focus-ring-width, 3px) solid currentColor;inset:var(--md-focus-ring-inward-offset, 0px)}@keyframes outward-grow{from{outline-width:0}to{outline-width:var(--md-focus-ring-active-width, 8px)}}@keyframes outward-shrink{from{outline-width:var(--md-focus-ring-active-width, 8px)}}@keyframes inward-grow{from{border-width:0}to{border-width:var(--md-focus-ring-active-width, 8px)}}@keyframes inward-shrink{from{border-width:var(--md-focus-ring-active-width, 8px)}}@media(prefers-reduced-motion){:host{animation:none}}/*# sourceMappingURL=focus-ring-styles.css.map */
 `;
 
 /**
@@ -371,7 +371,7 @@ const styles$6 = i$3 `:host{animation-delay:0s,calc(var(--md-focus-ring-duration
  */
 let MdFocusRing = class MdFocusRing extends FocusRing {
 };
-MdFocusRing.styles = [styles$6];
+MdFocusRing.styles = [styles$4];
 MdFocusRing = __decorate([
     t$3('md-focus-ring')
 ], MdFocusRing);
@@ -826,7 +826,7 @@ __decorate([
   * Copyright 2022 Google LLC
   * SPDX-License-Identifier: Apache-2.0
   */
-const styles$5 = i$3 `:host{display:flex;margin:auto;pointer-events:none}:host([disabled]){display:none}@media(forced-colors: active){:host{display:none}}:host,.surface{border-radius:inherit;position:absolute;inset:0;overflow:hidden}.surface{-webkit-tap-highlight-color:rgba(0,0,0,0)}.surface::before,.surface::after{content:"";opacity:0;position:absolute}.surface::before{background-color:var(--md-ripple-hover-color, var(--md-sys-color-on-surface, #1d1b20));inset:0;transition:opacity 15ms linear,background-color 15ms linear}.surface::after{background:radial-gradient(closest-side, var(--md-ripple-pressed-color, var(--md-sys-color-on-surface, #1d1b20)) max(100% - 70px, 65%), transparent 100%);transform-origin:center center;transition:opacity 375ms linear}.hovered::before{background-color:var(--md-ripple-hover-color, var(--md-sys-color-on-surface, #1d1b20));opacity:var(--md-ripple-hover-opacity, 0.08)}.pressed::after{opacity:var(--md-ripple-pressed-opacity, 0.12);transition-duration:105ms}/*# sourceMappingURL=ripple-styles.css.map */
+const styles$3 = i$3 `:host{display:flex;margin:auto;pointer-events:none}:host([disabled]){display:none}@media(forced-colors: active){:host{display:none}}:host,.surface{border-radius:inherit;position:absolute;inset:0;overflow:hidden}.surface{-webkit-tap-highlight-color:rgba(0,0,0,0)}.surface::before,.surface::after{content:"";opacity:0;position:absolute}.surface::before{background-color:var(--md-ripple-hover-color, var(--md-sys-color-on-surface, #1d1b20));inset:0;transition:opacity 15ms linear,background-color 15ms linear}.surface::after{background:radial-gradient(closest-side, var(--md-ripple-pressed-color, var(--md-sys-color-on-surface, #1d1b20)) max(100% - 70px, 65%), transparent 100%);transform-origin:center center;transition:opacity 375ms linear}.hovered::before{background-color:var(--md-ripple-hover-color, var(--md-sys-color-on-surface, #1d1b20));opacity:var(--md-ripple-hover-opacity, 0.08)}.pressed::after{opacity:var(--md-ripple-pressed-opacity, 0.12);transition-duration:105ms}/*# sourceMappingURL=ripple-styles.css.map */
 `;
 
 /**
@@ -849,7 +849,7 @@ const styles$5 = i$3 `:host{display:flex;margin:auto;pointer-events:none}:host([
  */
 let MdRipple = class MdRipple extends Ripple {
 };
-MdRipple.styles = [styles$5];
+MdRipple.styles = [styles$3];
 MdRipple = __decorate([
     t$3('md-ripple')
 ], MdRipple);
@@ -1371,7 +1371,7 @@ class FilledButton extends Button {
   * Copyright 2022 Google LLC
   * SPDX-License-Identifier: Apache-2.0
   */
-const styles$4 = i$3 `:host{--_container-color: var(--md-filled-button-container-color, var(--md-sys-color-primary, #6750a4));--_container-elevation: var(--md-filled-button-container-elevation, 0);--_container-height: var(--md-filled-button-container-height, 40px);--_container-shadow-color: var(--md-filled-button-container-shadow-color, var(--md-sys-color-shadow, #000));--_disabled-container-color: var(--md-filled-button-disabled-container-color, var(--md-sys-color-on-surface, #1d1b20));--_disabled-container-elevation: var(--md-filled-button-disabled-container-elevation, 0);--_disabled-container-opacity: var(--md-filled-button-disabled-container-opacity, 0.12);--_disabled-label-text-color: var(--md-filled-button-disabled-label-text-color, var(--md-sys-color-on-surface, #1d1b20));--_disabled-label-text-opacity: var(--md-filled-button-disabled-label-text-opacity, 0.38);--_focus-container-elevation: var(--md-filled-button-focus-container-elevation, 0);--_focus-label-text-color: var(--md-filled-button-focus-label-text-color, var(--md-sys-color-on-primary, #fff));--_hover-container-elevation: var(--md-filled-button-hover-container-elevation, 1);--_hover-label-text-color: var(--md-filled-button-hover-label-text-color, var(--md-sys-color-on-primary, #fff));--_hover-state-layer-color: var(--md-filled-button-hover-state-layer-color, var(--md-sys-color-on-primary, #fff));--_hover-state-layer-opacity: var(--md-filled-button-hover-state-layer-opacity, 0.08);--_label-text-color: var(--md-filled-button-label-text-color, var(--md-sys-color-on-primary, #fff));--_label-text-font: var(--md-filled-button-label-text-font, var(--md-sys-typescale-label-large-font, var(--md-ref-typeface-plain, Roboto)));--_label-text-line-height: var(--md-filled-button-label-text-line-height, var(--md-sys-typescale-label-large-line-height, 1.25rem));--_label-text-size: var(--md-filled-button-label-text-size, var(--md-sys-typescale-label-large-size, 0.875rem));--_label-text-weight: var(--md-filled-button-label-text-weight, var(--md-sys-typescale-label-large-weight, var(--md-ref-typeface-weight-medium, 500)));--_pressed-container-elevation: var(--md-filled-button-pressed-container-elevation, 0);--_pressed-label-text-color: var(--md-filled-button-pressed-label-text-color, var(--md-sys-color-on-primary, #fff));--_pressed-state-layer-color: var(--md-filled-button-pressed-state-layer-color, var(--md-sys-color-on-primary, #fff));--_pressed-state-layer-opacity: var(--md-filled-button-pressed-state-layer-opacity, 0.12);--_disabled-icon-color: var(--md-filled-button-disabled-icon-color, var(--md-sys-color-on-surface, #1d1b20));--_disabled-icon-opacity: var(--md-filled-button-disabled-icon-opacity, 0.38);--_focus-icon-color: var(--md-filled-button-focus-icon-color, var(--md-sys-color-on-primary, #fff));--_hover-icon-color: var(--md-filled-button-hover-icon-color, var(--md-sys-color-on-primary, #fff));--_icon-color: var(--md-filled-button-icon-color, var(--md-sys-color-on-primary, #fff));--_icon-size: var(--md-filled-button-icon-size, 18px);--_pressed-icon-color: var(--md-filled-button-pressed-icon-color, var(--md-sys-color-on-primary, #fff));--_container-shape-start-start: var(--md-filled-button-container-shape-start-start, var(--md-filled-button-container-shape, var(--md-sys-shape-corner-full, 9999px)));--_container-shape-start-end: var(--md-filled-button-container-shape-start-end, var(--md-filled-button-container-shape, var(--md-sys-shape-corner-full, 9999px)));--_container-shape-end-end: var(--md-filled-button-container-shape-end-end, var(--md-filled-button-container-shape, var(--md-sys-shape-corner-full, 9999px)));--_container-shape-end-start: var(--md-filled-button-container-shape-end-start, var(--md-filled-button-container-shape, var(--md-sys-shape-corner-full, 9999px)));--_leading-space: var(--md-filled-button-leading-space, 24px);--_trailing-space: var(--md-filled-button-trailing-space, 24px);--_with-leading-icon-leading-space: var(--md-filled-button-with-leading-icon-leading-space, 16px);--_with-leading-icon-trailing-space: var(--md-filled-button-with-leading-icon-trailing-space, 24px);--_with-trailing-icon-leading-space: var(--md-filled-button-with-trailing-icon-leading-space, 24px);--_with-trailing-icon-trailing-space: var(--md-filled-button-with-trailing-icon-trailing-space, 16px)}/*# sourceMappingURL=filled-styles.css.map */
+const styles$2 = i$3 `:host{--_container-color: var(--md-filled-button-container-color, var(--md-sys-color-primary, #6750a4));--_container-elevation: var(--md-filled-button-container-elevation, 0);--_container-height: var(--md-filled-button-container-height, 40px);--_container-shadow-color: var(--md-filled-button-container-shadow-color, var(--md-sys-color-shadow, #000));--_disabled-container-color: var(--md-filled-button-disabled-container-color, var(--md-sys-color-on-surface, #1d1b20));--_disabled-container-elevation: var(--md-filled-button-disabled-container-elevation, 0);--_disabled-container-opacity: var(--md-filled-button-disabled-container-opacity, 0.12);--_disabled-label-text-color: var(--md-filled-button-disabled-label-text-color, var(--md-sys-color-on-surface, #1d1b20));--_disabled-label-text-opacity: var(--md-filled-button-disabled-label-text-opacity, 0.38);--_focus-container-elevation: var(--md-filled-button-focus-container-elevation, 0);--_focus-label-text-color: var(--md-filled-button-focus-label-text-color, var(--md-sys-color-on-primary, #fff));--_hover-container-elevation: var(--md-filled-button-hover-container-elevation, 1);--_hover-label-text-color: var(--md-filled-button-hover-label-text-color, var(--md-sys-color-on-primary, #fff));--_hover-state-layer-color: var(--md-filled-button-hover-state-layer-color, var(--md-sys-color-on-primary, #fff));--_hover-state-layer-opacity: var(--md-filled-button-hover-state-layer-opacity, 0.08);--_label-text-color: var(--md-filled-button-label-text-color, var(--md-sys-color-on-primary, #fff));--_label-text-font: var(--md-filled-button-label-text-font, var(--md-sys-typescale-label-large-font, var(--md-ref-typeface-plain, Roboto)));--_label-text-line-height: var(--md-filled-button-label-text-line-height, var(--md-sys-typescale-label-large-line-height, 1.25rem));--_label-text-size: var(--md-filled-button-label-text-size, var(--md-sys-typescale-label-large-size, 0.875rem));--_label-text-weight: var(--md-filled-button-label-text-weight, var(--md-sys-typescale-label-large-weight, var(--md-ref-typeface-weight-medium, 500)));--_pressed-container-elevation: var(--md-filled-button-pressed-container-elevation, 0);--_pressed-label-text-color: var(--md-filled-button-pressed-label-text-color, var(--md-sys-color-on-primary, #fff));--_pressed-state-layer-color: var(--md-filled-button-pressed-state-layer-color, var(--md-sys-color-on-primary, #fff));--_pressed-state-layer-opacity: var(--md-filled-button-pressed-state-layer-opacity, 0.12);--_disabled-icon-color: var(--md-filled-button-disabled-icon-color, var(--md-sys-color-on-surface, #1d1b20));--_disabled-icon-opacity: var(--md-filled-button-disabled-icon-opacity, 0.38);--_focus-icon-color: var(--md-filled-button-focus-icon-color, var(--md-sys-color-on-primary, #fff));--_hover-icon-color: var(--md-filled-button-hover-icon-color, var(--md-sys-color-on-primary, #fff));--_icon-color: var(--md-filled-button-icon-color, var(--md-sys-color-on-primary, #fff));--_icon-size: var(--md-filled-button-icon-size, 18px);--_pressed-icon-color: var(--md-filled-button-pressed-icon-color, var(--md-sys-color-on-primary, #fff));--_container-shape-start-start: var(--md-filled-button-container-shape-start-start, var(--md-filled-button-container-shape, var(--md-sys-shape-corner-full, 9999px)));--_container-shape-start-end: var(--md-filled-button-container-shape-start-end, var(--md-filled-button-container-shape, var(--md-sys-shape-corner-full, 9999px)));--_container-shape-end-end: var(--md-filled-button-container-shape-end-end, var(--md-filled-button-container-shape, var(--md-sys-shape-corner-full, 9999px)));--_container-shape-end-start: var(--md-filled-button-container-shape-end-start, var(--md-filled-button-container-shape, var(--md-sys-shape-corner-full, 9999px)));--_leading-space: var(--md-filled-button-leading-space, 24px);--_trailing-space: var(--md-filled-button-trailing-space, 24px);--_with-leading-icon-leading-space: var(--md-filled-button-with-leading-icon-leading-space, 16px);--_with-leading-icon-trailing-space: var(--md-filled-button-with-leading-icon-trailing-space, 24px);--_with-trailing-icon-leading-space: var(--md-filled-button-with-trailing-icon-leading-space, 24px);--_with-trailing-icon-trailing-space: var(--md-filled-button-with-trailing-icon-trailing-space, 16px)}/*# sourceMappingURL=filled-styles.css.map */
 `;
 
 /**
@@ -1379,7 +1379,7 @@ const styles$4 = i$3 `:host{--_container-color: var(--md-filled-button-container
   * Copyright 2022 Google LLC
   * SPDX-License-Identifier: Apache-2.0
   */
-const styles$3 = i$3 `md-elevation{transition-duration:280ms}:host([disabled]) md-elevation{transition:none}md-elevation{--md-elevation-level: var(--_container-elevation);--md-elevation-shadow-color: var(--_container-shadow-color)}:host(:focus-within) md-elevation{--md-elevation-level: var(--_focus-container-elevation)}:host(:hover) md-elevation{--md-elevation-level: var(--_hover-container-elevation)}:host(:active) md-elevation{--md-elevation-level: var(--_pressed-container-elevation)}:host([disabled]) md-elevation{--md-elevation-level: var(--_disabled-container-elevation)}/*# sourceMappingURL=shared-elevation-styles.css.map */
+const styles$1 = i$3 `md-elevation{transition-duration:280ms}:host([disabled]) md-elevation{transition:none}md-elevation{--md-elevation-level: var(--_container-elevation);--md-elevation-shadow-color: var(--_container-shadow-color)}:host(:focus-within) md-elevation{--md-elevation-level: var(--_focus-container-elevation)}:host(:hover) md-elevation{--md-elevation-level: var(--_hover-container-elevation)}:host(:active) md-elevation{--md-elevation-level: var(--_pressed-container-elevation)}:host([disabled]) md-elevation{--md-elevation-level: var(--_disabled-container-elevation)}/*# sourceMappingURL=shared-elevation-styles.css.map */
 `;
 
 /**
@@ -1387,7 +1387,7 @@ const styles$3 = i$3 `md-elevation{transition-duration:280ms}:host([disabled]) m
   * Copyright 2022 Google LLC
   * SPDX-License-Identifier: Apache-2.0
   */
-const styles$2 = i$3 `:host{border-start-start-radius:var(--_container-shape-start-start);border-start-end-radius:var(--_container-shape-start-end);border-end-start-radius:var(--_container-shape-end-start);border-end-end-radius:var(--_container-shape-end-end);box-sizing:border-box;cursor:pointer;display:inline-flex;gap:8px;min-height:var(--_container-height);outline:none;padding-block:calc((var(--_container-height) - max(var(--_label-text-line-height),var(--_icon-size)))/2);padding-inline-start:var(--_leading-space);padding-inline-end:var(--_trailing-space);place-content:center;place-items:center;position:relative;font-family:var(--_label-text-font);font-size:var(--_label-text-size);line-height:var(--_label-text-line-height);font-weight:var(--_label-text-weight);text-overflow:ellipsis;text-wrap:nowrap;user-select:none;-webkit-tap-highlight-color:rgba(0,0,0,0);vertical-align:top;--md-ripple-hover-color: var(--_hover-state-layer-color);--md-ripple-pressed-color: var(--_pressed-state-layer-color);--md-ripple-hover-opacity: var(--_hover-state-layer-opacity);--md-ripple-pressed-opacity: var(--_pressed-state-layer-opacity)}md-focus-ring{--md-focus-ring-shape-start-start: var(--_container-shape-start-start);--md-focus-ring-shape-start-end: var(--_container-shape-start-end);--md-focus-ring-shape-end-end: var(--_container-shape-end-end);--md-focus-ring-shape-end-start: var(--_container-shape-end-start)}:host([disabled]){cursor:default;pointer-events:none}.button{border-radius:inherit;cursor:inherit;display:inline-flex;align-items:center;justify-content:center;border:none;outline:none;-webkit-appearance:none;vertical-align:middle;background:rgba(0,0,0,0);text-decoration:none;min-width:calc(64px - var(--_leading-space) - var(--_trailing-space));width:100%;z-index:0;height:100%;font:inherit;color:var(--_label-text-color);padding:0;gap:inherit}.button::-moz-focus-inner{padding:0;border:0}:host(:hover) .button{color:var(--_hover-label-text-color)}:host(:focus-within) .button{color:var(--_focus-label-text-color)}:host(:active) .button{color:var(--_pressed-label-text-color)}.background{background-color:var(--_container-color);border-radius:inherit;inset:0;position:absolute}.label{overflow:hidden}:is(.button,.label,.label slot),.label ::slotted(*){text-overflow:inherit}:host([disabled]) .label{color:var(--_disabled-label-text-color);opacity:var(--_disabled-label-text-opacity)}:host([disabled]) .background{background-color:var(--_disabled-container-color);opacity:var(--_disabled-container-opacity)}@media(forced-colors: active){.background{border:1px solid CanvasText}:host([disabled]){--_disabled-icon-color: GrayText;--_disabled-icon-opacity: 1;--_disabled-container-opacity: 1;--_disabled-label-text-color: GrayText;--_disabled-label-text-opacity: 1}}:host([has-icon]:not([trailing-icon])){padding-inline-start:var(--_with-leading-icon-leading-space);padding-inline-end:var(--_with-leading-icon-trailing-space)}:host([has-icon][trailing-icon]){padding-inline-start:var(--_with-trailing-icon-leading-space);padding-inline-end:var(--_with-trailing-icon-trailing-space)}::slotted([slot=icon]){display:inline-flex;position:relative;writing-mode:horizontal-tb;fill:currentColor;flex-shrink:0;color:var(--_icon-color);font-size:var(--_icon-size);inline-size:var(--_icon-size);block-size:var(--_icon-size)}:host(:hover) ::slotted([slot=icon]){color:var(--_hover-icon-color)}:host(:focus-within) ::slotted([slot=icon]){color:var(--_focus-icon-color)}:host(:active) ::slotted([slot=icon]){color:var(--_pressed-icon-color)}:host([disabled]) ::slotted([slot=icon]){color:var(--_disabled-icon-color);opacity:var(--_disabled-icon-opacity)}.touch{position:absolute;top:50%;height:48px;left:0;right:0;transform:translateY(-50%)}:host([touch-target=wrapper]){margin:max(0px,(48px - var(--_container-height))/2) 0}:host([touch-target=none]) .touch{display:none}/*# sourceMappingURL=shared-styles.css.map */
+const styles = i$3 `:host{border-start-start-radius:var(--_container-shape-start-start);border-start-end-radius:var(--_container-shape-start-end);border-end-start-radius:var(--_container-shape-end-start);border-end-end-radius:var(--_container-shape-end-end);box-sizing:border-box;cursor:pointer;display:inline-flex;gap:8px;min-height:var(--_container-height);outline:none;padding-block:calc((var(--_container-height) - max(var(--_label-text-line-height),var(--_icon-size)))/2);padding-inline-start:var(--_leading-space);padding-inline-end:var(--_trailing-space);place-content:center;place-items:center;position:relative;font-family:var(--_label-text-font);font-size:var(--_label-text-size);line-height:var(--_label-text-line-height);font-weight:var(--_label-text-weight);text-overflow:ellipsis;text-wrap:nowrap;user-select:none;-webkit-tap-highlight-color:rgba(0,0,0,0);vertical-align:top;--md-ripple-hover-color: var(--_hover-state-layer-color);--md-ripple-pressed-color: var(--_pressed-state-layer-color);--md-ripple-hover-opacity: var(--_hover-state-layer-opacity);--md-ripple-pressed-opacity: var(--_pressed-state-layer-opacity)}md-focus-ring{--md-focus-ring-shape-start-start: var(--_container-shape-start-start);--md-focus-ring-shape-start-end: var(--_container-shape-start-end);--md-focus-ring-shape-end-end: var(--_container-shape-end-end);--md-focus-ring-shape-end-start: var(--_container-shape-end-start)}:host([disabled]){cursor:default;pointer-events:none}.button{border-radius:inherit;cursor:inherit;display:inline-flex;align-items:center;justify-content:center;border:none;outline:none;-webkit-appearance:none;vertical-align:middle;background:rgba(0,0,0,0);text-decoration:none;min-width:calc(64px - var(--_leading-space) - var(--_trailing-space));width:100%;z-index:0;height:100%;font:inherit;color:var(--_label-text-color);padding:0;gap:inherit}.button::-moz-focus-inner{padding:0;border:0}:host(:hover) .button{color:var(--_hover-label-text-color)}:host(:focus-within) .button{color:var(--_focus-label-text-color)}:host(:active) .button{color:var(--_pressed-label-text-color)}.background{background-color:var(--_container-color);border-radius:inherit;inset:0;position:absolute}.label{overflow:hidden}:is(.button,.label,.label slot),.label ::slotted(*){text-overflow:inherit}:host([disabled]) .label{color:var(--_disabled-label-text-color);opacity:var(--_disabled-label-text-opacity)}:host([disabled]) .background{background-color:var(--_disabled-container-color);opacity:var(--_disabled-container-opacity)}@media(forced-colors: active){.background{border:1px solid CanvasText}:host([disabled]){--_disabled-icon-color: GrayText;--_disabled-icon-opacity: 1;--_disabled-container-opacity: 1;--_disabled-label-text-color: GrayText;--_disabled-label-text-opacity: 1}}:host([has-icon]:not([trailing-icon])){padding-inline-start:var(--_with-leading-icon-leading-space);padding-inline-end:var(--_with-leading-icon-trailing-space)}:host([has-icon][trailing-icon]){padding-inline-start:var(--_with-trailing-icon-leading-space);padding-inline-end:var(--_with-trailing-icon-trailing-space)}::slotted([slot=icon]){display:inline-flex;position:relative;writing-mode:horizontal-tb;fill:currentColor;flex-shrink:0;color:var(--_icon-color);font-size:var(--_icon-size);inline-size:var(--_icon-size);block-size:var(--_icon-size)}:host(:hover) ::slotted([slot=icon]){color:var(--_hover-icon-color)}:host(:focus-within) ::slotted([slot=icon]){color:var(--_focus-icon-color)}:host(:active) ::slotted([slot=icon]){color:var(--_pressed-icon-color)}:host([disabled]) ::slotted([slot=icon]){color:var(--_disabled-icon-color);opacity:var(--_disabled-icon-opacity)}.touch{position:absolute;top:50%;height:48px;left:0;right:0;transform:translateY(-50%)}:host([touch-target=wrapper]){margin:max(0px,(48px - var(--_container-height))/2) 0}:host([touch-target=none]) .touch{display:none}/*# sourceMappingURL=shared-styles.css.map */
 `;
 
 /**
@@ -1417,737 +1417,56 @@ const styles$2 = i$3 `:host{border-start-start-radius:var(--_container-shape-sta
  */
 let MdFilledButton = class MdFilledButton extends FilledButton {
 };
-MdFilledButton.styles = [styles$2, styles$3, styles$4];
+MdFilledButton.styles = [styles, styles$1, styles$2];
 MdFilledButton = __decorate([
     t$3('md-filled-button')
 ], MdFilledButton);
 
-/**
- * @license
- * Copyright 2021 Google LLC
- * SPDX-License-Identifier: Apache-2.0
- */
-/**
- * An outlined button component.
- */
-class OutlinedButton extends Button {
-    renderElevationOrOutline() {
-        return x `<div class="outline"></div>`;
-    }
-}
-
-/**
-  * @license
-  * Copyright 2022 Google LLC
-  * SPDX-License-Identifier: Apache-2.0
-  */
-const styles$1 = i$3 `:host{--_container-height: var(--md-outlined-button-container-height, 40px);--_disabled-label-text-color: var(--md-outlined-button-disabled-label-text-color, var(--md-sys-color-on-surface, #1d1b20));--_disabled-label-text-opacity: var(--md-outlined-button-disabled-label-text-opacity, 0.38);--_disabled-outline-color: var(--md-outlined-button-disabled-outline-color, var(--md-sys-color-on-surface, #1d1b20));--_disabled-outline-opacity: var(--md-outlined-button-disabled-outline-opacity, 0.12);--_focus-label-text-color: var(--md-outlined-button-focus-label-text-color, var(--md-sys-color-primary, #6750a4));--_hover-label-text-color: var(--md-outlined-button-hover-label-text-color, var(--md-sys-color-primary, #6750a4));--_hover-state-layer-color: var(--md-outlined-button-hover-state-layer-color, var(--md-sys-color-primary, #6750a4));--_hover-state-layer-opacity: var(--md-outlined-button-hover-state-layer-opacity, 0.08);--_label-text-color: var(--md-outlined-button-label-text-color, var(--md-sys-color-primary, #6750a4));--_label-text-font: var(--md-outlined-button-label-text-font, var(--md-sys-typescale-label-large-font, var(--md-ref-typeface-plain, Roboto)));--_label-text-line-height: var(--md-outlined-button-label-text-line-height, var(--md-sys-typescale-label-large-line-height, 1.25rem));--_label-text-size: var(--md-outlined-button-label-text-size, var(--md-sys-typescale-label-large-size, 0.875rem));--_label-text-weight: var(--md-outlined-button-label-text-weight, var(--md-sys-typescale-label-large-weight, var(--md-ref-typeface-weight-medium, 500)));--_outline-color: var(--md-outlined-button-outline-color, var(--md-sys-color-outline, #79747e));--_outline-width: var(--md-outlined-button-outline-width, 1px);--_pressed-label-text-color: var(--md-outlined-button-pressed-label-text-color, var(--md-sys-color-primary, #6750a4));--_pressed-outline-color: var(--md-outlined-button-pressed-outline-color, var(--md-sys-color-outline, #79747e));--_pressed-state-layer-color: var(--md-outlined-button-pressed-state-layer-color, var(--md-sys-color-primary, #6750a4));--_pressed-state-layer-opacity: var(--md-outlined-button-pressed-state-layer-opacity, 0.12);--_disabled-icon-color: var(--md-outlined-button-disabled-icon-color, var(--md-sys-color-on-surface, #1d1b20));--_disabled-icon-opacity: var(--md-outlined-button-disabled-icon-opacity, 0.38);--_focus-icon-color: var(--md-outlined-button-focus-icon-color, var(--md-sys-color-primary, #6750a4));--_hover-icon-color: var(--md-outlined-button-hover-icon-color, var(--md-sys-color-primary, #6750a4));--_icon-color: var(--md-outlined-button-icon-color, var(--md-sys-color-primary, #6750a4));--_icon-size: var(--md-outlined-button-icon-size, 18px);--_pressed-icon-color: var(--md-outlined-button-pressed-icon-color, var(--md-sys-color-primary, #6750a4));--_container-shape-start-start: var(--md-outlined-button-container-shape-start-start, var(--md-outlined-button-container-shape, var(--md-sys-shape-corner-full, 9999px)));--_container-shape-start-end: var(--md-outlined-button-container-shape-start-end, var(--md-outlined-button-container-shape, var(--md-sys-shape-corner-full, 9999px)));--_container-shape-end-end: var(--md-outlined-button-container-shape-end-end, var(--md-outlined-button-container-shape, var(--md-sys-shape-corner-full, 9999px)));--_container-shape-end-start: var(--md-outlined-button-container-shape-end-start, var(--md-outlined-button-container-shape, var(--md-sys-shape-corner-full, 9999px)));--_leading-space: var(--md-outlined-button-leading-space, 24px);--_trailing-space: var(--md-outlined-button-trailing-space, 24px);--_with-leading-icon-leading-space: var(--md-outlined-button-with-leading-icon-leading-space, 16px);--_with-leading-icon-trailing-space: var(--md-outlined-button-with-leading-icon-trailing-space, 24px);--_with-trailing-icon-leading-space: var(--md-outlined-button-with-trailing-icon-leading-space, 24px);--_with-trailing-icon-trailing-space: var(--md-outlined-button-with-trailing-icon-trailing-space, 16px);--_container-color: none;--_disabled-container-color: none;--_disabled-container-opacity: 0}.outline{inset:0;border-style:solid;position:absolute;box-sizing:border-box;border-color:var(--_outline-color);border-start-start-radius:var(--_container-shape-start-start);border-start-end-radius:var(--_container-shape-start-end);border-end-start-radius:var(--_container-shape-end-start);border-end-end-radius:var(--_container-shape-end-end)}:host(:active) .outline{border-color:var(--_pressed-outline-color)}:host([disabled]) .outline{border-color:var(--_disabled-outline-color);opacity:var(--_disabled-outline-opacity)}@media(forced-colors: active){:host([disabled]) .background{border-color:GrayText}:host([disabled]) .outline{opacity:1}}.outline,md-ripple{border-width:var(--_outline-width)}md-ripple{inline-size:calc(100% - 2*var(--_outline-width));block-size:calc(100% - 2*var(--_outline-width));border-style:solid;border-color:rgba(0,0,0,0)}/*# sourceMappingURL=outlined-styles.css.map */
-`;
-
-/**
- * @license
- * Copyright 2021 Google LLC
- * SPDX-License-Identifier: Apache-2.0
- */
-/**
- * @summary Buttons help people take action, such as sending an email, sharing a
- * document, or liking a comment.
- *
- * @description
- * __Emphasis:__ Medium emphasis – For important actions that don’t distract
- * from other onscreen elements.
- *
- * __Rationale:__ Use an outlined button for actions that need attention but
- * aren’t the primary action, such as “See all” or “Add to cart.” This is also
- * the button to use for giving someone the opportunity to change their mind or
- * escape a flow.
- *
- * __Example usages:__
- * - Reply
- * - View all
- * - Add to cart
- * - Take out of trash
- *
- * @final
- * @suppress {visibility}
- */
-let MdOutlinedButton = class MdOutlinedButton extends OutlinedButton {
-};
-MdOutlinedButton.styles = [styles$2, styles$1];
-MdOutlinedButton = __decorate([
-    t$3('md-outlined-button')
-], MdOutlinedButton);
-
-/**
- * @license
- * Copyright 2021 Google LLC
- * SPDX-License-Identifier: Apache-2.0
- */
-/**
- * Re-dispatches an event from the provided element.
- *
- * This function is useful for forwarding non-composed events, such as `change`
- * events.
- *
- * @example
- * class MyInput extends LitElement {
- *   render() {
- *     return html`<input @change=${this.redispatchEvent}>`;
- *   }
- *
- *   protected redispatchEvent(event: Event) {
- *     redispatchEvent(this, event);
- *   }
- * }
- *
- * @param element The element to dispatch the event from.
- * @param event The event to re-dispatch.
- * @return Whether or not the event was dispatched (if cancelable).
- */
-function redispatchEvent(element, event) {
-    // For bubbling events in SSR light DOM (or composed), stop their propagation
-    // and dispatch the copy.
-    if (event.bubbles && (!element.shadowRoot || event.composed)) {
-        event.stopPropagation();
-    }
-    const copy = Reflect.construct(event.constructor, [event.type, event]);
-    const dispatched = element.dispatchEvent(copy);
-    if (!dispatched) {
-        event.preventDefault();
-    }
-    return dispatched;
-}
-
-/**
- * @license
- * Copyright 2023 Google LLC
- * SPDX-License-Identifier: Apache-2.0
- */
-/**
- * A symbol property used to create a constraint validation `Validator`.
- * Required for all `mixinConstraintValidation()` elements.
- */
-const createValidator = Symbol('createValidator');
-/**
- * A symbol property used to return an anchor for constraint validation popups.
- * Required for all `mixinConstraintValidation()` elements.
- */
-const getValidityAnchor = Symbol('getValidityAnchor');
-// Private symbol members, used to avoid name clashing.
-const privateValidator = Symbol('privateValidator');
-const privateSyncValidity = Symbol('privateSyncValidity');
-const privateCustomValidationMessage = Symbol('privateCustomValidationMessage');
-/**
- * Mixes in constraint validation APIs for an element.
- *
- * See https://developer.mozilla.org/en-US/docs/Web/HTML/Constraint_validation
- * for more details.
- *
- * Implementations must provide a validator to cache and compute its validity,
- * along with a shadow root element to anchor validation popups to.
- *
- * @example
- * ```ts
- * const baseClass = mixinConstraintValidation(
- *   mixinFormAssociated(mixinElementInternals(LitElement))
- * );
- *
- * class MyCheckbox extends baseClass {
- *   \@property({type: Boolean}) checked = false;
- *   \@property({type: Boolean}) required = false;
- *
- *   [createValidator]() {
- *     return new CheckboxValidator(() => this);
- *   }
- *
- *   [getValidityAnchor]() {
- *     return this.renderRoot.querySelector('.root');
- *   }
- * }
- * ```
- *
- * @param base The class to mix functionality into.
- * @return The provided class with `ConstraintValidation` mixed in.
- */
-function mixinConstraintValidation(base) {
-    var _a;
-    class ConstraintValidationElement extends base {
-        constructor() {
-            super(...arguments);
-            /**
-             * Needed for Safari, see https://bugs.webkit.org/show_bug.cgi?id=261432
-             * Replace with this[internals].validity.customError when resolved.
-             */
-            this[_a] = '';
-        }
-        get validity() {
-            this[privateSyncValidity]();
-            return this[internals].validity;
-        }
-        get validationMessage() {
-            this[privateSyncValidity]();
-            return this[internals].validationMessage;
-        }
-        get willValidate() {
-            this[privateSyncValidity]();
-            return this[internals].willValidate;
-        }
-        checkValidity() {
-            this[privateSyncValidity]();
-            return this[internals].checkValidity();
-        }
-        reportValidity() {
-            this[privateSyncValidity]();
-            return this[internals].reportValidity();
-        }
-        setCustomValidity(error) {
-            this[privateCustomValidationMessage] = error;
-            this[privateSyncValidity]();
-        }
-        requestUpdate(name, oldValue, options) {
-            super.requestUpdate(name, oldValue, options);
-            this[privateSyncValidity]();
-        }
-        firstUpdated(changed) {
-            super.firstUpdated(changed);
-            // Sync the validity again when the element first renders, since the
-            // validity anchor is now available.
-            //
-            // Elements that `delegatesFocus: true` to an `<input>` will throw an
-            // error in Chrome and Safari when a form tries to submit or call
-            // `form.reportValidity()`:
-            // "An invalid form control with name='' is not focusable"
-            //
-            // The validity anchor MUST be provided in `internals.setValidity()` and
-            // MUST be the `<input>` element rendered.
-            //
-            // See https://lit.dev/playground/#gist=6c26e418e0010f7a5aac15005cde8bde
-            // for a reproduction.
-            this[privateSyncValidity]();
-        }
-        [(_a = privateCustomValidationMessage, privateSyncValidity)]() {
-            if (!this[privateValidator]) {
-                this[privateValidator] = this[createValidator]();
-            }
-            const { validity, validationMessage: nonCustomValidationMessage } = this[privateValidator].getValidity();
-            const customError = !!this[privateCustomValidationMessage];
-            const validationMessage = this[privateCustomValidationMessage] || nonCustomValidationMessage;
-            this[internals].setValidity({ ...validity, customError }, validationMessage, this[getValidityAnchor]() ?? undefined);
-        }
-        [createValidator]() {
-            throw new Error('Implement [createValidator]');
-        }
-        [getValidityAnchor]() {
-            throw new Error('Implement [getValidityAnchor]');
-        }
-    }
-    return ConstraintValidationElement;
-}
-
-/**
- * @license
- * Copyright 2023 Google LLC
- * SPDX-License-Identifier: Apache-2.0
- */
-/**
- * A symbol property to retrieve the form value for an element.
- */
-const getFormValue = Symbol('getFormValue');
-/**
- * A symbol property to retrieve the form state for an element.
- */
-const getFormState = Symbol('getFormState');
-/**
- * Mixes in form-associated behavior for a class. This allows an element to add
- * values to `<form>` elements.
- *
- * Implementing classes should provide a `[formValue]` to return the current
- * value of the element, as well as reset and restore callbacks.
- *
- * @example
- * ```ts
- * const base = mixinFormAssociated(mixinElementInternals(LitElement));
- *
- * class MyControl extends base {
- *   \@property()
- *   value = '';
- *
- *   override [getFormValue]() {
- *     return this.value;
- *   }
- *
- *   override formResetCallback() {
- *     const defaultValue = this.getAttribute('value');
- *     this.value = defaultValue;
- *   }
- *
- *   override formStateRestoreCallback(state: string) {
- *     this.value = state;
- *   }
- * }
- * ```
- *
- * Elements may optionally provide a `[formState]` if their values do not
- * represent the state of the component.
- *
- * @example
- * ```ts
- * const base = mixinFormAssociated(mixinElementInternals(LitElement));
- *
- * class MyCheckbox extends base {
- *   \@property()
- *   value = 'on';
- *
- *   \@property({type: Boolean})
- *   checked = false;
- *
- *   override [getFormValue]() {
- *     return this.checked ? this.value : null;
- *   }
- *
- *   override [getFormState]() {
- *     return String(this.checked);
- *   }
- *
- *   override formResetCallback() {
- *     const defaultValue = this.hasAttribute('checked');
- *     this.checked = defaultValue;
- *   }
- *
- *   override formStateRestoreCallback(state: string) {
- *     this.checked = Boolean(state);
- *   }
- * }
- * ```
- *
- * IMPORTANT: Requires declares for lit-analyzer
- * @example
- * ```ts
- * const base = mixinFormAssociated(mixinElementInternals(LitElement));
- * class MyControl extends base {
- *   // Writable mixin properties for lit-html binding, needed for lit-analyzer
- *   declare disabled: boolean;
- *   declare name: string;
- * }
- * ```
- *
- * @param base The class to mix functionality into. The base class must use
- *     `mixinElementInternals()`.
- * @return The provided class with `FormAssociated` mixed in.
- */
-function mixinFormAssociated(base) {
-    class FormAssociatedElement extends base {
-        get form() {
-            return this[internals].form;
-        }
-        get labels() {
-            return this[internals].labels;
-        }
-        // Use @property for the `name` and `disabled` properties to add them to the
-        // `observedAttributes` array and trigger `attributeChangedCallback()`.
-        //
-        // We don't use Lit's default getter/setter (`noAccessor: true`) because
-        // the attributes need to be updated synchronously to work with synchronous
-        // form APIs, and Lit updates attributes async by default.
-        get name() {
-            return this.getAttribute('name') ?? '';
-        }
-        set name(name) {
-            // Note: setting name to null or empty does not remove the attribute.
-            this.setAttribute('name', name);
-            // We don't need to call `requestUpdate()` since it's called synchronously
-            // in `attributeChangedCallback()`.
-        }
-        get disabled() {
-            return this.hasAttribute('disabled');
-        }
-        set disabled(disabled) {
-            this.toggleAttribute('disabled', disabled);
-            // We don't need to call `requestUpdate()` since it's called synchronously
-            // in `attributeChangedCallback()`.
-        }
-        attributeChangedCallback(name, old, value) {
-            // Manually `requestUpdate()` for `name` and `disabled` when their
-            // attribute or property changes.
-            // The properties update their attributes, so this callback is invoked
-            // immediately when the properties are set. We call `requestUpdate()` here
-            // instead of letting Lit set the properties from the attribute change.
-            // That would cause the properties to re-set the attribute and invoke this
-            // callback again in a loop. This leads to stale state when Lit tries to
-            // determine if a property changed or not.
-            if (name === 'name' || name === 'disabled') {
-                // Disabled's value is only false if the attribute is missing and null.
-                const oldValue = name === 'disabled' ? old !== null : old;
-                // Trigger a lit update when the attribute changes.
-                this.requestUpdate(name, oldValue);
-                return;
-            }
-            super.attributeChangedCallback(name, old, value);
-        }
-        requestUpdate(name, oldValue, options) {
-            super.requestUpdate(name, oldValue, options);
-            // If any properties change, update the form value, which may have changed
-            // as well.
-            // Update the form value synchronously in `requestUpdate()` rather than
-            // `update()` or `updated()`, which are async. This is necessary to ensure
-            // that form data is updated in time for synchronous event listeners.
-            this[internals].setFormValue(this[getFormValue](), this[getFormState]());
-        }
-        [getFormValue]() {
-            // Closure does not allow abstract symbol members, so a default
-            // implementation is needed.
-            throw new Error('Implement [getFormValue]');
-        }
-        [getFormState]() {
-            return this[getFormValue]();
-        }
-        formDisabledCallback(disabled) {
-            this.disabled = disabled;
-        }
-    }
-    /** @nocollapse */
-    FormAssociatedElement.formAssociated = true;
-    __decorate([
-        n$1({ noAccessor: true })
-    ], FormAssociatedElement.prototype, "name", null);
-    __decorate([
-        n$1({ type: Boolean, noAccessor: true })
-    ], FormAssociatedElement.prototype, "disabled", null);
-    return FormAssociatedElement;
-}
-
-/**
- * @license
- * Copyright 2023 Google LLC
- * SPDX-License-Identifier: Apache-2.0
- */
-/**
- * A class that computes and caches `ValidityStateFlags` for a component with
- * a given `State` interface.
- *
- * Cached performance before computing validity is important since constraint
- * validation must be checked frequently and synchronously when properties
- * change.
- *
- * @template State The expected interface of properties relevant to constraint
- *     validation.
- */
-class Validator {
-    /**
-     * Creates a new validator.
-     *
-     * @param getCurrentState A callback that returns the current state of
-     *     constraint validation-related properties.
-     */
-    constructor(getCurrentState) {
-        this.getCurrentState = getCurrentState;
-        /**
-         * The current validity state and message. This is cached and returns if
-         * constraint validation state does not change.
-         */
-        this.currentValidity = {
-            validity: {},
-            validationMessage: '',
-        };
-    }
-    /**
-     * Returns the current `ValidityStateFlags` and validation message for the
-     * validator.
-     *
-     * If the constraint validation state has not changed, this will return a
-     * cached result. This is important since `getValidity()` can be called
-     * frequently in response to synchronous property changes.
-     *
-     * @return The current validity and validation message.
-     */
-    getValidity() {
-        const state = this.getCurrentState();
-        const hasStateChanged = !this.prevState || !this.equals(this.prevState, state);
-        if (!hasStateChanged) {
-            return this.currentValidity;
-        }
-        const { validity, validationMessage } = this.computeValidity(state);
-        this.prevState = this.copy(state);
-        this.currentValidity = {
-            validationMessage,
-            validity: {
-                // Change any `ValidityState` instances into `ValidityStateFlags` since
-                // `ValidityState` cannot be easily `{...spread}`.
-                badInput: validity.badInput,
-                customError: validity.customError,
-                patternMismatch: validity.patternMismatch,
-                rangeOverflow: validity.rangeOverflow,
-                rangeUnderflow: validity.rangeUnderflow,
-                stepMismatch: validity.stepMismatch,
-                tooLong: validity.tooLong,
-                tooShort: validity.tooShort,
-                typeMismatch: validity.typeMismatch,
-                valueMissing: validity.valueMissing,
-            },
-        };
-        return this.currentValidity;
-    }
-}
-
-/**
- * @license
- * Copyright 2023 Google LLC
- * SPDX-License-Identifier: Apache-2.0
- */
-/**
- * A validator that provides constraint validation that emulates
- * `<input type="checkbox">` validation.
- */
-class CheckboxValidator extends Validator {
-    computeValidity(state) {
-        if (!this.checkboxControl) {
-            // Lazily create the platform input
-            this.checkboxControl = document.createElement('input');
-            this.checkboxControl.type = 'checkbox';
-        }
-        this.checkboxControl.checked = state.checked;
-        this.checkboxControl.required = state.required;
-        return {
-            validity: this.checkboxControl.validity,
-            validationMessage: this.checkboxControl.validationMessage,
-        };
-    }
-    equals(prev, next) {
-        return prev.checked === next.checked && prev.required === next.required;
-    }
-    copy({ checked, required }) {
-        return { checked, required };
-    }
-}
-
-/**
- * @license
- * Copyright 2019 Google LLC
- * SPDX-License-Identifier: Apache-2.0
- */
-// Separate variable needed for closure.
-const checkboxBaseClass = mixinConstraintValidation(mixinFormAssociated(mixinElementInternals(s)));
-/**
- * A checkbox component.
- *
- *
- * @fires change {Event} The native `change` event on
- * [`<input>`](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/change_event)
- * --bubbles
- * @fires input {InputEvent} The native `input` event on
- * [`<input>`](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/input_event)
- * --bubbles --composed
- */
-class Checkbox extends checkboxBaseClass {
-    constructor() {
-        super();
-        /**
-         * Whether or not the checkbox is selected.
-         */
-        this.checked = false;
-        /**
-         * Whether or not the checkbox is indeterminate.
-         *
-         * https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/checkbox#indeterminate_state_checkboxes
-         */
-        this.indeterminate = false;
-        /**
-         * When true, require the checkbox to be selected when participating in
-         * form submission.
-         *
-         * https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/checkbox#validation
-         */
-        this.required = false;
-        /**
-         * The value of the checkbox that is submitted with a form when selected.
-         *
-         * https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/checkbox#value
-         */
-        this.value = 'on';
-        this.prevChecked = false;
-        this.prevDisabled = false;
-        this.prevIndeterminate = false;
-        {
-            this.addEventListener('click', (event) => {
-                if (!isActivationClick(event) || !this.input) {
-                    return;
-                }
-                this.focus();
-                dispatchActivationClick(this.input);
-            });
-        }
-    }
-    update(changed) {
-        if (changed.has('checked') ||
-            changed.has('disabled') ||
-            changed.has('indeterminate')) {
-            this.prevChecked = changed.get('checked') ?? this.checked;
-            this.prevDisabled = changed.get('disabled') ?? this.disabled;
-            this.prevIndeterminate =
-                changed.get('indeterminate') ?? this.indeterminate;
-        }
-        super.update(changed);
-    }
-    render() {
-        const prevNone = !this.prevChecked && !this.prevIndeterminate;
-        const prevChecked = this.prevChecked && !this.prevIndeterminate;
-        const prevIndeterminate = this.prevIndeterminate;
-        const isChecked = this.checked && !this.indeterminate;
-        const isIndeterminate = this.indeterminate;
-        const containerClasses = e({
-            'disabled': this.disabled,
-            'selected': isChecked || isIndeterminate,
-            'unselected': !isChecked && !isIndeterminate,
-            'checked': isChecked,
-            'indeterminate': isIndeterminate,
-            'prev-unselected': prevNone,
-            'prev-checked': prevChecked,
-            'prev-indeterminate': prevIndeterminate,
-            'prev-disabled': this.prevDisabled,
-        });
-        // Needed for closure conformance
-        const { ariaLabel, ariaInvalid } = this;
-        // Note: <input> needs to be rendered before the <svg> for
-        // form.reportValidity() to work in Chrome.
-        return x `
-      <div class="container ${containerClasses}">
-        <input
-          type="checkbox"
-          id="input"
-          aria-checked=${isIndeterminate ? 'mixed' : T}
-          aria-label=${ariaLabel || T}
-          aria-invalid=${ariaInvalid || T}
-          ?disabled=${this.disabled}
-          ?required=${this.required}
-          .indeterminate=${this.indeterminate}
-          .checked=${this.checked}
-          @input=${this.handleInput}
-          @change=${this.handleChange} />
-
-        <div class="outline"></div>
-        <div class="background"></div>
-        <md-focus-ring part="focus-ring" for="input"></md-focus-ring>
-        <md-ripple for="input" ?disabled=${this.disabled}></md-ripple>
-        <svg class="icon" viewBox="0 0 18 18" aria-hidden="true">
-          <rect class="mark short" />
-          <rect class="mark long" />
-        </svg>
-      </div>
-    `;
-    }
-    handleInput(event) {
-        const target = event.target;
-        this.checked = target.checked;
-        this.indeterminate = target.indeterminate;
-        // <input> 'input' event bubbles and is composed, don't re-dispatch it.
-    }
-    handleChange(event) {
-        // <input> 'change' event is not composed, re-dispatch it.
-        redispatchEvent(this, event);
-    }
-    [getFormValue]() {
-        if (!this.checked || this.indeterminate) {
-            return null;
-        }
-        return this.value;
-    }
-    [getFormState]() {
-        return String(this.checked);
-    }
-    formResetCallback() {
-        // The checked property does not reflect, so the original attribute set by
-        // the user is used to determine the default value.
-        this.checked = this.hasAttribute('checked');
-    }
-    formStateRestoreCallback(state) {
-        this.checked = state === 'true';
-    }
-    [createValidator]() {
-        return new CheckboxValidator(() => this);
-    }
-    [getValidityAnchor]() {
-        return this.input;
-    }
-}
-(() => {
-    requestUpdateOnAriaChange(Checkbox);
-})();
-/** @nocollapse */
-Checkbox.shadowRootOptions = {
-    ...s.shadowRootOptions,
-    delegatesFocus: true,
-};
-__decorate([
-    n$1({ type: Boolean })
-], Checkbox.prototype, "checked", void 0);
-__decorate([
-    n$1({ type: Boolean })
-], Checkbox.prototype, "indeterminate", void 0);
-__decorate([
-    n$1({ type: Boolean })
-], Checkbox.prototype, "required", void 0);
-__decorate([
-    n$1()
-], Checkbox.prototype, "value", void 0);
-__decorate([
-    r$2()
-], Checkbox.prototype, "prevChecked", void 0);
-__decorate([
-    r$2()
-], Checkbox.prototype, "prevDisabled", void 0);
-__decorate([
-    r$2()
-], Checkbox.prototype, "prevIndeterminate", void 0);
-__decorate([
-    e$3('input')
-], Checkbox.prototype, "input", void 0);
-
-/**
-  * @license
-  * Copyright 2022 Google LLC
-  * SPDX-License-Identifier: Apache-2.0
-  */
-const styles = i$3 `:host{border-start-start-radius:var(--md-checkbox-container-shape-start-start, var(--md-checkbox-container-shape, 2px));border-start-end-radius:var(--md-checkbox-container-shape-start-end, var(--md-checkbox-container-shape, 2px));border-end-end-radius:var(--md-checkbox-container-shape-end-end, var(--md-checkbox-container-shape, 2px));border-end-start-radius:var(--md-checkbox-container-shape-end-start, var(--md-checkbox-container-shape, 2px));display:inline-flex;height:var(--md-checkbox-container-size, 18px);position:relative;vertical-align:top;width:var(--md-checkbox-container-size, 18px);-webkit-tap-highlight-color:rgba(0,0,0,0);cursor:pointer}:host([disabled]){cursor:default}:host([touch-target=wrapper]){margin:max(0px,(48px - var(--md-checkbox-container-size, 18px))/2)}md-focus-ring{height:44px;inset:unset;width:44px}input{appearance:none;height:48px;margin:0;opacity:0;outline:none;position:absolute;width:48px;z-index:1;cursor:inherit}:host([touch-target=none]) input{height:100%;width:100%}.container{border-radius:inherit;display:flex;height:100%;place-content:center;place-items:center;position:relative;width:100%}.outline,.background,.icon{inset:0;position:absolute}.outline,.background{border-radius:inherit}.outline{border-color:var(--md-checkbox-outline-color, var(--md-sys-color-on-surface-variant, #49454f));border-style:solid;border-width:var(--md-checkbox-outline-width, 2px);box-sizing:border-box}.background{background-color:var(--md-checkbox-selected-container-color, var(--md-sys-color-primary, #6750a4))}.background,.icon{opacity:0;transition-duration:150ms,50ms;transition-property:transform,opacity;transition-timing-function:cubic-bezier(0.3, 0, 0.8, 0.15),linear;transform:scale(0.6)}:where(.selected) :is(.background,.icon){opacity:1;transition-duration:350ms,50ms;transition-timing-function:cubic-bezier(0.05, 0.7, 0.1, 1),linear;transform:scale(1)}md-ripple{border-radius:var(--md-checkbox-state-layer-shape, var(--md-sys-shape-corner-full, 9999px));height:var(--md-checkbox-state-layer-size, 40px);inset:unset;width:var(--md-checkbox-state-layer-size, 40px);--md-ripple-hover-color: var(--md-checkbox-hover-state-layer-color, var(--md-sys-color-on-surface, #1d1b20));--md-ripple-hover-opacity: var(--md-checkbox-hover-state-layer-opacity, 0.08);--md-ripple-pressed-color: var(--md-checkbox-pressed-state-layer-color, var(--md-sys-color-primary, #6750a4));--md-ripple-pressed-opacity: var(--md-checkbox-pressed-state-layer-opacity, 0.12)}.selected md-ripple{--md-ripple-hover-color: var(--md-checkbox-selected-hover-state-layer-color, var(--md-sys-color-primary, #6750a4));--md-ripple-hover-opacity: var(--md-checkbox-selected-hover-state-layer-opacity, 0.08);--md-ripple-pressed-color: var(--md-checkbox-selected-pressed-state-layer-color, var(--md-sys-color-on-surface, #1d1b20));--md-ripple-pressed-opacity: var(--md-checkbox-selected-pressed-state-layer-opacity, 0.12)}.icon{fill:var(--md-checkbox-selected-icon-color, var(--md-sys-color-on-primary, #fff));height:var(--md-checkbox-icon-size, 18px);width:var(--md-checkbox-icon-size, 18px)}.mark.short{height:2px;transition-property:transform,height;width:2px}.mark.long{height:2px;transition-property:transform,width;width:10px}.mark{animation-duration:150ms;animation-timing-function:cubic-bezier(0.3, 0, 0.8, 0.15);transition-duration:150ms;transition-timing-function:cubic-bezier(0.3, 0, 0.8, 0.15)}.selected .mark{animation-duration:350ms;animation-timing-function:cubic-bezier(0.05, 0.7, 0.1, 1);transition-duration:350ms;transition-timing-function:cubic-bezier(0.05, 0.7, 0.1, 1)}.checked .mark,.prev-checked.unselected .mark{transform:scaleY(-1) translate(7px, -14px) rotate(45deg)}.checked .mark.short,.prev-checked.unselected .mark.short{height:5.6568542495px}.checked .mark.long,.prev-checked.unselected .mark.long{width:11.313708499px}.indeterminate .mark,.prev-indeterminate.unselected .mark{transform:scaleY(-1) translate(4px, -10px) rotate(0deg)}.prev-unselected .mark{transition-property:none}.prev-unselected.checked .mark.long{animation-name:prev-unselected-to-checked}@keyframes prev-unselected-to-checked{from{width:0}}:where(:hover) .outline{border-color:var(--md-checkbox-hover-outline-color, var(--md-sys-color-on-surface, #1d1b20));border-width:var(--md-checkbox-hover-outline-width, 2px)}:where(:hover) .background{background:var(--md-checkbox-selected-hover-container-color, var(--md-sys-color-primary, #6750a4))}:where(:hover) .icon{fill:var(--md-checkbox-selected-hover-icon-color, var(--md-sys-color-on-primary, #fff))}:where(:focus-within) .outline{border-color:var(--md-checkbox-focus-outline-color, var(--md-sys-color-on-surface, #1d1b20));border-width:var(--md-checkbox-focus-outline-width, 2px)}:where(:focus-within) .background{background:var(--md-checkbox-selected-focus-container-color, var(--md-sys-color-primary, #6750a4))}:where(:focus-within) .icon{fill:var(--md-checkbox-selected-focus-icon-color, var(--md-sys-color-on-primary, #fff))}:where(:active) .outline{border-color:var(--md-checkbox-pressed-outline-color, var(--md-sys-color-on-surface, #1d1b20));border-width:var(--md-checkbox-pressed-outline-width, 2px)}:where(:active) .background{background:var(--md-checkbox-selected-pressed-container-color, var(--md-sys-color-primary, #6750a4))}:where(:active) .icon{fill:var(--md-checkbox-selected-pressed-icon-color, var(--md-sys-color-on-primary, #fff))}:where(.disabled,.prev-disabled) :is(.background,.icon,.mark){animation-duration:0s;transition-duration:0s}:where(.disabled) .outline{border-color:var(--md-checkbox-disabled-outline-color, var(--md-sys-color-on-surface, #1d1b20));border-width:var(--md-checkbox-disabled-outline-width, 2px);opacity:var(--md-checkbox-disabled-container-opacity, 0.38)}:where(.selected.disabled) .outline{visibility:hidden}:where(.selected.disabled) .background{background:var(--md-checkbox-selected-disabled-container-color, var(--md-sys-color-on-surface, #1d1b20));opacity:var(--md-checkbox-selected-disabled-container-opacity, 0.38)}:where(.disabled) .icon{fill:var(--md-checkbox-selected-disabled-icon-color, var(--md-sys-color-surface, #fef7ff))}@media(forced-colors: active){.background{background-color:CanvasText}.selected.disabled .background{background-color:GrayText;opacity:1}.outline{border-color:CanvasText}.disabled .outline{border-color:GrayText;opacity:1}.icon{fill:Canvas}}/*# sourceMappingURL=checkbox-styles.css.map */
-`;
-
-/**
- * @license
- * Copyright 2018 Google LLC
- * SPDX-License-Identifier: Apache-2.0
- */
-/**
- * @summary Checkboxes allow users to select one or more items from a set.
- * Checkboxes can turn an option on or off.
- *
- * @description
- * Use checkboxes to:
- * - Select one or more options from a list
- * - Present a list containing sub-selections
- * - Turn an item on or off in a desktop environment
- *
- * @final
- * @suppress {visibility}
- */
-let MdCheckbox = class MdCheckbox extends Checkbox {
-};
-MdCheckbox.styles = [styles];
-MdCheckbox = __decorate([
-    t$3('md-checkbox')
-], MdCheckbox);
-
 // index.js
-window.addEventListener('DOMContentLoaded', function() {
-    const rocket = document.querySelector('.rocket'); // Use querySelector
-  
-    if (navigator.userAgent.indexOf('iPhone') > -1 || navigator.userAgent.indexOf('iPad') > -1) {
-      rocket.style.display = 'none'; // Access style directly after selection
-      document.querySelector('.fallback-image').style.display = 'block';
-    } else {
-      console.log('Not an iPhone or iPad');
-    }
-  });
+// Get the user's preferred color scheme
+let colorScheme = window.matchMedia('(prefers-color-scheme: dark)');
 
- /* function reveal() {
+// Define a function to toggle the body's class
+function toggleBodyClass(e) {
+  // If the user prefers dark mode, add the 'dark' class to the body
+  if (e.matches) {
+    document.body.classList.add('dark');
+  } else {
+    // Otherwise, remove the 'dark' class from the body
+    document.body.classList.remove('dark');
+  }
+}
+
+// Call the function once to set the initial class
+toggleBodyClass(colorScheme);
+
+// Add an event listener to the color scheme media query
+// This will call the function whenever the user changes their preference
+colorScheme.addListener(toggleBodyClass);
+
+
+// Optional: Event listener for dynamic changes
+window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', (event) => {
+  bodi.classList.remove('light');  // Always remove "light" first
+  if (event.matches) {
+    bodi.classList.add('dark');
+  }
+});
+window.addEventListener("DOMContentLoaded", function () {
+  const rocket = document.querySelector(".rocket"); // Use querySelector
+
+  if (
+    navigator.userAgent.indexOf("iPhone") > -1 ||
+    navigator.userAgent.indexOf("iPad") > -1
+  ) {
+    rocket.style.display = "none"; // Access style directly after selection
+    document.querySelector(".fallback-image").style.display = "block";
+  } else {
+    console.log("Not an iPhone or iPad");
+  }
+});
+
+/* function reveal() {
     var reveals = document.querySelectorAll("#main2");
     for (var i = 0; i < reveals.length; i++) {
       var windowHeight = window.innerHeight;
