@@ -20,7 +20,7 @@
 
         </div>
 
-        <div class="grid md:grid-cols-2 gap-8 p-8 md:p-12">
+        <div class="grid md:grid-cols-2 gap-8 p-4 md:p-12">
           <Card v-for="feature in FEATURES" class="text-center p-12 rounded-2xl border-gray-600 border-gradient">
             <CardHeader>
             <CardTitle>{{ feature.title }}</CardTitle>
@@ -28,6 +28,39 @@
             <CardDescription class="text-lg mt-4">{{ feature.description }}</CardDescription>
           </Card>
         </div>
+
+        <Card class="card-gradient p-6 md:p-16 rounded-3xl text-white">
+          <CardHeader>
+            <CardTitle class="text-3xl md:text-5xl text-white">Download Sketchware Pro</CardTitle>
+            <Separator class="w-40 h-1 bg-blue-600 my-4 md:my-8 border-gradient" />
+          </CardHeader>
+          <CardContent>
+            <CardDescription class="text-lg md:text-xl leading-relaxed mb-8">
+              Sketchware Pro is a powerful Android app that allows you to create apps on your phone or tablet. It is a visual programming language that is easy to learn and use. You can download the latest version of Sketchware Pro from the link below.
+            </CardDescription>
+
+            <div class="flex gap-8 justify-between">
+              <Card class="w-full">
+                <CardHeader>
+                  <CardTitle class="text-xl md:text-2xl text-muted-foreground mb-2 text-center">GitHub Stars</CardTitle>
+                  <Separator />
+                </CardHeader>
+                <CardContent class="text-2xl pb-4 text-center">
+                  <CardDescription class="text-5xl md:text-6xl text-gray-100 font-bold">{{ stargazersCount }}</CardDescription>
+                </CardContent>
+              </Card>
+              <Card class="w-full">
+                <CardHeader>
+                  <CardTitle class="text-xl md:text-2xl text-muted-foreground mb-2 text-center">GitHub Forks</CardTitle>
+                  <Separator />
+                </CardHeader>
+                <CardContent class="text-2xl pb-4 text-center">
+                  <CardDescription class="text-5xl md:text-6xl text-gray-100 font-bold">{{ forks }}</CardDescription>
+                </CardContent>
+              </Card>
+            </div>
+</CardContent>
+</Card>          
 
 
     </div>
@@ -53,6 +86,25 @@ import {
 } from '@/components/ui/card'
 
 import { FEATURES } from '@/components/data';
+
+const API_URL = 'https://api.github.com/repos/Sketchware-Pro/Sketchware-Pro'
+import { ref, onMounted } from 'vue';
+
+const stargazersCount = ref('');
+const forks = ref(0);
+
+onMounted(async () => {
+  try {
+    const response = await fetch(API_URL);
+    if (!response.ok) throw new Error('Failed to fetch data');
+    const data = await response.json();
+    stargazersCount.value = data.stargazers_count;
+    forks.value = data.forks;
+
+  } catch (error) {
+    console.error('Error fetching GitHub data:', error);
+  }
+});
 
 
 </script>

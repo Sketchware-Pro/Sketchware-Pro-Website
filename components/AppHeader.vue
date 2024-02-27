@@ -2,8 +2,8 @@
 
     <header class="p-2 md:p-4 backdrop-blur-xl sticky top-0">
         <div class="flex items-center justify-between gap-4">
-            <div class="flex items-center gap-4">
-                <img class="h-12 md:h-16 md:w-16"
+            <div class="flex items-center gap-4 p-1">
+                <img class="h-10 md:h-16 md:w-16"
                     src="https://raw.githubusercontent.com/Sketchware-Pro/Sketchware-Pro/main/assets/Sketchware-Pro.png"
                     alt="Logo" />
                 <a href="/"
