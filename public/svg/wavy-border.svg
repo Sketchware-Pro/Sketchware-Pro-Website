@@ -1,0 +1,3 @@
+<svg id="wavy-separator" viewBox="0 0 100 10" xmlns="http://www.w3.org/2000/svg">
+    <path d="M0 5 C20 8 40 2 60 5 S80 8 100 5" fill="none" stroke="#ddd" stroke-width="2" />
+</svg>

@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
+
+
+* {
+	font-family: "IBM Plex Sans";
+}
+
+.font-serif {
+	font-family: "IBM Plex Serif";
+}
+
+.border-gradient {
+	display: grid;
+	place-content: center;
+	color: white;
+	text-shadow: 0 1px 0 #000;
+	
+	--border-angle: 0turn;
+	--main-bg: conic-gradient(
+		from var(--border-angle),
+		#213,
+		#112 5%,
+		#112 60%,
+		#213 95%
+	  );
+	
+	border: solid 2px transparent;
+	border-radius: 2em;
+	--gradient-border: conic-gradient(from var(--border-angle), transparent 25%, #004988, #710017 100%, transparent);
+	
+	background: 
+	    var(--main-bg) padding-box,
+	    var(--gradient-border) border-box, 
+	    var(--main-bg) border-box;
+	
+	background-position: center center;
+  
+	animation: bg-spin 3s linear infinite;
+	@keyframes bg-spin {
+	    to {
+		    --border-angle: 1turn;
+	    }
+	}
+  
+}
+
+@property --border-angle {
+	syntax: "<angle>";
+	inherits: true;
+	initial-value: 0turn;
+}
+
+.card-gradient {
+	display: grid;
+	place-content: center;
+	text-shadow: 0 1px 0 #000;
+	
+	--border-angle: 0turn;
+	--main-bg: conic-gradient(
+		from var(--border-angle),
+		#04050e,
+		#04050e 5%,
+		#04050e 60%,
+		#04050e 95%
+	  );
+	
+	
+	
+	border: solid 2px transparent;
+	border-radius: 2em;
+	--gradient-border: conic-gradient(from var(--border-angle), transparent 70%, #0051ff, #00ffdd 100%, transparent);
+	
+	background: 
+		var(--main-bg) padding-box,
+	    var(--gradient-border) border-box,
+	    var(--main-bg) border-box;
+	
+  
+	animation: bg-spin 3s linear infinite;
+	@keyframes bg-spin {
+	    to {
+		    --border-angle: 1turn;
+	    }
+	}
+  
+}
