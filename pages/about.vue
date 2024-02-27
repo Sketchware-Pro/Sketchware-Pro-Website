@@ -3,17 +3,16 @@
         <div class="bg-gray-100 dark:bg-[#0b1026]">
             <AppHeader />
 
-            <Card class="container mx-auto py-12 border-gradient">
+            <Card class="container mx-auto py-12 md:border-gradient px-4 md:p-[2rem]">
 
                 <CardHeader>
-                    <CardTitle class="text-5xl">About Sketchware Pro</CardTitle>
+                    <CardTitle class="text-3xl md:text-5xl">About Sketchware Pro</CardTitle>
                     <Separator class="w-40 h-1 bg-blue-600 my-8 border-gradient" />
-
                 </CardHeader>
 
                 <CardContent>
 
-                    <CardDescription class=" dark:text-gray-300 text-xl leading-relaxed">
+                    <CardDescription class=" dark:text-gray-300 text-lg md:text-xl leading-relaxed">
                         Sketchware Pro is a modified version of Sketchware, an Android app development platform. It was
                         created to enhance the functionality and features of the original Sketchware app. Sketchware Pro is
                         an open-source project that is maintained by a community of contributors. The goal of Sketchware Pro

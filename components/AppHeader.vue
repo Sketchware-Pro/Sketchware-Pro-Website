@@ -7,7 +7,7 @@
                     src="https://raw.githubusercontent.com/Sketchware-Pro/Sketchware-Pro/main/assets/Sketchware-Pro.png"
                     alt="Logo" />
                 <a href="/"
-                    class="scroll-m-20 text-3xl md:text-4xl font-semibold tracking-wide transition-colors text-[#2394FF] hover:underline">Sketchware
+                    class="scroll-m-20 text-2xl md:text-4xl font-semibold tracking-wide transition-colors text-[#2394FF] hover:underline">Sketchware
                     <span class="scroll-m-20 text-2xl md:text-3xl font-medium text-gray-700 dark:text-gray-300">Pro</span>
                 </a>
             </div>
@@ -21,16 +21,16 @@
                     <img class="h-8 w-8 dark:invert" src="/svg/menu.svg" alt="Menu" />
                 </SheetTrigger>
 
-                <SheetContent class="bg-green-50 text-gray-200 p-4 dark:bg-[#0b1026] rounded-s-3xl flex flex-col justify-between">
+                <SheetContent class="bg-green-200 text-gray-200 p-4 rounded-s-3xl flex flex-col justify-between">
                         <div class="flex flex-col gap-4 py-8">
-                            <a v-for="header in HEADERS" class="flex gap-2 text-left rounded-3xl bg-green-300 text-2xl font-medium  hover:underline p-4 text-gray-600" :href="header.link">
+
+                            <div v-for="header in HEADERS" class="flex items-center gap-2 text-left rounded-3xl bg-green-300 text-xl font-medium hover:underline p-4 text-gray-600">
                                 <img class="h-8 w-8 p-1" :src="header.icon" :alt="header.title"  />
-                                
-                                {{ header.title }}
-                            </a>
+                                <a  :href="header.link" class="no-underline">{{ header.title }}</a>
+                            </div>
                         </div>
 
-                        <Button class="rounded-full p-6 text-xl md:text-2xl tracking-widest font-semibold border-gray-400 text-gray-600 toggle" variant="outline" >
+                        <Button class="rounded-full p-4 text-lg tracking-widest font-semibold border-gray-400 text-gray-600 toggle" variant="outline" >
                             Switch to Light Mode
                         </Button>
                 </SheetContent>

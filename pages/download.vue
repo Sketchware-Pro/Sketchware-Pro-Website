@@ -5,11 +5,11 @@
     <div class="flex flex-col gap-4 dark:bg-[#0b1026] text-gray-100">
         <AppHeader />
         
-        <div class="p-16">
-        <Card class="card-gradient p-16 rounded-3xl">
+        <div class="p-8 md:p-16">
+        <Card class="card-gradient p-6 md:p-16 rounded-3xl">
             <CardHeader>
-                <CardTitle class="text-5xl">Download Sketchware Pro</CardTitle>
-                <Separator class="w-40 h-1 bg-blue-600 my-8 border-gradient" />
+                <CardTitle class="text-3xl md:text-5xl">Download Sketchware Pro</CardTitle>
+                <Separator class="w-40 h-1 bg-blue-600 my-4 md:my-8 border-gradient" />
             </CardHeader>
             <CardContent>
                 <CardDescription class="text-xl leading-relaxed mb-8">
