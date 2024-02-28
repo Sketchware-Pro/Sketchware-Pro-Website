@@ -31,7 +31,7 @@
 
         <Card class="card-gradient p-4 md:p-16 rounded-3xl text-white">
           <CardHeader>
-            <CardTitle class="text-2xl md:text-5xl text-white">Download Sketchware Pro</CardTitle>
+            <CardTitle class="text-2xl md:text-5xl text-white">GitHub Stats</CardTitle>
             <Separator class="w-40 h-1 bg-blue-600 my-2 md:my-8 border-gradient" />
           </CardHeader>
           <CardContent class="px-3">

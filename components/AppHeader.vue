@@ -1,7 +1,8 @@
 <template>
-
     <header class="p-2 md:p-4 backdrop-blur-xl sticky top-0">
-        <div class="flex items-center justify-between gap-4">
+        <SpeedInsights />
+
+        <div class="flex items-center justify-between gap-4 pr-4">
             <div class="flex items-center gap-4 p-1">
                 <img class="h-10 md:h-16 md:w-16"
                     src="https://raw.githubusercontent.com/Sketchware-Pro/Sketchware-Pro/main/assets/Sketchware-Pro.png"
@@ -11,9 +12,9 @@
                     <span class="scroll-m-20 text-2xl md:text-3xl font-medium text-gray-700 dark:text-gray-300">Pro</span>
                 </a>
             </div>
-            <nav class="hidden md:flex gap-6 text-gray-600 dark:text-gray-200 justify-center items-center">
+            <nav class="hidden md:flex gap-4 text-gray-600 dark:text-gray-200 justify-center items-center ">
                 <a v-for="header in HEADERS" :key="header.title" :href="header.link"
-                    class="text-2xl font-semibold text-center no-underline hover:underline font-sans">{{ header.title }}</a>
+                    class="text-xl font-semibold text-center no-underline hover:underline font-mono">{{ header.title }}</a>
             </nav>
 
             <Sheet>
@@ -49,6 +50,7 @@ import {
     SheetContent,
     SheetTrigger,
 } from '@/components/ui/sheet'
+import { SpeedInsights } from "@vercel/speed-insights/nuxt"
 
 </script>
   
