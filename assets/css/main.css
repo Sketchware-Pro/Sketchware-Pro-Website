@@ -71,7 +71,7 @@
   border-radius: 2em;
   --gradient-border: conic-gradient(
     from var(--border-angle),
-    transparent 70%,
+    transparent 80%,
     #0051ff,
     #00ffdd 100%,
     transparent
@@ -80,7 +80,7 @@
   background: var(--main-bg) padding-box, var(--gradient-border) border-box,
     var(--main-bg) border-box;
 
-  animation: bg-spin 3s linear infinite;
+  animation: bg-spin 6s linear infinite;
   @keyframes bg-spin {
     to {
       --border-angle: 1turn;
@@ -88,3 +88,39 @@
   }
 }
 
+.separator-gradient-1 {
+  display: grid;
+  place-content: center;
+  text-shadow: 0 1px 0 #000;
+
+  --border-angle: 0turn;
+  --main-bg: conic-gradient(
+    from var(--border-angle),
+    #213,
+    #112 5%,
+    #112 60%,
+    #213 95%
+  );
+
+  border: solid 2px transparent;
+  border-radius: 2em;
+  --gradient-border: conic-gradient(
+    from var(--border-angle),
+    transparent 25%,
+    #00665e,
+    #004a78 100%,
+    transparent
+  );
+
+  background: var(--main-bg) padding-box, var(--gradient-border) border-box,
+    var(--main-bg) border-box;
+
+  background-position: center center;
+
+  animation: bg-spin 3s linear infinite;
+  @keyframes bg-spin {
+    to {
+      --border-angle: 1turn;
+    }
+  }
+}
