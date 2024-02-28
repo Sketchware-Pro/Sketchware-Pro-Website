@@ -1,57 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-.fullscreen-on-scroll {
-  /* Initially hidden */
-  display: none;
-  position: absolute; /* Avoids overlaying content */
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Material Design Drawer</title>
+<style>
+  /* Styles for the drawer container */
+.drawer-container {
+  display: flex;
+  min-height: 100vh; /* Ensure content fills viewport height */
+}
+
+/* Styles for the drawer itself */
+.drawer {
+  position: fixed;
+  top: 0;
+  left: -100%; /* Start hidden off-screen */
+  width: 250px; /* Adjust width as needed */
+  background-color: white;
+  box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.16);
+  transition: left 0.3s ease-in-out; /* Smooth transition */
+  z-index: 10; /* Ensure drawer is above other content */
+}
+
+/* Styles for drawer content */
+.drawer ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.drawer li {
+  padding: 16px;
+  border-bottom: 1px solid #ddd;
+  cursor: pointer;
+}
+
+/* Styles for the drawer toggle button */
+.drawer-toggle {
+  position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100vh;
-  background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent background */
-  transition: opacity 0.5s ease-in-out;
+  padding: 16px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 24px;
+  z-index: 11; /* Ensure button is above drawer */
 }
 
-.fullscreen-on-scroll.active {
-  opacity: 1; /* Becomes fully visible */
+/* Styles for the active drawer state (optional) */
+.drawer-container.active .drawer {
+  left: 0; /* Slide drawer in */
 }
 
-/* Trigger active state based on scroll position */
-.fullscreen-on-scroll {
-  scroll-behavior: smooth;
-  will-change: transform;
-}
 </style>
-<script>
-window.addEventListener('scroll', function() {
-  const element = document.querySelector('.fullscreen-on-scroll');
-  const scrollPosition = window.scrollY; // Get scroll position
-  const triggerPoint = 100; // Adjust trigger point (distance from top)
-
-  if (scrollPosition > triggerPoint) {
-    element.classList.add('active');
-  } else {
-    element.classList.remove('active');
-  }
-});
-</script>
-</head>
+ </head>
 <body>
-    <div style="height: 100vh;">
-        sus baka
-    </div>
-    <div class="content">
-        <h1>This is your page content</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        </div>
-      
-      <div class="fullscreen-on-scroll"></div>
-      
-      
-</body>
+  <div class="drawer-container">
+    <p>This is the main content area.</p>
+    
+    <button class="drawer-toggle">&#9776;</button> </div>
+
+  <div class="drawer">
+    <ul>
+      <li>Menu item 1</li>
+      <li>Menu item 2</li>
+      <li>Menu item 3</li>
+    </ul>
+  </div>
+
+  <script>
+const drawerToggle = document.querySelector('.drawer-toggle');
+const drawer = document.querySelector('.drawer');
+const container = document.querySelector('.drawer-container');
+
+drawerToggle.addEventListener('click', () => {
+  container.classList.toggle('active'); // Toggle active class on container
+});
+
+  </script> </body>
 </html>

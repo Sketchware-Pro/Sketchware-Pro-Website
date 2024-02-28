@@ -1,6 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-@import url(https://db.onlinewebfonts.com/c/41cdafd19e156a1f74759f9c88b878ff?family=Google+Sans+Text+Regular);
-
+@font-face{font-family:"Product Sans Bold";font-style:normal;font-weight:normal;src:local("Product Sans Bold"),url(/fonts/ProductSans-Bold.woff) format("woff"); font-display: swap;}@font-face{font-family:"Product Sans Regular";font-style:normal;font-weight:normal;src:local("Product Sans Regular"),url(/fonts/ProductSans-Regular.woff) format("woff");  }
 /* @keyframes comparison {
   0% {
     margin: 12px;
@@ -52,12 +50,12 @@
   }
   70% {
     height: 100vh;
-    margin: 12px 40px 12px 40px;
-    transition: margin-bottom 0.5s ease-in-out; /* Adjust duration and timing as needed */
+    margin: 12px 64px 12px 64px;
+    transition: margin-bottom 0.5s ease-in-out;
   }
 }
 @keyframes slideIn_bottom {
-  from { bottom: -100%; } /* Start from hidden position */
+  from { bottom: -100%; }
   to { bottom: 0; }
 
 }
@@ -78,7 +76,7 @@ body {
   margin-bottom: 20px;
   display: none;
   position: relative;
-  animation: slideIn_bottom 1s ease-in-out forwards;
+  animation: slideIn_bottom 0.5s ease-in-out forwards;
 }
 div.logo {
   margin-left: 4px;
@@ -91,7 +89,6 @@ div.logo {
   flex-direction: row;
   align-items: center;
   height: 100vh;
-  background-image: url(/img/bg3.png);
   background-repeat: no-repeat;
   background-size: cover;
   min-height: 800px;
@@ -296,7 +293,7 @@ footer {
   font-family: 'Product Sans Bold';
 }
 #footer a {
-  font-family: 'Google Sans Text Regular';
+  font-family: 'Product Sans Regular';
   color: #0b57d0;
   text-decoration:none;
   font-size: 18px;
@@ -323,8 +320,7 @@ footer {
   header {
     font-size: larger;
     height: 60px;
-    border-radius: 0px 0px 40px 40px;
-    position: inherit;
+    border-radius: 0px 0px 20px 20px;
     margin-bottom: 0px;
     box-shadow: 0px 0px 0px 0px #111111;
   }
@@ -339,7 +335,7 @@ footer {
     width: 22px;
     height: 22px;
     margin-left: 20px;
-    content: url(/img/menu.png);
+    content: url(/img/menu.webp);
   }
   header li a {
     display: none;
@@ -367,12 +363,11 @@ footer {
   #main {
     display: flex;
     flex-direction: column;
-    padding-top: 64px;
+    padding-top: 10px;
     margin-left: 4px;
     height: 100vh;
-    align-items: center;
-    justify-content: center;
-    background-image: none;
+    align-items: none;
+    justify-content: none;
   }
   #menu_img {
     display: none;
@@ -454,6 +449,7 @@ footer {
     justify-content: left;
     box-sizing: border-box;
     margin: 0px;
+    padding: 5px;
   }
   .footer_1 {
     display: none;
@@ -461,7 +457,7 @@ footer {
   @media (prefers-color-scheme: dark) {
 
   .logo img {
-    content: url(/img/menu-white.png);
+    content: url(/img/menu-white.webp);
   }
   }
 }
@@ -474,10 +470,7 @@ footer {
 }
 
 @media (prefers-color-scheme: dark) {
-  #main {
-    background-image: none;
-  }
   .fallback-image {
-    content: url(/img/mockup_dark.png);
+    content: url(/img/mockup_dark.webp);
   }
 }

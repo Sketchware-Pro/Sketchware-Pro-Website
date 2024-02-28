@@ -1,4 +1,4 @@
-// index.js
+// NOTICE: To compile this file, run `npx rollup -p @rollup/plugin-node-resolve script/index.js -o script/bundle.js` in the terminal, and then minify the generated bundle.js into bundle-min.js
 import "@material/web/button/filled-button.js";
 // Get the user's preferred color scheme
 let colorScheme = window.matchMedia('(prefers-color-scheme: dark)');

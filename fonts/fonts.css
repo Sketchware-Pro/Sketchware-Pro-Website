@@ -5,7 +5,7 @@
     src: local('Product Sans Regular'), url('ProductSans-Regular.woff') format('woff');
     }
     
-
+/*
     @font-face {
     font-family: 'Product Sans Italic';
     font-style: normal;
@@ -69,7 +69,7 @@
     src: local('Product Sans Medium Italic'), url('ProductSans-MediumItalic.woff') format('woff');
     }
     
-
+*/
     @font-face {
     font-family: 'Product Sans Bold';
     font-style: normal;
@@ -77,7 +77,7 @@
     src: local('Product Sans Bold'), url('ProductSans-Bold.woff') format('woff');
     }
     
-
+/*
     @font-face {
     font-family: 'Product Sans Bold Italic';
     font-style: normal;
@@ -91,4 +91,4 @@
     font-style: normal;
     font-weight: normal;
     src: local('Product Sans Black Italic'), url('ProductSans-BlackItalic.woff') format('woff');
-    }
+    } */
