@@ -21,18 +21,19 @@
                     <img class="h-8 w-8 dark:invert" src="/svg/menu.svg" alt="Menu" />
                 </SheetTrigger>
 
-                <SheetContent class="bg-green-200 text-gray-200 p-4 rounded-s-3xl flex flex-col justify-between">
+                <SheetContent class="bg-slate-800 p-4 flex flex-col rounded-s-3xl">
+
+                <SheetHeader class="text-gray-200">
+                    <SheetTitle class="text-2xl font-semibold text-gray-300">Menu</SheetTitle>
+                </SheetHeader>
+
                         <div class="flex flex-col gap-4 py-8">
 
-                            <div v-for="header in HEADERS" class="flex items-center gap-2 text-left rounded-3xl bg-green-300 text-xl font-medium hover:underline p-4 text-gray-600">
-                                <img class="h-8 w-8 p-1" :src="header.icon" :alt="header.title"  />
-                                <a  :href="header.link" class="no-underline">{{ header.title }}</a>
-                            </div>
+                            <a v-for="header in HEADERS" class="flex items-center gap-2 text-left rounded-3xl bg-slate-950 text-xl font-medium hover:underline p-4 text-gray-400" :href="header.link">
+                                <img class="h-8 w-8 p-1 invert" :src="header.icon" :alt="header.title"  />
+                                {{ header.title }}
+                            </a>
                         </div>
-
-                        <Button class="rounded-full p-4 text-lg tracking-widest font-semibold border-gray-400 text-gray-600 toggle" variant="outline" >
-                            Switch to Light Mode
-                        </Button>
                 </SheetContent>
             </Sheet>
         </div>

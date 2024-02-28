@@ -8,7 +8,7 @@
 
       <div class="flex flex-col gap-8 rounded-3xl items-center text-center md:p-16 p-8 md:px-64 text-white" style="background-image: url(&quot;https://lh3.googleusercontent.com/2OrUzHCRSI-V46Z1qJBh90usG6OkKwCbXN80FbrjkWoQz4VfoJjNAoQHLHPQRZWH7dI_m5I1gi48h6xMJ5pK6kkdXmUnXPe4VqwvEdo4QeWRjLV9Oew=w2400-rj&quot;);  background-size: cover;">
           <h1 class="font-semibold md:font-bold text-4xl md:text-8xl text-gray-800">Sketchware Pro</h1>
-          <p class="text-lg md:text-2xl text-gray-600 tracking-tight md:tracking-normal">
+          <p class="text-lg md:text-2xl text-gray-600 md:tracking-normal">
             Sketchware Pro is a powerful Android app that allows you to create apps on your phone or tablet. It is a
             visual programming language that is easy to learn and use.
           </p>
@@ -29,17 +29,17 @@
           </Card>
         </div>
 
-        <Card class="card-gradient p-6 md:p-16 rounded-3xl text-white">
+        <Card class="card-gradient p-4 md:p-16 rounded-3xl text-white">
           <CardHeader>
-            <CardTitle class="text-3xl md:text-5xl text-white">Download Sketchware Pro</CardTitle>
-            <Separator class="w-40 h-1 bg-blue-600 my-4 md:my-8 border-gradient" />
+            <CardTitle class="text-2xl md:text-5xl text-white">Download Sketchware Pro</CardTitle>
+            <Separator class="w-40 h-1 bg-blue-600 my-2 md:my-8 border-gradient" />
           </CardHeader>
-          <CardContent>
+          <CardContent class="px-3">
             <CardDescription class="text-lg md:text-xl leading-relaxed mb-8">
               Sketchware Pro is a powerful Android app that allows you to create apps on your phone or tablet. It is a visual programming language that is easy to learn and use. You can download the latest version of Sketchware Pro from the link below.
             </CardDescription>
 
-            <div class="flex gap-8 justify-between">
+            <div class="flex gap-4 md:gap-8 justify-between">
               <Card class="w-full">
                 <CardHeader>
                   <CardTitle class="text-xl md:text-2xl text-muted-foreground mb-2 text-center">GitHub Stars</CardTitle>

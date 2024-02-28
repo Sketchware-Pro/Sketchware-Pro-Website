@@ -13,7 +13,8 @@ const COMMUNITY = [
 ];
 
 const SWPRO = [
-  { title: "Download", link: "https://github.com/Sketchware-pro/Sketchware-Pro/releases" },
+  { title: "Download", link: "/download" },
+  { title: "Team" , link: "/team" },
   { title: "Blog", link: "/blog" },
   { title: "Documentation", link: "https://sketchware-pro.vercel.app/docs" },
 ];
@@ -27,6 +28,7 @@ const MORE = [
 const HEADERS = [
   { title: "About", link: "/about", icon: "/svg/info.svg" },
   { title: "Download", link: "/download", icon: "/svg/download.svg" },
+  { title: "Team" , link: "/team", icon: "/svg/teams.svg" },
   { title: "Blog", link: "/blog", icon: "/svg/blog.svg" },
   { title: "Github", link: "https://github.com/Sketchware-Pro/Sketchware-Pro", icon: "/svg/github.svg" },
   { title: "Discord", link: "https://discord.gg/Sgbb3nmv4A", icon: "/svg/discord.svg"},

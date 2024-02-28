@@ -6,7 +6,7 @@
 
             <div class="p-8 md:p-16 rounded-3xl">
                 <CardHeader>
-                    <CardTitle class="text-3xl md:text-5xl">Main Modders</CardTitle>
+                    <CardTitle class="text-3xl md:text-5xl">Team</CardTitle>
                     <Separator class="w-40 h-1 bg-blue-600 my-4 md:my-8 border-gradient rounded-lg" />
                 </CardHeader>
                 <CardContent class="md:px-16">
@@ -72,9 +72,9 @@ const CONTRIBUTORS_API = 'https://api.github.com/repos/Sketchware-Pro/Sketchware
 
 const mainModders = ref([
     {
-        login: 'John Doe',
+        login: 'Pranav Purwar',
         contributions: 100,
-        avatar_url: 'https://avatars.githubusercontent.com/u/1?v=4'
+        avatar_url: 'https://avatars.githubusercontent.com/u/75154889?v=4'
     }
 ])
 
@@ -82,7 +82,7 @@ const contributors = ref([
     {
         login: 'John Doe',
         contributions: 100,
-        avatar_url: 'https://avatars.githubusercontent.com/u/1?v=4'
+        avatar_url: 'https://avatars.githubusercontent.com/u/75154889?v=4'
     }
 ])
 

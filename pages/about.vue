@@ -26,25 +26,25 @@
                     </CardDescription>
 
                     <Card class="px-4 mt-8">
-                        <Accordion type="single" collapsible>
+                        <Accordion type="single" collapsible class="text-xl text-left">
                             <AccordionItem value="item-1">
-                                <AccordionTrigger class="text-xl">Is it safe?</AccordionTrigger>
-                                <AccordionContent class="text-gray-400 text-lg">
+                                <AccordionTrigger>Is it safe?</AccordionTrigger>
+                                <AccordionContent class="text-gray-400 text-lg px-2">
                                     Yes. Sketchware Pro is safe to use. It is an open-source project, and its source code is
                                     available for review on GitHub.
                                 </AccordionContent>
                             </AccordionItem>
                             <AccordionItem value="item-2">
-                                <AccordionTrigger class="text-xl">How is it different from the original Sketchware?</AccordionTrigger>
-                                <AccordionContent class="text-gray-400 text-lg">
+                                <AccordionTrigger>How is it different from the original Sketchware?</AccordionTrigger>
+                                <AccordionContent class="text-gray-400 text-lg px-2">
                                     Sketchware Pro offers additional features, improvements, and customization options
                                     compared to the original Sketchware app. It is an open-source project that is maintained
                                     by a community of contributors.
                                 </AccordionContent>
                             </AccordionItem>
                             <AccordionItem value="item-3">
-                                <AccordionTrigger class="text-xl">How can I contribute to Sketchware Pro?</AccordionTrigger>
-                                <AccordionContent class="text-gray-400 text-lg">
+                                <AccordionTrigger>How can I contribute to Sketchware Pro?</AccordionTrigger>
+                                <AccordionContent class="text-gray-400 text-lg px-2">
                                     You can contribute to Sketchware Pro by fixing bugs, adding new features, and improving
                                     the platform. The source code is available on GitHub, and you can submit pull requests to
                                     contribute to its development.
