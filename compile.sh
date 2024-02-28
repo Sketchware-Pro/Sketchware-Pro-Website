@@ -1,0 +1,1 @@
+npx rollup -p @rollup/plugin-node-resolve script/index.js -o script/bundle.js

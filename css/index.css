@@ -302,6 +302,63 @@ footer {
 .footer_1 {
   text-align: left;
 }
+.backdrop-container{
+  display: none;
+  position: fixed;
+  z-index: 2; 
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%; 
+  overflow: auto; 
+  -webkit-animation: fadeIn 0.6s ease-in-out;
+  animation: fadeIn 0.6s ease-in-out;
+}
+
+.sidenav-container {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 3;
+  top: 0;
+  left: 0;
+  background-color: var(--md-sys-color-surface-container);
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sidenav-container a {
+  text-decoration: none;
+  font-size: 1rem;
+  color: var(--md-sys-color-on-surface-container);
+  display: block;
+  transition: 0.3s;
+  margin: 10px 0;
+}
+
+.sidenav-container a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav-container .closebtn {
+  font-size: 3rem;
+  font-weight: 700;
+  color:#C9002B ;
+  padding-right: 1rem;
+} 
+
+.sidenav-container .drawer-close-button{
+  height: 3rem;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-bottom: 3rem;
+}
 @media (min-width: 100px) and (max-width: 1024px) {
   .fallback-image {
     display: block;

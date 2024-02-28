@@ -1,83 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Material Design Drawer</title>
-<style>
-  /* Styles for the drawer container */
-.drawer-container {
-  display: flex;
-  min-height: 100vh; /* Ensure content fills viewport height */
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+      /* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
-/* Styles for the drawer itself */
-.drawer {
-  position: fixed;
-  top: 0;
-  left: -100%; /* Start hidden off-screen */
-  width: 250px; /* Adjust width as needed */
-  background-color: white;
-  box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.16);
-  transition: left 0.3s ease-in-out; /* Smooth transition */
-  z-index: 10; /* Ensure drawer is above other content */
+header {
+    background-color: var(--primary-color); /* Set your primary color here */
+    color: white;
+    padding: 1rem;
+    display: flex;
+    justify-content: flex-end;
 }
 
-/* Styles for drawer content */
-.drawer ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
+#toggleDrawer {
+    font-size: 1.5rem;
+    cursor: pointer;
 }
 
-.drawer li {
-  padding: 16px;
-  border-bottom: 1px solid #ddd;
-  cursor: pointer;
+#myDrawer {
+    position: fixed;
+    top: 0;
+    left: -250px; /* Initial position (off-screen) */
+    width: 250px;
+    height: 100%;
+    background-color: #212121; /* Set your drawer color here */
+    transition: left 0.3s ease;
 }
 
-/* Styles for the drawer toggle button */
-.drawer-toggle {
-  position: fixed;
-  top: 0;
-  left: 0;
-  padding: 16px;
-  background-color: transparent;
-  border: none;
-  cursor: pointer;
-  font-size: 24px;
-  z-index: 11; /* Ensure button is above drawer */
+#myDrawer ul {
+    list-style: none;
+    padding: 0;
 }
 
-/* Styles for the active drawer state (optional) */
-.drawer-container.active .drawer {
-  left: 0; /* Slide drawer in */
+#myDrawer li {
+    padding: 1rem;
 }
 
-</style>
- </head>
+#myDrawer a {
+    color: green;
+    text-decoration: none;
+}
+
+main {
+    padding: 2rem;
+}
+
+    </style>
+    <title>Material You Drawer</title>
+</head>
 <body>
-  <div class="drawer-container">
-    <p>This is the main content area.</p>
-    
-    <button class="drawer-toggle">&#9776;</button> </div>
+    <!-- Header -->
+    <header>
+        <button id="toggleDrawer">☰</button>
+    </header>
 
-  <div class="drawer">
-    <ul>
-      <li>Menu item 1</li>
-      <li>Menu item 2</li>
-      <li>Menu item 3</li>
-    </ul>
-  </div>
+    <!-- Drawer -->
+    <nav id="myDrawer">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <!-- Add more menu items as needed -->
+        </ul>
+    </nav>
 
-  <script>
-const drawerToggle = document.querySelector('.drawer-toggle');
-const drawer = document.querySelector('.drawer');
-const container = document.querySelector('.drawer-container');
+    <!-- Main Content -->
+    <main>
+        <h1>Welcome to My App</h1>
+        <p>This is the main content area.</p>
+    </main>
 
-drawerToggle.addEventListener('click', () => {
-  container.classList.toggle('active'); // Toggle active class on container
+    <!-- JavaScript -->
+    <script>
+      // script.js
+const toggleButton = document.getElementById('logoImg');
+const drawer = document.getElementById('myDrawer');
+
+toggleButton.addEventListener('click', () => {
+    drawer.style.left = drawer.style.left === '0px' ? '-250px' : '0px';
 });
 
-  </script> </body>
+    </script>
+</body>
 </html>

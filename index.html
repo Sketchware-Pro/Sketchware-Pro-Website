@@ -6,10 +6,26 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Gabarito:wght@400&family=Poppins:ital,wght@0,500&family=Roboto:ital,wght@0,500&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="css/index-min.css">
+        <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/light.css">
     <link rel="stylesheet" href="css/dark.css">
+<script>
+function openNav() {
+  //opens side navbar by 70 percent
+  document.getElementById("mySidenav").style.width = "70%" 
 
+ //opens overlay display
+  document.getElementById('backdrop').style.display = "block" 
+}
+
+function closeNav() {
+  //closes side navbar totally
+  document.getElementById("mySidenav").style.width = "0"
+
+  //removes overlay display
+  document.getElementById('backdrop').style.display = "none"
+}
+</script>
     <title>Sketchware Pro</title>
 </head>
 <body class="light" id="bodi">
@@ -17,14 +33,14 @@
   <nav>
     <div class="header-container">
     <div class="logo">
-      <img src="img/logo.webp" alt="SW Pro Logo">
+      <img src="img/logo.webp" alt="SW Pro Logo" onclick="openNav()">
       <p style="margin-left: 8px;">Sketchware Pro</p>
     </div>
     <ul class="nav-links">
       <li><a href="https://sketchware-pro.vercel.app/download">Download</a></li>
-      <li><a href="https://sketchware-pro.vercel.app/docs">Docs</a></li>
-      <li><a href="https://sketchware-pro.vercel.app/blog">Blog</a></li>
-      <li><a href="https://sketchware-pro.vercel.app/about">About</a></li>
+      <li><a href="https://sketchware-pro.vercel.app/docs">Docs</a>        </li>
+      <li><a href="https://sketchware-pro.vercel.app/blog">Blog</a>        </li>
+      <li><a href="https://sketchware-pro.vercel.app/about">About</a>      </li>
     </ul>
  <!--   <div id="menu_img_div">
       <img id="menu_img" height="24px" src="img/menu.webp" alt="menu">
@@ -32,6 +48,23 @@
   </div>
   </nav>
   </header>
+<!-- this would work as the backdrop when navbar is open-->
+<div class="backdrop-container" id="backdrop"></div>
+
+<!--the would be the drawer and it's content-->
+  <div id="mySidenav" class="sidenav-container">
+
+  <span class="drawer-close-button">
+<!--icon for closing of the navbar-->
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  </span>
+<!--Each links on the navbar-->
+<a href="https://sketchware-pro.vercel.app/download">Download</a>
+<a href="https://sketchware-pro.vercel.app/docs">Docs</a>        
+<a href="https://sketchware-pro.vercel.app/blog">Blog</a>        
+<a href="https://sketchware-pro.vercel.app/about">About</a>
+
+</div>
   <div id="main">
     <div id="sec1Text">
         <h1>Sketchware <a style="color: var(--md-sys-color-primary)">Pro</a>. Epic. Inside</u> out.</h1>
@@ -72,12 +105,12 @@
   <h2>Apptastic Features: Sketchware <a style="color: var(--md-sys-color-primary);">Pro</a>'s Toolkit for <u>Success</u><a style="color: var(--md-sys-color-primary);">.</a></h2>
   <div class="features">
     <div class="feature">
-      <img src="https://sketchware-pro.vercel.app/assets/images/woman_laying_down-358394bd78d90736f68548d4b3cfd9fa.png" alt="Easy to use" class="feature_img">
+      <img src="/img/easy.webp" alt="Easy to use" class="feature_img">
       <h4>Easy to use</h4>
       <p>Sketchware Pro was designed to be easily installed and used to get your app up and running quickly.</p>
     </div>
     <div class="feature">
-      <img src="https://sketchware-pro.vercel.app/assets/images/focus_on_matter-e8efd3d072b811190e18fdcdbbc9f283.png" alt="Focus on what matters" class="feature_img">
+      <img src="/img/focus.webp" alt="Focus on what matters" class="feature_img">
       <h4>Focus on what matters</h4>
       <p>Sketchware Pro lets you focus on your apps, and we'll do the chores. Go ahead and get started.</p>
     </div>
@@ -99,7 +132,7 @@
         <p>Whether you wanna ask a question, or just hang out, we have Discord and Telegram channels just for that.</p>
       </div>
       <div class="feature">
-        <img src="https://sketchware-pro.vercel.app/assets/images/free_forever-1cb0d6d2b47062ae0d47feee10a9b6d1.png" alt="Free" class="feature_img">
+        <img src="img/free.webp" alt="Free" class="feature_img">
         <h4>Free forever</h4>
         <p>Sketchware Pro is completely free. Sketchware Pro's source code is available on our GitHub repository.</p>
       </div>

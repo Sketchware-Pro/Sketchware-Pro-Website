@@ -1,4 +1,4 @@
-// NOTICE: To compile this file, run `npx rollup -p @rollup/plugin-node-resolve script/index.js -o script/bundle.js` in the terminal, and then minify the generated bundle.js into bundle-min.js
+// NOTICE: To compile this file, run `./compile.sh` or `npx rollup -p @rollup/plugin-node-resolve script/index.js -o script/bundle.js` in the terminal, and then minify the generated bundle.js into bundle-min.js
 import "@material/web/button/filled-button.js";
 // Get the user's preferred color scheme
 let colorScheme = window.matchMedia('(prefers-color-scheme: dark)');
@@ -33,10 +33,8 @@ window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', (ev
 });
 
 
-function openNav() {
-  document.getElementsByClassName("nav-links[0]").style.width = "70%";
-  document.getElementById("main").style.display = "block";
-}
+
+
 window.addEventListener("DOMContentLoaded", function () {
   const rocket = document.querySelector(".rocket"); // Use querySelector
 
