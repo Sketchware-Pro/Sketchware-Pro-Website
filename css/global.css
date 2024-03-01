@@ -222,7 +222,7 @@ footer p {
     width: 22px;
     height: 22px;
     margin-left: 20px;
-    content: url(/img/menu.webp);
+    content: url(../img/menu.webp);
     pointer-events: all;
   }
   header li a {
@@ -256,19 +256,19 @@ footer p {
   }
   @media (prefers-color-scheme: dark) {
     .logo img {
-      content: url(/img/menu-white.webp);
+      content: url(../img/menu-white.webp);
     }
   }
 }
 
 @media (prefers-color-scheme: dark) {
   .closebtn {
-    content: url(/img/close_white.png);
+    content: url(../img/close_white.png);
   }
   #home_icon {
-    content: url(/img/home_white.png);
+    content: url(../img/home_white.png);
   }
   #mySidenav img {
-    content: url(/img/swpro_white.svg);
+    content: url(../img/swpro_white.svg);
   }
 }
