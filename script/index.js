@@ -1,5 +1,8 @@
 // NOTICE: To compile this file, run `./compile.sh` or `npx rollup -p @rollup/plugin-node-resolve script/index.js -o script/bundle.js` in the terminal, and then minify the generated bundle.js into bundle-min.js
 import "@material/web/button/filled-button.js";
+import "@material/web/iconbutton/icon-button";
+import '@material/web/icon/icon';
+import "@material/web/divider/divider";
 // Get the user's preferred color scheme
 let colorScheme = window.matchMedia('(prefers-color-scheme: dark)');
 
@@ -34,35 +37,3 @@ window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', (ev
 
 
 
-
-window.addEventListener("DOMContentLoaded", function () {
-  const rocket = document.querySelector(".rocket"); // Use querySelector
-
-  if (
-    navigator.userAgent.indexOf("iPhone") > -1 ||
-    navigator.userAgent.indexOf("iPad") > -1
-  ) {
-    rocket.style.display = "none"; // Access style directly after selection
-    document.querySelector(".fallback-image").style.display = "block";
-  } else {
-    console.log("Not an iPhone or iPad");
-  }
-});
-
-/* function reveal() {
-    var reveals = document.querySelectorAll("#main2");
-    for (var i = 0; i < reveals.length; i++) {
-      var windowHeight = window.innerHeight;
-      var elementTop = reveals[i].getBoundingClientRect().top;
-      var elementVisible = 150;
-      if (elementTop < windowHeight - elementVisible) {
-        reveals[i].classList.add("active");
-      } else {
-        reveals[i].classList.remove("active");
-      }
-    }
-  }
-  window.addEventListener("scroll", reveal);
-
-// To check the scroll position on page load
-reveal(); */

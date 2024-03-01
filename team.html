@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Team</title>
+    <link rel="stylesheet" href="css/global.css" />
+    <link rel="stylesheet" href="css/light.css" />
+    <link rel="stylesheet" href="css/dark.css">
+    <script src="script/team-bundle.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gabarito:wght@400&family=Poppins:ital,wght@0,500&family=Roboto:ital,wght@0,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" /> 
+    <style>
+      /* Styles for modders list */
+.modders-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.modder-item {
+  display: flex;
+  align-items: center;
+  padding: 12px;
+  border-radius: 8px;
+  background-color: var(--md-sys-color-surface);
+}
+
+.modder-item img {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  margin-right: 16px;
+}
+
+.modder-info {
+  flex: 1;
+}
+
+.modder-username {
+  font-weight: bold;
+}
+
+.modder-description {
+  color: var(--md-sys-color-on-surface);
+}
+.loading-indicator {
+  text-align: center;
+  padding-top: 64px;
+}
+
+.spinner {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 4px solid var(--mdc-theme-primary);
+  border-top-color: transparent;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+#main {
+  width: 100%;
+  box-sizing: border-box;
+  font-family: "Gabarito", sans-serif;
+}
+md-divider {
+  padding-left: 3px;
+  padding-right: 3px;
+  width: 100%;
+  box-sizing: border-box;
+}
+    </style>
+    <script>
+      function openNav() {
+        document.getElementById("mySidenav").style.width = "85%";
+        document.getElementById("backdrop").style.display = "block";
+        document.getElementById("main").style.opacity = "0.3";
+      }
+
+      function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+        document.getElementById("backdrop").style.display = "none";
+        document.getElementById("main").style.opacity = "1";
+      }
+      function openLink(link) {
+        window.location.href = link;
+      }
+    </script>
+  </head>
+  <body class="light" style="width: 100%; box-sizing: border-box;">
+    <header>
+      <nav>
+        <div class="header-container">
+          <div class="logo">
+            <img src="img/logo.webp" alt="SW Pro Logo" onclick="openNav()" />
+            <div style="display: flex; justify-content: center">
+              <p style="margin-left: 8px; font-weight: 400;" onclick="location.href = '/';">Sketchware Pro</p>
+            </div>
+          </div>
+          <ul class="nav-links">
+            <li>
+              <a href="https://sketchware-pro.vercel.app/download">Download</a>
+            </li>
+            <li><a href="https://sketchware-pro.vercel.app/docs">Docs</a></li>
+            <li><a href="https://sketchware-pro.vercel.app/blog">Blog</a></li>
+            <li><a href="https://sketchware-pro.vercel.app/about">About</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <!-- this would work as the backdrop when navbar is open-->
+    <div class="backdrop-container" id="backdrop"></div>
+
+    <!--the would be the drawer and it's content-->
+    <div id="mySidenav" class="sidenav-container">
+      <span class="drawer-close-button">
+        <!--icon for closing of the navbar-->
+        <div style="display: flex; align-items: center; width: 100%">
+          <img
+            src="/img/swpro.svg"
+            alt="SW Pro Logo"
+            style="margin-left: 8px; height: 80%; width: 80%; color: white"
+          />
+        </div>
+        <md-icon-button onclick="closeNav()">
+          <span class="material-symbols-outlined">close</span>
+        </md-icon-button>
+      </span>
+
+      <md-divider></md-divider>
+      <div id="links">
+        <a href="/">
+          <span class="material-symbols-outlined">home</span> Home</a
+        >
+        <a onclick='openLink("https://sketchware-pro.vercel.app/download");'
+          ><span class="material-symbols-outlined">get_app</span>Download</a
+        >
+        <a onclick="openLink('https://sketchware-pro.vercel.app/docs')"
+          ><span class="material-symbols-outlined">menu_book</span>Docs</a
+        >
+        <a onclick="openLink('https://sketchware-pro.vercel.app/blog')"
+          ><span class="material-symbols-outlined">library_books</span>Blog</a
+        >
+        <md-divider></md-divider>
+        <p>About</p>
+        <a onclick="openLink('/team')" id="homeLink"><span class="material-symbols-outlined">groups</span>Team</a
+        >
+        <a onclick="openLink('https://sketchware-pro.vercel.app/about')"
+          ><span class="material-symbols-outlined">warning</span>Disclaimer</a
+        >
+      </div>
+    </div>
+
+<div id="main">
+<div id="loadingIndicator" class="loading-indicator">
+  <div class="spinner"></div>
+</div>
+    <div id="sec1" style="padding: 12px; padding-top: 64px; padding-bottom: 0px; font-family: 'Roboto';">
+        <h1 style="font-size: 40px;">Meet the Team</h1>
+        <p style="font-size: 20px;">This vibrant crew isn't just passionate about coding, they're fueled by the thrill of helping others bring their app ideas to life. From seasoned developers to design wizards, they're the masterminds behind Sketchware Pro, your gateway to app creation nirvana.</p>
+    </div>
+<ul id="moddersList" class="modders-list">
+  <li id="loading">Loading...</li>
+</ul>
+</div>
+
+
+    <footer>
+        <div id="footer">
+          <div class="footer_1">
+            <img src="img/logo.webp" alt="SWPro logo" style="height: 60px; width: 60px;">
+            <p style="font-size: 18px; width: 70%;">Sketchware Pro is a powerful app development tool that allows you to build apps without having to write even a single line of code.</p>
+          </div>
+          <div class="footer_col">
+            <h3>Sketchware Pro</h3>
+              <a href="https://sketchware-pro.vercel.app/download">Download</a></li>
+              <a href="https://sketchware-pro.vercel.app/docs">Documentation</a></li>
+              <a href="https://sketchware-pro.vercel.app/blog">Blog</a></li>
+          </div>
+          <div class="footer_col">
+            <h3>Community</h3>
+            
+            <a href="https://discord.gg/Dc8ZDBRK5V">Discord</a>
+              <a href="https://t.me/sketchwarepro">Telegram</a>
+              <a href="https://github.com/Sketchware-Pro/Sketchware-Pro/discussions">GitHub Discussions</a>
+              
+              </div>
+              <div class="footer_col">
+                <h3>More</h3>
+                
+                  <a href="https://github.com/Sketchware-Pro/Sketchware-Pro">GitHub</a>
+                  <a href="https://github.com/Sketchware-Pro/Sketchware-Pro-website">Website GitHub</a>
+               <a href="https://sketchware-pro.vercel.app/about">Disclaimer</a>
+                  
+                  </div>
+              </div>
+              <p>Built by NiceSapien.</p>
+      </footer>
+    <script>
+      let colorScheme = window.matchMedia("(prefers-color-scheme: dark)");
+
+      // Define a function to toggle the body's class
+      function toggleBodyClass(e) {
+        // If the user prefers dark mode, add the 'dark' class to the body
+        if (e.matches) {
+          document.body.classList.add("dark");
+        } else {
+          // Otherwise, remove the 'dark' class from the body
+          document.body.classList.remove("dark");
+        }
+      }
+
+      // Call the function once to set the initial class
+      toggleBodyClass(colorScheme);
+
+      // Add an event listener to the color scheme media query
+      // This will call the function whenever the user changes their preference
+      colorScheme.addListener(toggleBodyClass);
+
+      // Optional: Event listener for dynamic changes
+      window
+        .matchMedia("(prefers-color-scheme: dark)")
+        .addEventListener("change", (event) => {
+          bodi.classList.remove("light"); // Always remove "light" first
+          if (event.matches) {
+            bodi.classList.add("dark");
+          } else {
+            // No need to explicitly remove "dark" here
+          }
+        });
+// Get loading indicator element
+const loadingIndicator = document.getElementById('loadingIndicator');
+
+// Display loading indicator
+loadingIndicator.style.display = 'block';
+
+// Fetch data from the provided URL
+fetch('https://sketchware-pro.github.io/Sketchware-Pro/aboutus.json')
+  .then(response => response.json())
+  .then(data => {
+    // Hide loading indicator
+    loadingIndicator.style.display = 'none';
+    
+    // Extract the 'moddersteam' array from the fetched data
+    const moddersTeam = data.moddersteam;
+    
+    // Get the ul element to append list items
+    const moddersList = document.getElementById('moddersList');
+    
+    // Flags to track if labels are already added
+    let mainModdersLabelAdded = false;
+    let contributorsLabelAdded = false;
+    
+    // Loop through the moddersTeam array and create list items
+    moddersTeam.forEach((modder, index) => {
+      // Create list item
+      const listItem = document.createElement('li');
+      listItem.classList.add('modder-item');
+
+      // Create and set modder image
+      const modderImage = document.createElement('img');
+      modderImage.src = modder.modder_img;
+      listItem.appendChild(modderImage);
+
+      // Create modder info container
+      const modderInfo = document.createElement('div');
+      modderInfo.classList.add('modder-info');
+
+      // Create and set modder username
+      const modderUsername = document.createElement('div');
+      modderUsername.classList.add('modder-username');
+      modderUsername.textContent = modder.modder_username;
+      modderInfo.appendChild(modderUsername);
+
+      // Create and set modder description
+      const modderDescription = document.createElement('div');
+      modderDescription.classList.add('modder-description');
+      modderDescription.textContent = modder.modder_description;
+      modderInfo.appendChild(modderDescription);
+
+      // Append modder info to list item
+      listItem.appendChild(modderInfo);
+
+      // Append list item to list
+      moddersList.appendChild(listItem);
+
+      // Add padding to list item
+      listItem.style.padding = '12px';
+
+      // Check if modder is a main modder and if main modders label is not already added
+      if (modder.isMainModder && !mainModdersLabelAdded) {
+        // Create label for main modders
+        const mainModdersLabel = document.createElement('h2');
+        mainModdersLabel.textContent = "Main Modders";
+        mainModdersLabel.style.padding = '12px';
+        moddersList.insertBefore(mainModdersLabel, listItem);
+        mainModdersLabelAdded = true; // Update flag to indicate label is added
+      }
+
+      // Check if modder is not a main modder and if contributors label is not already added
+      if (!modder.isMainModder && !contributorsLabelAdded) {
+        // Create label for contributors
+        const contributorsLabel = document.createElement('h2');
+        contributorsLabel.textContent = "Contributors";
+        contributorsLabel.style.padding = '12px';
+        moddersList.insertBefore(contributorsLabel, listItem);
+        contributorsLabelAdded = true; // Update flag to indicate label is added
+      }
+
+      // Add md-divider between list items, except for the last one
+      if (index < moddersTeam.length - 1) {
+        const divider = document.createElement('md-divider');
+        moddersList.appendChild(divider);
+      }
+
+      document.getElementById('loading').style.display = 'none';
+    });
+  })
+  .catch(error => {
+    // Hide loading indicator in case of error
+    loadingIndicator.style.display = 'none';
+    console.error('Error fetching data:', error);
+  });
+
+    </script>
+  </body>
+</html>

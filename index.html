@@ -6,24 +6,25 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Gabarito:wght@400&family=Poppins:ital,wght@0,500&family=Roboto:ital,wght@0,500&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="css/index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />    
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/global.css">
     <link rel="stylesheet" href="css/light.css">
     <link rel="stylesheet" href="css/dark.css">
 <script>
 function openNav() {
-  //opens side navbar by 70 percent
-  document.getElementById("mySidenav").style.width = "70%" 
-
- //opens overlay display
-  document.getElementById('backdrop').style.display = "block" 
+  document.getElementById("mySidenav").style.width = "85%";
+  document.getElementById('backdrop').style.display = "block"; 
+  document.getElementById('main').style.opacity = "0.3";
 }
 
 function closeNav() {
-  //closes side navbar totally
-  document.getElementById("mySidenav").style.width = "0"
-
-  //removes overlay display
-  document.getElementById('backdrop').style.display = "none"
+  document.getElementById("mySidenav").style.width = "0";
+  document.getElementById('backdrop').style.display = "none";
+  document.getElementById('main').style.opacity = "1";
+}
+function openLink(link) {
+  window.location.href = link;
 }
 </script>
     <title>Sketchware Pro</title>
@@ -34,7 +35,9 @@ function closeNav() {
     <div class="header-container">
     <div class="logo">
       <img src="img/logo.webp" alt="SW Pro Logo" onclick="openNav()">
+      <div style="display: flex; justify-content: center;">
       <p style="margin-left: 8px;">Sketchware Pro</p>
+    </div>
     </div>
     <ul class="nav-links">
       <li><a href="https://sketchware-pro.vercel.app/download">Download</a></li>
@@ -42,9 +45,6 @@ function closeNav() {
       <li><a href="https://sketchware-pro.vercel.app/blog">Blog</a>        </li>
       <li><a href="https://sketchware-pro.vercel.app/about">About</a>      </li>
     </ul>
- <!--   <div id="menu_img_div">
-      <img id="menu_img" height="24px" src="img/menu.webp" alt="menu">
-  </div>-->
   </div>
   </nav>
   </header>
@@ -56,14 +56,25 @@ function closeNav() {
 
   <span class="drawer-close-button">
 <!--icon for closing of the navbar-->
-    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+<div style="display: flex; align-items: center; width: 100%;">
+  <img src="/img/swpro.svg" alt="SW Pro Logo" style="margin-left: 8px; height: 80%; width: 80%; color: white;">
+</div>
+<md-icon-button onclick="closeNav()">
+    <span class="material-symbols-outlined">close</span>
+  </md-icon-button>
   </span>
-<!--Each links on the navbar-->
-<a href="https://sketchware-pro.vercel.app/download">Download</a>
-<a href="https://sketchware-pro.vercel.app/docs">Docs</a>        
-<a href="https://sketchware-pro.vercel.app/blog">Blog</a>        
-<a href="https://sketchware-pro.vercel.app/about">About</a>
 
+  <md-divider></md-divider>
+  <div id="links">
+<a href="#" id="homeLink"> <span class="material-symbols-outlined">home</span>  Home</a>
+<a onclick='openLink("https://sketchware-pro.vercel.app/download");'><span class="material-symbols-outlined">get_app</span>Download</a>
+<a onclick="openLink('https://sketchware-pro.vercel.app/docs')"><span class="material-symbols-outlined">menu_book</span>Docs</a>
+<a onclick="openLink('https://sketchware-pro.vercel.app/blog')"><span class="material-symbols-outlined">library_books</span>Blog</a>
+<md-divider></md-divider>
+<p>About</p>
+<a onclick="openLink('/team')"><span class="material-symbols-outlined">groups</span>Team</a>
+<a onclick="openLink('https://sketchware-pro.vercel.app/about')"><span class="material-symbols-outlined">warning</span>Disclaimer</a>
+</div>
 </div>
   <div id="main">
     <div id="sec1Text">
@@ -78,9 +89,6 @@ function closeNav() {
           </md-filled-button></a
         >
       </div>
-      <video class="rocket" alt="rocket_animation"  autoplay muted loop>
-        <source src="img/main.webm" type="video/webm">
-      </video>
       <img class="fallback-image" src="img/mockup.webp" alt="Video not supported">
     </div>
     <div id="main-2">
