@@ -7,7 +7,7 @@
     <footer class="flex flex-col gap-6 text-gray-600 bottom-0 w-full p-8">
         <div class="flex md:justify-between gap-2 md:gap-8">
 
-            <div class="hidden md:flex flex-col gap-2">
+            <div class="hidden lg:flex flex-col gap-2">
                 <img class="h-16 w-16"
                     src="https://raw.githubusercontent.com/Sketchware-Pro/Sketchware-Pro/main/assets/Sketchware-Pro.png"
                     alt="Logo" />
