@@ -50,6 +50,9 @@ const config = {
       'classic',
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
+                googleTagManager: {
+          containerId: 'GTM-NFZPPW6N',
+        },
         docs: {
           showLastUpdateAuthor: true,
           showLastUpdateTime: true,
