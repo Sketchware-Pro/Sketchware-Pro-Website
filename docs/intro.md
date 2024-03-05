@@ -1,6 +1,6 @@
 ---
-title: Indroduction
-description: Indroducing Sketchware Pro! Create Android apps on your smartphone, without writing even a single line of code.
+title: Introduction
+description: Introducing Sketchware Pro! Create Android apps on your smartphone, without writing even a single line of code.
 sidebar_position: 1
 slug: /
 ---
@@ -15,7 +15,7 @@ From designing to programming, you can create a completely native Android applic
 
 ### Features
 
-- Custom Blocks: The Pro version allows users to create, use and share custom blocks.
+- Custom Blocks: Sketchware Pro allows users to create, use and share custom blocks.
 - Local Library: This feature allows developers to download and use local libraries in their projects.
 - No Ads: The Pro version does not contain ads and is free to use.
 - Additional Components: There are various extra components added in the pro version such as Google Login, Notification, Phone Auth, Rewarded Video Ad and more.
@@ -26,30 +26,36 @@ From setting up to publishing your first Android application, you can handle all
 
 ## Sketchware Pro - the rhyming poem
 Sketchware Pro, it's the way to go
+
 With its simple flow, let your ideas grow
+
 Build stunning apps, without any woes
+
 Just drag and drop, and watch it take shape like a pro
 
+
+
 Create Android apps, with just a tap
+
 No need to code, no need to unwrap
+
 With Sketchware Pro, the possibilities are vast
+
 From games to utilities, your app will outlast
 
+
+
 So download Sketchware Pro, and get started today
+
 Unlock your creativity, and let your imagination play
+
 Make your app stand out, in every way
+
 Sketchware Pro, it's the perfect way to slay!
 
-## How to Use
 
-1. Download and install Sketchware Pro from our website [here](https://sketchware-pro.ga/download)
-2. Create a new project
-3. Add components and customize your app
-4. Build and run your app
 
-## Conclusion
 
-Sketchware Pro is a great tool for anyone looking to create Android apps without any programming knowledge. With its drag-and-drop interface and built-in components, it's easy to create professional-looking apps in no time.
 
 ## Wanna contribute to Sketchware Pro?
 To contribute to Sketchware Pro, you can follow these steps:
@@ -65,5 +71,5 @@ To contribute to Sketchware Pro, you can follow these steps:
 You can also contribute by reporting issues, suggesting new features, and helping to answer questions in the Sketchware Pro community.
 
 ## Full docs
-Click the next button to see more docs, and if you can't find any, try finding it on this clone of [official Sketchware docs website](https://sketchware-docs.vercel.app/docs/getting-started.html/).
-If you still don't find what you need, please request it to us in our Discord server(website). The link is mentioned in the website's footer.
+Click the next button to see more docs, and if you can't find any, there's a search feature present in the website. If you're unable to find any documentation even with search, try finding it on this clone of [official Sketchware docs website](https://sketchware-docs.vercel.app/docs/getting-started.html/).
+If you still don't find what you need, please request it to us in our Discord server. The link is mentioned in the website's footer.
