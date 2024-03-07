@@ -1,15 +1,14 @@
 ---
-title: Get Started
+title: More blocks
 description: Get started with More Block in Sketchware.
-sidebar_position: 1
+sidebar_position: 38
 tags:
-  - More Block
-slug: started
+  - Blocks
 ---
 
-### What is Sketchware more Block?
+### More blocks in Sketchware Pro
 
-More Block is a feature of Sketchware which easily helps developer to define a method in activity by using drag and drop.
+More Blocks allow developers to create their own blocks useable in a single activity only. They are usually used when there is a task in the app which has to be run multiple times.
 
 ![Structure](assets/get-started-with-more-block/structure.png)
 

@@ -2,6 +2,8 @@
 title: Creating a custom Block
 description: This is a guide for creating blocks in Sketchware Pro.
 sidebar_position: 1
+tags:
+  - Blocks
 ---
 To create a Block in Sketchware Pro, you need to know some terms related to Blocks.
 

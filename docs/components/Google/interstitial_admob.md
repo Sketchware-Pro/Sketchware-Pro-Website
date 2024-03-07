@@ -28,10 +28,13 @@ You will see test ads until you `SIGN APK`.
 
 ### Add Admob component
 First, add an AdMob component.
+
 ![Admob in Sketchware](/img/IMG_20220905_131356.jpg)
+
 Give it a name, and click on `Add`.
 ### Initialisation
 Load the ad in the onCreate event.
+
 ![Load the ad](img/load_ad.jpg)
 
 Now add the [onAdLoaded](#oninterstitialadloaded) event, which gets executed when the ad is loaded.
