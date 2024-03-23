@@ -10,26 +10,25 @@
     "postinstall": "nuxt prepare"
   },
   "dependencies": {
+    "@nuxtjs/tailwindcss": "^6.11.5-1709108338.2ae28e5",
     "@vercel/analytics": "^1.2.2",
     "@vercel/speed-insights": "^1.0.10",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.0",
     "debug": "^4.3.4",
     "dprint": "^0.45.0",
-    "gsa": "^0.0.0",
     "gsap": "^3.12.5",
-    "lucide-vue-next": "^0.343.0",
-    "nuxt": "^3.10.3",
-    "radix-vue": "^1.4.9",
-    "tailwind-merge": "^2.2.1",
+    "lucide-vue-next": "^0.363.0",
+    "nesting": "^0.1.0",
+    "nuxt": "^3.11.1",
+    "radix-vue": "^1.5.3",
+    "tailwind-merge": "^2.2.2",
     "tailwindcss": "^3.4.1",
-    "tailwindcss-animate": "^1.0.7",
     "uuid": "^9.0.1",
-    "vue": "^3.4.19",
+    "vue": "^3.4.21",
     "vue-router": "^4.3.0"
   },
   "devDependencies": {
-    "@nuxtjs/tailwindcss": "^6.11.4",
     "shadcn-nuxt": "^0.9.0",
     "typescript": "^5.3.3"
   },

@@ -8,14 +8,14 @@
 
       <div class="flex flex-col gap-8 rounded-3xl items-center text-center md:p-16 p-8 lg:px-64 text-white" style="background-image: url(&quot;https://lh3.googleusercontent.com/2OrUzHCRSI-V46Z1qJBh90usG6OkKwCbXN80FbrjkWoQz4VfoJjNAoQHLHPQRZWH7dI_m5I1gi48h6xMJ5pK6kkdXmUnXPe4VqwvEdo4QeWRjLV9Oew=w2400-rj&quot;);  background-size: cover;">
           <h1 class="font-semibold md:font-bold text-4xl md:text-7xl lg:text-8xl text-gray-800">Sketchware Pro</h1>
-          <p class="text-lg md:text-2xl text-gray-600 md:tracking-normal">
+          <p class="text-lg md:text-2xl text-gray-600 subpixel-antialiased">
             Sketchware Pro is a powerful Android app that allows you to create apps on your phone or tablet. It is a
             visual programming language that is easy to learn and use.
           </p>
 
  
           <Button class="bg-blue-600 hover:bg-blue-700 rounded-full p-6 md:p-8 text-xl md:text-2xl tracking-wide font-semibold text-gray-50" onclick="
-          window.open('/docs/getting-started');
+            window.open('/docs/getting-started');
           ">Get Started</Button>
 
         </div>
@@ -35,7 +35,7 @@
             <Separator class="w-40 h-1 bg-blue-600 my-2 md:my-8 border-gradient" />
           </CardHeader>
           <CardContent class="px-3">
-            <CardDescription class="text-lg md:text-xl leading-relaxed mb-8">
+            <CardDescription class="text-lg md:text-xl leading-relaxed mb-8 antialiased">
               Sketchware Pro is a powerful Android app that allows you to create apps on your phone or tablet. It is a visual programming language that is easy to learn and use. You can download the latest version of Sketchware Pro from the link below.
             </CardDescription>
 
@@ -55,7 +55,7 @@
                   <Separator />
                 </CardHeader>
                 <CardContent class="text-2xl pb-4 text-center">
-                  <CardDescription class="text-5xl lg:text-6xl text-gray-100 font-bold">{{ downloads.toFixed(0) }}</CardDescription>
+                  <CardDescription class="text-5xl lg:text-6xl text-gray-100 font-bold">{{ Number.parseInt(downloads.toFixed(0)).toLocaleString() }}</CardDescription>
                 </CardContent>
               </Card>
               <Card class="w-full">
@@ -129,8 +129,6 @@ onMounted(async () => {
     value: downloadsRef.value,
     duration: 1
   });
-  
-
 });
 
 

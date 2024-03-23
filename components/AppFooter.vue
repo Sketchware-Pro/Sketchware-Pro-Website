@@ -12,33 +12,33 @@
                     src="https://raw.githubusercontent.com/Sketchware-Pro/Sketchware-Pro/main/assets/Sketchware-Pro.png"
                     alt="Logo" />
                 <h1 class="font-bold text-xl text-gray-800 dark:text-gray-300">Sketchware Pro</h1>
-                <p class="font-sm leading-7 dark:text-gray-400">© 2024-2025 Sketchware Pro</p>
+                <p class="font-sm leading-7 dark:text-gray-400 antialiased">© 2024-2025 Sketchware Pro</p>
             </div>
 
             <div class="flex flex-col md:flex-row gap-8 md:gap-32 mr-8">
                 <div class="flex flex-col gap-2">
                     <h1 class="font-bold text-lg md:text-xl text-gray-700 dark:text-gray-200">Sketchware Pro</h1>
                     <a v-for="item in SWPRO" :href="item.link"
-                    class="text-md md:text-lg font-medium leading-7 text-blue-500 dark:text-blue-400 hover:text-gray-800 hover:underline dark:hover:text-blue-500">
+                    class="text-md md:text-lg font-medium leading-7 text-blue-500 dark:text-blue-400 hover:text-gray-800 hover:underline dark:hover:text-blue-500 subpixel-antialiased">
                     {{ item.title }}</a>
                 </div>
                 <div class="flex flex-col gap-2">
                     <h1 class="font-bold text-lg md:text-xl text-gray-700 dark:text-gray-200">Community</h1>
                     <a v-for="item in COMMUNITY" :href="item.link"
-                    class="text-md md:text-lg font-medium leading-7 text-blue-500 dark:text-blue-400 hover:text-gray-800 hover:underline dark:hover:text-blue-500">
+                    class="text-md md:text-lg font-medium leading-7 text-blue-500 dark:text-blue-400 hover:text-gray-800 hover:underline dark:hover:text-blue-500 subpixel-antialiased">
                     {{ item.title }} </a>
                 </div>
                 <div class="flex flex-col gap-2">
                     <h1 class="font-bold text-lg md:text-xl text-gray-700 dark:text-gray-200">More</h1>
                     <a v-for="item in MORE" :href="item.link"
-                    class="text-md md:text-lg font-medium leading-7 text-blue-500 dark:text-blue-400 hover:text-gray-800 hover:underline dark:hover:text-blue-500">
+                    class="text-md md:text-lg font-medium leading-7 text-blue-500 dark:text-blue-400 hover:text-gray-800 hover:underline dark:hover:text-blue-500 subpixel-antialiased">
                     {{ item.title }} </a>
                 </div>
                 </div>
         </div>
 
         <div class="text-center">
-            <p class="text-md md:text-lg text-gray-500 dark:text-gray-400">© 2024-2025 Sketchware Pro</p>
+            <p class="text-md md:text-lg text-gray-500 dark:text-gray-400 antialiased">© 2024-2025 Sketchware Pro</p>
         </div>
     </footer>
 </template>

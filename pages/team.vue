@@ -10,7 +10,7 @@
                     <Separator class="w-40 h-1 bg-blue-600 my-4 md:my-8 border-gradient rounded-lg" />
                 </CardHeader>
                 <CardContent class="lg:px-16">
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-16">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 xl:gap-12">
                         <a v-for="modder in mainModders" :href="'https://github.com/' + modder.login">
                             <Card class="bg-slate-900 border-gray-700 rounded-3xl py-4 md:p-8 hover:bg-slate-800">
                                 <CardHeader class="flex items-center gap-4">
