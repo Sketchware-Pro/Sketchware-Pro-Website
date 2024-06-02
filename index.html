@@ -3,26 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preload" href="css/global-min.css" as="style">
+    <link rel="stylesheet" href="css/global-min.css">
+    <link rel="preload" href="/css/index-min.css" as="style" />
+    <link rel="stylesheet" href="/css/index-min.css"/>
+    <link rel="prefetch" href="/img/mockup_dark.webp">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Gabarito:wght@400&family=Poppins:ital,wght@0,500&family=Roboto:ital,wght@0,500&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />    
-    <link rel="stylesheet" href="css/index-min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Sketchware-Pro/Sketchware-Pro-website@website/css/global.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Sketchware-Pro/Sketchware-Pro-website@website/css/light.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Sketchware-Pro/Sketchware-Pro-website@website/css/dark.min.css">
 <script>
-function openNav() {
-  document.getElementById("mySidenav").style.width = "85%";
-  document.getElementById('backdrop').style.display = "block"; 
-  document.getElementById('main').style.opacity = "0.3";
-}
+      var navOpen;
+      function openNav() {
+        document.getElementById("mySidenav").style.width = "85%";
+        document.getElementById("backdrop").style.display = "block";
+        document.getElementById("main").style.opacity = "0.3";
+        navOpen = true;
+      }
 
-function closeNav() {
-  document.getElementById("mySidenav").style.width = "0";
-  document.getElementById('backdrop').style.display = "none";
-  document.getElementById('main').style.opacity = "1";
-}
+      function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+        document.getElementById("backdrop").style.display = "none";
+        document.getElementById("main").style.opacity = "1";
+        navOpen = false;
+      }
 function openLink(link) {
   window.location.href = link;
 }
@@ -49,7 +55,7 @@ function openLink(link) {
   </nav>
   </header>
 <!-- this would work as the backdrop when navbar is open-->
-<div class="backdrop-container" id="backdrop"></div>
+<div class="backdrop-container" id="backdrop" onclick=" if(navOpen){closeNav()}"></div>
 
 <!--the would be the drawer and it's content-->
   <div id="mySidenav" class="sidenav-container">
@@ -59,9 +65,6 @@ function openLink(link) {
 <div style="display: flex; align-items: center; width: 100%;">
   <img src="/img/swpro.svg" alt="SW Pro Logo" style="margin-left: 8px; height: 80%; width: 80%; color: white;">
 </div>
-<md-icon-button onclick="closeNav()">
-    <span class="material-symbols-outlined">close</span>
-  </md-icon-button>
   </span>
 
   <md-divider></md-divider>
@@ -82,12 +85,10 @@ function openLink(link) {
         <p>
             No code, all awesome. Craft epic apps with Sketchware Pro's magical blocks.
         </p>
-        <a href="https://sketchware-pro.vercel.app/docs">
-          <md-filled-button
-           style="z-index: 1;">
+        <md-filled-button
+           style="z-index: 1;" onclick="openLink('https://sketchware-pro.vercel.app/docs')">
             Get Started
-          </md-filled-button></a
-        >
+          </md-filled-button>
       </div>
       <img class="fallback-image" src="img/mockup.webp" alt="Video not supported">
     </div>
@@ -146,37 +147,51 @@ function openLink(link) {
       </div>
   </div>
   </div>
-<footer>
-  <div id="footer">
-    <div class="footer_1">
-      <img src="img/logo.webp" alt="SWPro logo" style="height: 60px; width: 60px;">
-      <p style="font-size: 18px; width: 70%;">Sketchware Pro is a powerful app development tool that allows you to build apps without having to write even a single line of code.</p>
-    </div>
-    <div class="footer_col">
-      <h3>Sketchware Pro</h3>
-        <a href="https://sketchware-pro.vercel.app/download">Download</a></li>
-        <a href="https://sketchware-pro.vercel.app/docs">Documentation</a></li>
-        <a href="https://sketchware-pro.vercel.app/blog">Blog</a></li>
-    </div>
-    <div class="footer_col">
-      <h3>Community</h3>
-      
-      <a href="https://discord.gg/Dc8ZDBRK5V">Discord</a>
-        <a href="https://t.me/sketchwarepro">Telegram</a>
-        <a href="https://github.com/Sketchware-Pro/Sketchware-Pro/discussions">GitHub Discussions</a>
+  <div id="sec4">
+    <div class="gh-stats">
+    <h3>GitHub stars</h3>
+    <h4>800+</h4>
+  </div>
+  <div class="gh-stats">
+    <h3>GitHub stars</h3>
+    <h4>800+</h4>
+  </div>
+  <div class="gh-stats">
+    <h3>GitHub stars</h3>
+    <h4>800+</h4>
+  </div>
+  </div>
+  <footer>
+    <div id="footer">
+      <div class="footer_1">
+        <img src="img/logo.webp" alt="SWPro logo" style="height: 60px; width: 60px;">
+        <p style="font-size: 18px; width: 70%;">Sketchware Pro is a powerful app development tool that allows you to build apps without having to write even a single line of code.</p>
+      </div>
+      <div class="footer_col">
+        <h3>Sketchware Pro</h3>
+          <a href="https://sketchware-pro.vercel.app/download">Download</a>
+          <a href="https://sketchware-pro.vercel.app/docs">Documentation</a>
+          <a href="https://sketchware-pro.vercel.app/blog">Blog</a>
+      </div>
+      <div class="footer_col">
+        <h3>Community</h3>
         
-        </div>
-        <div class="footer_col">
-          <h3>More</h3>
+        <a href="https://discord.gg/Dc8ZDBRK5V">Discord</a>
+          <a href="https://t.me/sketchwarepro">Telegram</a>
+          <a href="https://github.com/Sketchware-Pro/Sketchware-Pro/discussions">GitHub Discussions</a>
           
-            <a href="https://github.com/Sketchware-Pro/Sketchware-Pro">GitHub</a>
-            <a href="https://github.com/Sketchware-Pro/Sketchware-Pro-website">Website GitHub</a>
-         <a href="https://sketchware-pro.vercel.app/about">Disclaimer</a>
+          </div>
+          <div class="footer_col">
+            <h3>More</h3>
             
-            </div>
-        </div>
-        <p>Built by NiceSapien.</p>
-</footer>
+              <a href="https://github.com/Sketchware-Pro/Sketchware-Pro">GitHub</a>
+              <a href="https://github.com/Sketchware-Pro/Sketchware-Pro-website">Website GitHub</a>
+           <a href="https://sketchware-pro.vercel.app/about">Disclaimer</a>
+              
+              </div>
+          </div>
+          <p>Built by NiceSapien.</p>
+  </footer>
   <script src="script/bundle-min.js"></script>
       </body>
 </body>

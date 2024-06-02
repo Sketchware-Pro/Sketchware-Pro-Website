@@ -2,22 +2,22 @@
   font-family: "Product Sans Bold";
   font-style: normal;
   font-weight: normal;
-  src: local("Product Sans Bold"),
-    url(/fonts/ProductSans-Bold.woff) format("woff");
+  src: local("Product Sans Bold"),url(/fonts/ProductSans-Bold.woff) format("woff");
   font-display: swap;
 }
+
 @font-face {
   font-family: "Product Sans Regular";
   font-style: normal;
   font-weight: normal;
-  src: local("Product Sans Regular"),
-    url(/fonts/ProductSans-Regular.woff) format("woff");
-    font-display: swap;
+  src: local("Product Sans Regular"),url(/fonts/ProductSans-Regular.woff) format("woff");
+  font-display: swap;
 }
 
 html {
-  font-family: "Gabarito", sans-serif;
+  font-family: "Gabarito",sans-serif;
 }
+
 body {
   padding: 0;
   margin: 0;
@@ -25,17 +25,20 @@ body {
   background-color: var(--md-sys-color-background);
   color: var(--md-sys-color-on-background);
 }
+
 div.logo {
   margin-left: 4px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
 .logo img {
   width: 48px;
   height: fit-content;
   pointer-events: none;
 }
+
 header {
   background-color: var(--md-sys-color-background);
   position: fixed;
@@ -45,34 +48,40 @@ header {
   height: 64px;
   display: flex;
   align-items: center;
-  box-shadow: 0 2px 8px 0 rgba(32, 33, 36, 0.08);
+  box-shadow: 0 2px 8px 0 rgba(32,33,36,.08);
   z-index: 2;
   color: var(--md-sys-color-on-surface-container);
 }
+
 .header-container {
   display: flex;
-  align-items: center; /* optional for vertical centering */
+  align-items: center
 }
 
 header * {
   display: inline;
 }
+
 header li {
-  margin: 5px 0px 5px 0px;
+  margin: 5px 0 5px 0;
 }
+
 header li a {
   color: var(--md-sys-color-on-primary-container);
   font-size: 18px;
   text-decoration: none;
   border-radius: 12px;
-  padding: 10px 6px 10px 0px;
+  padding: 10px 6px 10px 0;
 }
+
 header li a:hover {
   color: var(--md-sys-color-tertiary);
 }
+
 header li a:active {
   border-color: #448aff;
 }
+
 footer {
   display: flex;
   flex-direction: column;
@@ -81,9 +90,11 @@ footer {
   color: var(--md-sys-color-on-surface-container);
   font-size: 24px;
 }
+
 footer p {
   font-size: 18px;
 }
+
 #footer {
   display: flex;
   width: 100%;
@@ -92,26 +103,31 @@ footer p {
   padding: 32px;
   margin: 0 auto;
 }
+
 .footer_col {
   display: flex;
   flex-direction: column;
   width: 50%;
   text-align: left;
-  padding: 0px 16px;
+  padding: 0 16px;
 }
+
 #footer h3 {
   font-family: "Product Sans Bold";
 }
+
 #footer a {
   font-family: "Product Sans Regular";
-  color: #0b57d0;
+  color: var(--md-sys-color-primary);
   text-decoration: none;
   font-size: 18px;
   margin-bottom: 6px;
 }
+
 .footer_1 {
   text-align: left;
 }
+
 .backdrop-container {
   display: none;
   position: fixed;
@@ -121,8 +137,8 @@ footer p {
   width: 100%;
   height: 100%;
   overflow: auto;
-  -webkit-animation: fadeIn 0.6s ease-in-out;
-  animation: fadeIn 0.6s ease-in-out;
+  -webkit-animation: fadeIn .6s ease-in-out;
+  animation: fadeIn .6s ease-in-out;
 }
 
 .sidenav-container {
@@ -134,12 +150,12 @@ footer p {
   left: 0;
   background-color: var(--md-sys-color-surface-container-low);
   overflow-x: hidden;
-  transition: 0.3s;
+  transition: .3s;
   padding-top: 10px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  border-radius: 0px 30px 30px 0px;
+  border-radius: 0 30px 30px 0;
   margin: 4px;
 }
 
@@ -149,6 +165,7 @@ footer p {
   color: var(--md-sys-color-on-surface-variant);
   display: block;
 }
+
 .sidenav-container p {
   font-size: 24px;
   color: var(--md-sys-color-primary);
@@ -161,19 +178,19 @@ footer p {
 }
 
 .sidenav-container .drawer-close-button {
-  height: 3rem;
   width: 100%;
   padding: 12px;
   display: flex;
-  justify-content: flex-end;
 }
+
 #links {
   width: 100%;
   padding: 16px;
 }
+
 #links a {
   width: 100;
-  margin: 0px 6px 0px 6px;
+  margin: 0 6px 0 6px;
   display: flex;
   padding: 10px;
   justify-content: flex-start;
@@ -181,94 +198,107 @@ footer p {
   align-items: center;
   border-radius: 32px;
 }
+
 #links a:active {
   background-color: var(--md-sys-color-secondary-container);
 }
+
 #links span {
   font-size: 28px;
   margin-right: 8px;
 }
+
 #links p {
   font-size: 14px;
   padding: 8px;
   padding-left: 12px;
-  padding-bottom: 0px;
+  padding-bottom: 0;
   color: var(--md-sys-color-on-surface-variant);
 }
+
 #homeLink {
   color: var(--md-sys-color-on-secondary-container);
   background-color: var(--md-sys-color-secondary-container);
 }
 
-@media (min-width: 100px) and (max-width: 1024px) {
+@media (min-width: 100px) and (max-width:1024px) {
   div.logo {
-    width: max-content;
+      width:max-content
   }
+
   header {
-    font-size: larger;
-    height: 60px;
-    border-radius: 0px 0px 20px 20px;
-    margin-bottom: 0px;
-    box-shadow: 0px 0px 0px 0px #111111;
+      font-size: larger;
+      height: 60px;
+      border-radius: 0 0 20px 20px;
+      margin-bottom: 0;
+      box-shadow: 0 0 0 0 #111111
   }
+
   .header-container {
-    box-shadow: 0px;
+      box-shadow: 0
   }
+
   header p {
-    padding: 0px 12px;
-    font-size: 22px;
+      padding: 0 12px;
+      font-size: 22px
   }
+
   .logo img {
-    width: 22px;
-    height: 22px;
-    margin-left: 20px;
-    content: url(../img/menu.webp);
-    pointer-events: all;
+      width: 22px;
+      height: 22px;
+      margin-left: 20px;
+      content: url(../img/menu.webp);
+      pointer-events: all
   }
+
   header li a {
-    display: none;
+      display: none
   }
+
   .header-container {
-    display: flex;
-    justify-content: center;
-    align-items: center; /* optional for vertical centering */
-    width: max-content;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: max-content
   }
+
   body {
-    width: 100%;
+      width: 100%
   }
 
   footer {
-    box-sizing: border-box;
-    margin: 0px;
-    width: auto;
+      box-sizing: border-box;
+      margin: 0;
+      width: auto
   }
+
   #footer {
-    display: flex;
-    flex-direction: column;
-    justify-content: left;
-    box-sizing: border-box;
-    margin: 0px;
-    padding: 5px;
+      display: flex;
+      flex-direction: column;
+      justify-content: left;
+      box-sizing: border-box;
+      margin: 0;
+      padding: 5px
   }
+
+  #footer h3 {
+      width: 100%;
+      font-size: 25px
+  }
+
   .footer_1 {
-    display: none;
+      display: none
   }
+
   @media (prefers-color-scheme: dark) {
-    .logo img {
-      content: url(../img/menu-white.webp);
-    }
+      .logo img {
+          content:url(/img/menu-white.webp)
+      }
   }
 }
 
 @media (prefers-color-scheme: dark) {
-  .closebtn {
-    content: url(../img/close_white.png);
-  }
-  #home_icon {
-    content: url(../img/home_white.png);
-  }
   #mySidenav img {
-    content: url(../img/swpro_white.svg);
+      content:url(/img/swpro_white.svg)
   }
 }
