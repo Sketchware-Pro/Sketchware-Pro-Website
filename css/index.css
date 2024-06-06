@@ -1,23 +1,4 @@
-/* @keyframes comparison {
-  0% {
-    margin: 12px;
-    border-radius: 0px;
-    border-width: 0px;
-    box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.08);
-  }
-  40% {
-    margin: 12px 15px 4px 15px;
-    border-radius: 7px;
-    border-width: 1px;
-    box-shadow: 0px 2px 2px 2px rgba(0, 0, 0, 0.08);
-  }
-  70% {
-    margin: 12px 25px 12px 25px;
-    border-radius: 12px;
-    border-width: 2px;
-    box-shadow: 0px 4px 4px 4px rgba(0, 0, 0, 0.08);
-  }
-} */
+
 @keyframes comparison {
   0% {
     margin: 12px 80px 12px 80px;
@@ -54,38 +35,28 @@
   to { bottom: 0; }
 
 }
-#sec4 {
-display: flex;  
-width: 100%;
-}
-.gh-stats {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-}
+
 .fallback-image {
-  width: 90%;
+  width: auto;
   height: auto;
   margin-top: 40px;
   margin-bottom: 20px;
-  display: none;
   position: relative;
   animation: slideIn_bottom 0.5s ease-in-out forwards;
+    content: url(/img/tabshot.png);
 }
 
 #main {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
-  height: 100vh;
+  height: 120vh;
   background-repeat: no-repeat;
   background-size: cover;
-  min-height: 800px;
+  min-height: 1200px;
 }
 #main-2 {
-  min-height: 300px;
+  min-height: 900px;
   height: 80vh;
   word-wrap: break-word;
   margin: 12px 30px 12px 30px;
@@ -99,6 +70,7 @@ width: 100%;
   font-style: normal;
   font-size: 60px;
   margin-bottom: 10px;
+  margin-top: 200px;
   width: 80%;
 }
 #sec1Text p {
@@ -114,10 +86,8 @@ width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
   text-align: center;
   width: 100%;
-  height: 100%;
 }
 
 #sec2 {
@@ -130,9 +100,10 @@ width: 100%;
   height: 100%;
   border-radius: 64px;
   text-align: center;
-  background-color: var(--md-sys-color-primary-container);
+  background-color: var(--md-sys-surface-container-high);
   border-width: 2px;
   padding: 8px;
+  margin-top: 50px;
 }
 #sec2 h2 {
   padding: 12px;
@@ -175,8 +146,9 @@ width: 100%;
 }
 .editor img {
   border-radius: 12px;
-  height: 306px;
-  width: 542px;
+  min-width: 400px;
+  width: 60%;
+  height: auto;
 }
 
 .feature_img {
@@ -212,11 +184,80 @@ width: 100%;
   font-size: 40px;
   margin-bottom: 4px;
 }
+#main4 {
+  justify-content: center;
+  padding: 50px;
+}
+#sec4 {
+  border-radius: 20px;
+  background-color: var(--md-sys-color-surface-container);
+  min-height: 400px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 12px;
+}
 
-@media (min-width: 100px) and (max-width: 1024px) {
+#sec4 h1 {
+  color: var(--md-sys-color-on-surface);
+  font-size: 50px;
+  margin-bottom: 10px;
+}
+
+#sec4 p {
+  margin-bottom: 20px;
+  font-size: 20px;
+  color: var(--md-sys-color-on-surface);
+  margin-left: 40px;
+}
+
+.stats-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 20px;
+}
+
+.gh-stats {
+  background-color: var(--md-sys-color-tertiary-container);
+  padding: 50px;
+  border-radius: 20px;
+  width: 80%;
+  max-width: 270px;
+  text-align: center;
+}
+
+.gh-stats h2 {
+  margin: 0 0 10px 0;
+  font-size: 20px;
+  color: var(--md-sys-color-on-surface-variant);
+}
+
+.gh-stats h3 {
+  margin: 0;
+  font-size: 36px;
+  color: var(--md-sys-color-on-surface);
+}
+
+@media (min-width: 100px) and (max-width: 950px) {
+  .stats-container {
+    flex-direction: column;
+  }
+  .gh-stats {
+    width: 50%;
+  }
+  #main4 {
+    padding: 30px;
+  }
+  #sec4 {
+    padding-bottom: 30px;
+  }
   .fallback-image {
     display: block;
     margin-top: 0px;
+    content: url(/img/mockup.webp);
+    width: 100%;
+    height: auto;
   }
   #sec1Text h1 {
     vertical-align: bottom;
@@ -262,6 +303,7 @@ width: 100%;
     padding-top: 10px;
     margin-left: 4px;
     height: 100vh;
+    min-height: 800px;
     align-items: none;
     justify-content: none;
   }
@@ -310,9 +352,10 @@ width: 100%;
     text-align: center;
   }
   .editor img {
+    min-width: 200px;
     width: 95%;
     height: auto;
-    margin-bottom: 0px
+    margin-bottom: 0px;
   }
   .features {
     display: flex;
@@ -328,17 +371,19 @@ width: 100%;
     margin-bottom: 0px;
     padding-bottom: 0px;
   }
+  @media (prefers-color-scheme: dark) {
+    .fallback-image {
+      content: url(/img/mockup_dark.webp);
+    }
+  }
 }
+
 @media (min-width: 1500px) {
     #main-2 {
 
   animation: comparison linear;
   animation-timeline: scroll(root block);
   }
+
 }
 
-@media (prefers-color-scheme: dark) {
-  .fallback-image {
-    content: url(/img/mockup_dark.webp);
-  }
-}

@@ -32,6 +32,50 @@
 function openLink(link) {
   window.location.href = link;
 }
+const repoUrl = 'https://api.github.com/repos/Sketchware-Pro/Sketchware-Pro';
+
+// Function to format numbers over 1000 with 'K+'
+function formatNumber(num) {
+    if (num >= 1000) {
+        return Math.floor(num / 1000) + 'K+';
+    }
+    return num;
+}
+
+async function getRepoData() {
+    try {
+        // Fetch repository details
+        const response = await fetch(repoUrl);
+        const repoData = await response.json();
+        
+        // Fetch releases details
+        const releasesResponse = await fetch(`${repoUrl}/releases`);
+        const releasesData = await releasesResponse.json();
+        
+        // Calculate total downloads from all releases
+        let totalDownloads = 0;
+        releasesData.forEach(release => {
+            release.assets.forEach(asset => {
+                totalDownloads += asset.download_count;
+            });
+        });
+
+        // Extract required data
+        const stars = repoData.stargazers_count;
+        const forks = repoData.forks_count;
+
+        // Update HTML elements with the fetched data
+        document.getElementById('stars').innerText = stars;
+        document.getElementById('downloads').innerText = formatNumber(totalDownloads);
+        document.getElementById('forks').innerText = forks;
+
+    } catch (error) {
+        console.error('Error fetching repository data:', error);
+    }
+}
+
+// Call the function to fetch and update repo data
+getRepoData();
 </script>
     <title>Sketchware Pro</title>
 </head>
@@ -49,7 +93,7 @@ function openLink(link) {
       <li><a href="https://sketchware-pro.vercel.app/download">Download</a></li>
       <li><a href="https://sketchware-pro.vercel.app/docs">Docs</a>        </li>
       <li><a href="https://sketchware-pro.vercel.app/blog">Blog</a>        </li>
-      <li><a href="https://sketchware-pro.vercel.app/about">About</a>      </li>
+      <li><a href="/team.html">About</a>      </li>
     </ul>
   </div>
   </nav>
@@ -82,15 +126,15 @@ function openLink(link) {
   <div id="main">
     <div id="sec1Text">
         <h1>Sketchware <a style="color: var(--md-sys-color-primary)">Pro</a>. Epic. Inside</u> out.</h1>
-        <p>
+        <p class="hideDesk">
             No code, all awesome. Craft epic apps with Sketchware Pro's magical blocks.
         </p>
         <md-filled-button
-           style="z-index: 1;" onclick="openLink('https://sketchware-pro.vercel.app/docs')">
+           style="z-index: 1;" onclick="openLink('https://sketchware-pro.vercel.app/docs')" class="hideDesk">
             Get Started
           </md-filled-button>
       </div>
-      <img class="fallback-image" src="img/mockup.webp" alt="Video not supported">
+      <img class="fallback-image" src="img/tabshot.png" alt="Video not supported">
     </div>
     <div id="main-2">
    <div id="sec2">
@@ -147,20 +191,28 @@ function openLink(link) {
       </div>
   </div>
   </div>
+  
+  <div id="main4">
   <div id="sec4">
-    <div class="gh-stats">
-    <h3>GitHub stars</h3>
-    <h4>800+</h4>
+    <h1>GitHub Stats</h1>
+  <p>Sketchware Pro's sources in Java. Now anyone can contribute to Sketchware Pro.</p>
+    <div class="stats-container">
+      <div class="gh-stats">
+        <h2>GitHub Stars</h2>
+        <h3 id="stars">877</h3>
+      </div>
+      <div class="gh-stats">
+        <h2>Downloads</h2>
+        <h3 id="downloads">101,124</h3>
+      </div>
+      <div class="gh-stats">
+        <h2>GitHub Forks</h2>
+        <h3 id="forks">260</h3>
+      </div>
+    </div>
   </div>
-  <div class="gh-stats">
-    <h3>GitHub stars</h3>
-    <h4>800+</h4>
-  </div>
-  <div class="gh-stats">
-    <h3>GitHub stars</h3>
-    <h4>800+</h4>
-  </div>
-  </div>
+</div>
+
   <footer>
     <div id="footer">
       <div class="footer_1">
