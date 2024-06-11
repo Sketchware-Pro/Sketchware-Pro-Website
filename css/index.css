@@ -190,7 +190,7 @@
 }
 #sec4 {
   border-radius: 20px;
-  background-color: var(--md-sys-color-surface-container);
+  background-color: var(--md-sys-color-surface-container-high);
   min-height: 400px;
   display: flex;
   flex-direction: column;
@@ -219,7 +219,7 @@
 }
 
 .gh-stats {
-  background-color: var(--md-sys-color-tertiary-container);
+  background-color: var(--md-sys-color-surface-container);
   padding: 50px;
   border-radius: 20px;
   width: 80%;
@@ -238,7 +238,42 @@
   font-size: 36px;
   color: var(--md-sys-color-on-surface);
 }
+#main5 {
 
+  padding: 120px 0px;
+}
+#sec5 {
+  grid-template-columns: min(calc(var(--col-width)* 12), calc(100vw - 2* var(--gutter))) auto;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  max-width: min(calc(var(--col-width)* 22), calc(100vw - 2* var(--gutter)));
+  padding: 0px 100px;
+  display: flex;
+  place-items: start;
+  box-sizing: inherit;
+  unicode-bidi: isolate;
+  margin: auto;
+}
+#sec5 p {
+  width: 60%;
+  max-width: 600px;
+  font-size: 5rem;
+  font-weight: 400;
+  padding: 0px;
+  margin: 0px;
+  letter-spacing: -0.04em;
+
+}
+#sec5 md-filled-button {
+  font-size: 3rem;
+  padding: 23px 48px 27px;
+  line-height: 1;
+  border: 0px;
+text-align: center;
+  letter-spacing: -0.01em;
+}
 @media (min-width: 100px) and (max-width: 950px) {
   .stats-container {
     flex-direction: column;
@@ -318,7 +353,10 @@
     flex-direction: row;
     padding: 0px;
     margin: 0px;
-    border-radius: 28px;
+    border-radius: 35px;
+  }
+  #main-2 {
+    border-radius: 35px;
   }
   #main-2 h4 {
     font-size: 24px;
@@ -370,6 +408,9 @@
     font-size: 30px;
     margin-bottom: 0px;
     padding-bottom: 0px;
+  }
+  #main5 {
+    display: none;
   }
   @media (prefers-color-scheme: dark) {
     .fallback-image {
