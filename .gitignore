@@ -1,2 +1,5 @@
 node_modules
 package-lock.json
+test.html
+CNAME
+pnpm-lock.yaml

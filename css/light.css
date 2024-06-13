@@ -48,4 +48,10 @@
   --md-sys-color-surface-container: rgb(237 237 244);
   --md-sys-color-surface-container-high: rgb(231 232 238);
   --md-sys-color-surface-container-highest: rgb(225 226 233);
+  --color-primary: rgb(77, 119, 184);   /* Blue */
+  --color-secondary: rgb(220, 20, 60);  /* Crimson */
+  --color-tertiary: rgb(34, 139, 34);   /* Forest Green */
+  --color-quaternary: rgb(255, 140, 0); /* Dark Orange */
+  --color-quinary: rgb(148, 0, 211);    /* Dark Violet */
+  --color-senary: rgb(30, 144, 255);    /* Dodger Blue */
 }

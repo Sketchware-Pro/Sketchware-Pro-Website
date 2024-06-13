@@ -12,8 +12,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Gabarito:wght@400&family=Poppins:ital,wght@0,500&family=Roboto:ital,wght@0,500&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />    
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Sketchware-Pro/Sketchware-Pro-website@website/css/light.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Sketchware-Pro/Sketchware-Pro-website@website/css/dark.min.css">
+    <link rel="stylesheet" href="/css/light-min.css">
+    <link rel="stylesheet" href="/css/dark-min.css">
 <script>
       var navOpen;
       function openNav() {
@@ -95,7 +95,7 @@ getRepoData();
       <li><a href="https://sketchware-pro.vercel.app/blog">Blog</a>        </li>
       <li><a href="/team.html">About</a>      </li>
     </ul>
-  </div>
+</div>
   </nav>
   </header>
 <!-- this would work as the backdrop when navbar is open-->
@@ -138,7 +138,7 @@ getRepoData();
     </div>
     <div id="main-2">
    <div id="sec2">
-      <h2>Fast & Easy Apps: Sketchware <a style="color: var(--md-sys-color-primary);">Pro</a> vs. <a style="color: var(--md-sys-color-tertiary);">Android</a> Studio</h2><br>
+      <h2>Fast & Easy Apps: Sketchware <a style="color: rgb(77, 119, 184);">Pro</a> vs. <a style="color: #3DDC84;">Android</a> Studio</h2><br>
       <div id="comparison">
       <div class="editor">
       <img src="img/Android Studio.webp" alt="Android Studio">
@@ -155,7 +155,7 @@ getRepoData();
   </div>
  <div id="main-3">
 <div id="sec3">
-  <h2>Apptastic Features: Sketchware <a style="color: var(--md-sys-color-primary);">Pro</a>'s Toolkit for <u>Success</u><a style="color: var(--md-sys-color-primary);">.</a></h2>
+  <h2>Apptastic Features: Sketchware <a style="color: var(--md-sys-color-primary);">Pro</a>'s Toolkit for <span class="wavy-underline">Success</span><a style="color: var(--md-sys-color-primary);">.</a></h2>
   <div class="features">
     <div class="feature">
       <img src="/img/easy.webp" alt="Easy to use" class="feature_img">
@@ -214,9 +214,12 @@ getRepoData();
 </div>
 <div id="main5">
   <div id="sec5">
-    <p>Start <a style="color: var(--md-sys-color-tertiary);">making</a> with Sketchware Pro</p>
+    <p>Start <span style="color: rgb(77, 119, 184);" id="dynamic-word">developing</span><br/> with Sketchware Pro<span class="vibrant" style="color: rgb(77, 119, 184);">.</span></p>
     <div style="align-items: center; text-align: center; height: max-content; padding: 60px 0px;">
-    <md-filled-button onclick="openLink('https://sketchware-pro.vercel.app/download')">Download Sketchware Pro</md-filled-button>
+      <a class="material-button vibrant" onclick="openLink('/download')">
+        Get Started
+        <span class="material-symbols-outlined arrow">arrow_outward</span>
+      </a>
   </div>
   </div>
 </div>
@@ -250,7 +253,7 @@ getRepoData();
               
               </div>
           </div>
-          <p>Built by NiceSapien.</p>
+          <p>©2024-25 Sketchware Pro.</p>
   </footer>
   <script src="script/bundle-min.js"></script>
       </body>

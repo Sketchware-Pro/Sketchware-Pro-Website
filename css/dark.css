@@ -48,4 +48,10 @@
   --md-sys-color-surface-container: rgb(29 32 36);
   --md-sys-color-surface-container-high: rgb(40 42 47);
   --md-sys-color-surface-container-highest: rgb(51 53 58);
+  --color-primary: rgb(77, 119, 184);
+  --color-secondary: rgb(255, 99, 71);
+  --color-tertiary: rgb(60, 179, 113);
+  --color-quaternary: rgb(255, 215, 0);
+  --color-quinary: rgb(147, 112, 219);
+  --color-senary: rgb(0, 191, 255);
 }

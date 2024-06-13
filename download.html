@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preload" href="css/global-min.css" as="style">
+    <link rel="stylesheet" href="css/global-min.css">
+    <title>Team</title>
+    <link rel="stylesheet" href="/css/light.css" />
+    <link rel="stylesheet" href="/css/dark.css">
+    <script src="script/team-bundle.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gabarito:wght@400&family=Poppins:ital,wght@0,500&family=Roboto:ital,wght@0,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" /> 
+    <style>
+ md-divider {
+  padding-left: 10px;
+  padding-right: 10px;
+  width: 100%;
+  box-sizing: border-box;
+  color: var(--md-sys-color-outline);
+}
+    </style>
+    <script>
+      var navOpen;
+      function openNav() {
+        document.getElementById("mySidenav").style.width = "85%";
+        document.getElementById("backdrop").style.display = "block";
+        document.getElementById("main").style.opacity = "0.3";
+        navOpen = true;
+      }
+
+      function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+        document.getElementById("backdrop").style.display = "none";
+        document.getElementById("main").style.opacity = "1";
+        navOpen = false;
+      }
+      function openLink(link) {
+        window.location.href = link;
+      }
+    </script>
+  </head>
+  <body class="light" style="width: 100%; box-sizing: border-box;">
+    <header>
+      <nav>
+        <div class="header-container">
+          <div class="logo">
+            <img src="img/logo.webp" alt="SW Pro Logo" onclick="openNav()" />
+            <div style="display: flex; justify-content: center">
+              <p style="margin-left: 8px; font-weight: 400;" onclick="location.href = '/';">Sketchware Pro</p>
+            </div>
+          </div>
+          <ul class="nav-links">
+            <li><a href="/">Home</a></li>
+            <li>
+              <a href="https://sketchware-pro.vercel.app/download">Download</a>
+            </li>
+            <li><a href="https://sketchware-pro.vercel.app/docs">Docs</a></li>
+            <li><a href="https://sketchware-pro.vercel.app/blog">Blog</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <!-- this would work as the backdrop when navbar is open-->
+    <div class="backdrop-container" id="backdrop" onclick=" if(navOpen){closeNav()}"></div>
+
+    <!--the would be the drawer and it's content-->
+    <div id="mySidenav" class="sidenav-container">
+      <span class="drawer-close-button">
+        <!--icon for closing of the navbar-->
+        <div style="display: flex; width: 100%">
+          <img
+            src="/img/swpro.svg"
+            alt="SW Pro Logo"
+            style="height: 75%; width: 75%; color: white"
+          />
+        </div>
+      </span>
+
+      <md-divider></md-divider>
+      <div id="links">
+        <a href="/">
+          <span class="material-symbols-outlined">home</span> Home</a
+        >
+        <a onclick='openLink("https://sketchware-pro.vercel.app/download");'
+          ><span class="material-symbols-outlined">get_app</span>Download</a
+        >
+        <a onclick="openLink('https://sketchware-pro.vercel.app/docs')"
+          ><span class="material-symbols-outlined">menu_book</span>Docs</a
+        >
+        <a onclick="openLink('https://sketchware-pro.vercel.app/blog')"
+          ><span class="material-symbols-outlined">library_books</span>Blog</a
+        >
+        <md-divider></md-divider>
+        <p>About</p>
+        <a onclick="openLink('/team')" id="homeLink"><span class="material-symbols-outlined">groups</span>Team</a
+        >
+        <a onclick="openLink('https://sketchware-pro.vercel.app/about')"
+          ><span class="material-symbols-outlined">warning</span>Disclaimer</a
+        >
+      </div>
+    </div>
+<div id="main">
+    <h1>useless damas</h1>
+    <h1>wait damas</h1>
+    <p>this page not ready yet</p>
+</div>
+
+    <footer>
+        <div id="footer">
+          <div class="footer_1">
+            <img src="img/logo.webp" alt="SWPro logo" style="height: 60px; width: 60px;">
+            <p style="font-size: 18px; width: 70%;">Sketchware Pro is a powerful app development tool that allows you to build apps without having to write even a single line of code.</p>
+          </div>
+          <div class="footer_col">
+            <h3>Sketchware Pro</h3>
+              <a href="https://sketchware-pro.vercel.app/download">Download</a>
+              <a href="https://sketchware-pro.vercel.app/docs">Documentation</a>
+              <a href="https://sketchware-pro.vercel.app/blog">Blog</a>
+          </div>
+          <div class="footer_col">
+            <h3>Community</h3>
+            
+            <a href="https://discord.gg/Dc8ZDBRK5V">Discord</a>
+              <a href="https://t.me/sketchwarepro">Telegram</a>
+              <a href="https://github.com/Sketchware-Pro/Sketchware-Pro/discussions">GitHub Discussions</a>
+              
+              </div>
+              <div class="footer_col">
+                <h3>More</h3>
+                
+                  <a href="https://github.com/Sketchware-Pro/Sketchware-Pro">GitHub</a>
+                  <a href="https://github.com/Sketchware-Pro/Sketchware-Pro-website">Website GitHub</a>
+               <a href="https://sketchware-pro.vercel.app/about">Disclaimer</a>
+                  
+                  </div>
+              </div>
+              <p>©2024-25 Sketchware Pro.</p>
+      </footer>
+    <script>
+      let colorScheme = window.matchMedia("(prefers-color-scheme: dark)");
+
+      // Define a function to toggle the body's class
+      function toggleBodyClass(e) {
+        // If the user prefers dark mode, add the 'dark' class to the body
+        if (e.matches) {
+          document.body.classList.add("dark");
+        } else {
+          // Otherwise, remove the 'dark' class from the body
+          document.body.classList.remove("dark");
+        }
+      }
+
+      // Call the function once to set the initial class
+      toggleBodyClass(colorScheme);
+
+      // Add an event listener to the color scheme media query
+      // This will call the function whenever the user changes their preference
+      colorScheme.addListener(toggleBodyClass);
+
+      // Optional: Event listener for dynamic changes
+      window
+        .matchMedia("(prefers-color-scheme: dark)")
+        .addEventListener("change", (event) => {
+          bodi.classList.remove("light"); // Always remove "light" first
+          if (event.matches) {
+            bodi.classList.add("dark");
+          } else {
+            // No need to explicitly remove "dark" here
+          }
+        });
+</script>
+        </body>
+</html>

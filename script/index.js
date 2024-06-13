@@ -33,8 +33,31 @@ window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', (ev
     bodi.classList.add('dark');
   } else {
     // No need to explicitly remove "dark" here
+    bodi.classList.remove('dark');
+    bodi.classList.add('light');
   }
 });
+document.addEventListener("DOMContentLoaded", function() {
+  const words = ["developing", "designing", "building", "creating", "coding", "crafting"];
+  let currentIndex = 0;
+  const dynamicWordElement = document.getElementById("dynamic-word");
+  const vibrantElement = document.getElementsByClassName("vibrant");
 
+  function changeWord() {
+      currentIndex = (currentIndex + 1) % words.length;
+      dynamicWordElement.textContent = words[currentIndex];
+      
+      // Change color based on the current theme class
+      const rootStyles = getComputedStyle(document.body);
+      const newColor = rootStyles.getPropertyValue(`--color-${["primary", "secondary", "tertiary", "quaternary", "quinary", "senary"][currentIndex]}`);
+      dynamicWordElement.style.color = newColor;
+      vibrantElement[0].style.color = newColor;
+      
+      // Trigger the animation
+      dynamicWordElement.classList.remove("slide-in");
+      void dynamicWordElement.offsetWidth; // Trigger reflow to restart the animation
+      dynamicWordElement.classList.add("slide-in");
+  }
 
-
+  setInterval(changeWord, 2000);
+});
