@@ -1,6 +1,7 @@
 // NOTICE: To compile this file, run `./compile.sh` or `npx rollup -p @rollup/plugin-node-resolve script/index.js -o script/bundle.js` in the terminal, and then minify the generated bundle.js into bundle-min.js
 import "@material/web/button/filled-button.js";
-import "@material/web/button/text-button";
+import "@material/web/button/outlined-button.js";
+import "@material/web/button/filled-tonal-button";
 import '@material/web/icon/icon';
 import "@material/web/divider/divider";
 // Get the user's preferred color scheme

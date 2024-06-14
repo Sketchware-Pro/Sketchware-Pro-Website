@@ -16,6 +16,8 @@
 
 html {
   font-family: "Gabarito",sans-serif;
+  overflow-x: hidden;
+  height: 100%;
 }
 
 body {

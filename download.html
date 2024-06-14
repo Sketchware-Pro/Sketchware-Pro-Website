@@ -3,24 +3,30 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preload" href="css/global-min.css" as="style">
-    <link rel="stylesheet" href="css/global-min.css">
+    <link rel="preload" href="css/global-min.css" as="style" />
+    <link rel="stylesheet" href="css/global-min.css" />
     <title>Download Sketchware Pro</title>
-    <link rel="icon" type="image/x-icon" href="/img/logo.webp">
+    <link rel="icon" type="image/x-icon" href="/img/logo.webp" />
     <link rel="stylesheet" href="/css/light.css" />
-    <link rel="stylesheet" href="/css/dark.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Gabarito:wght@400&family=Poppins:ital,wght@0,500&family=Roboto:ital,wght@0,400&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" /> 
+    <link rel="stylesheet" href="/css/dark.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Gabarito:wght@400&family=Poppins:ital,wght@0,500&family=Roboto:ital,wght@0,400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+      rel="stylesheet"
+    />
     <style>
- md-divider {
-  padding-left: 10px;
-  padding-right: 10px;
-  width: 100%;
-  box-sizing: border-box;
-  color: var(--md-sys-color-outline);
-}
+      md-divider {
+        padding-left: 10px;
+        padding-right: 10px;
+        width: 100%;
+        box-sizing: border-box;
+        color: var(--md-sys-color-outline);
+      }
     </style>
     <script>
       var navOpen;
@@ -42,29 +48,38 @@
       }
     </script>
   </head>
-  <body id="bodi" class="light" style="width: 100%; box-sizing: border-box;">
+  <body id="bodi" class="light" style="width: 100%; box-sizing: border-box">
     <header>
       <nav>
         <div class="header-container">
           <div class="logo">
             <img src="img/logo.webp" alt="SW Pro Logo" onclick="openNav()" />
             <div style="display: flex; justify-content: center">
-              <p style="margin-left: 8px; font-weight: 400;" onclick="location.href = '/';">Sketchware Pro</p>
+              <p
+                style="margin-left: 8px; font-weight: 400"
+                onclick="location.href = '/';"
+              >
+                Sketchware Pro
+              </p>
             </div>
           </div>
           <ul class="nav-links">
             <li><a href="/">Home</a></li>
-            <li>
-              <a href="https://sketchware-pro.vercel.app/download">Download</a>
-            </li>
             <li><a href="https://sketchware-pro.vercel.app/docs">Docs</a></li>
             <li><a href="https://sketchware-pro.vercel.app/blog">Blog</a></li>
+            <li>
+              <a href="/team">About</a>
+            </li>
           </ul>
         </div>
       </nav>
     </header>
     <!-- this would work as the backdrop when navbar is open-->
-    <div class="backdrop-container" id="backdrop" onclick=" if(navOpen){closeNav()}"></div>
+    <div
+      class="backdrop-container"
+      id="backdrop"
+      onclick=" if(navOpen){closeNav()}"
+    ></div>
 
     <!--the would be the drawer and it's content-->
     <div id="mySidenav" class="sidenav-container">
@@ -84,8 +99,8 @@
         <a href="/">
           <span class="material-symbols-outlined">home</span> Home</a
         >
-        <a onclick='openLink("/download");'
-           id="homeLink"><span class="material-symbols-outlined">get_app</span>Download</a
+        <a onclick='openLink("/download");' id="homeLink"
+          ><span class="material-symbols-outlined">get_app</span>Download</a
         >
         <a onclick="openLink('https://sketchware-pro.vercel.app/docs')"
           ><span class="material-symbols-outlined">menu_book</span>Docs</a
@@ -95,68 +110,129 @@
         >
         <md-divider></md-divider>
         <p>About</p>
-        <a onclick="openLink('/team')"><span class="material-symbols-outlined">groups</span>Team</a
+        <a onclick="openLink('/team')"
+          ><span class="material-symbols-outlined">groups</span>Team</a
         >
         <a onclick="openLink('https://sketchware-pro.vercel.app/about')"
           ><span class="material-symbols-outlined">warning</span>Disclaimer</a
         >
       </div>
     </div>
-<div id="main" style="padding-top: 64px; padding-bottom: 12px; text-align: center;">
-    <h1>Download</h1>
-    <p>You can download the latest builds of Sketchware Pro from here.</p>
-    <md-filled-button style="margin: 12px 12px;" onclick="location.href = 'https://github.com/Sketchware-Pro/Sketchware-Pro/releases/download/v6.4.0-rc05/Sketchware.Pro.v6.4.0-rc05-minApi26.apk';">Stable Android 8+</md-filled-button>
-    <md-filled-tonal-button style="margin: 12px 12px;" onclick="location.href = 'https://github.com/Sketchware-Pro/Sketchware-Pro/releases/download/v6.4.0-rc05/Sketchware.Pro.v6.4.0-rc05-minApi21.apk';">Stable - Android 5+</md-filled-tonal-button>
-    <md-outlined-button style="margin: 12px 12px;" onclick="location.href = 'https://nightly.link/Sketchware-Pro/Sketchware-Pro/workflows/android/main'">Nightly</md-outlined-button>
-    <br>
-
-</div>
-<div>
-  <h2 style="padding-left: 20px;">What's new</h2>
-  <ul>
-    <li>Java 1.9, 10, and 11 compile support! This only works in minApi26 builds though. </li>
-    <li>Syntax highlighting for Kotlin and even XML files. </li>
-    <li>When Sketchware Pro crashes, you can now send the error message to us. It's fully optional though, so please make sure to send them if you want to help us fix bugs!</li>
-    <li>New features using root access: Auto-installing of projects, and also launching of projects if auto-install is enabled and worked.</li>
-    <li>You can now use e.g. <code>tools:replace="android:id"</code> in a View's inject property to remove <code>android:id</code> from its XML code. This is a replacement for XML Command Blocks that change tiny things like these. </li>
-  </ul>
-  <h2 style="padding: 0px 20px;">Difference between Nightly and Release version</h2>
-  <p style="padding: 0px 20px;">The Nightly builds are directly downloaded from the developers' codebase. They are usually very unstable and not recommended. The Release builds, however, are very stable to use and are chosen by developers to be available to the public.</p>
-  <h2 style="padding: 0px 20px;">Difference between Android 5+ and 8+ version</h2>
-  <p style="padding: 0px 20px;">Just as the name states, the Android 5+ version is built for devices running Android 5, 6, or 7. However, the Android 8+ version is built for devices running Android 8 or above. The Android 8+ version has additional capabilities, such as compiling Java 1.9, 10, 11, and D8.</p>
-</div>
+    <div
+      id="main"
+      style="padding-top: 64px; padding-bottom: 12px; text-align: center"
+    >
+      <div>
+        <img
+          src="https://proxyimg.com/img/623e424e83bf1a487d3616d383cfee56e4b4646ec813fbd2b74ec454a2b38383db7b29fae453710aa7156b784dfda7941c484a784d836ed3d3f37ae1a1393562866121cefe245d2d87bf2789b2c739ded7ad9506070c6969c4442c85a0a87279172980f2d7d3bbbdc63fd15c1516e269.webp"
+          alt="Sketchware Pro"
+          style="width: 20%; height: auto"
+        />
+   </div>
+    <div>
+      <h1>Download</h1>
+      <p>You can download the latest builds of Sketchware Pro from here.</p>
+      <md-filled-button
+        style="margin: 8px 12px"
+        onclick="location.href = 'https://github.com/Sketchware-Pro/Sketchware-Pro/releases/download/v6.4.0-rc05/Sketchware.Pro.v6.4.0-rc05-minApi26.apk';"
+        >Stable Android 8+</md-filled-button
+      >
+      <md-filled-tonal-button
+        style="margin: 8px 12px"
+        onclick="location.href = 'https://github.com/Sketchware-Pro/Sketchware-Pro/releases/download/v6.4.0-rc05/Sketchware.Pro.v6.4.0-rc05-minApi21.apk';"
+        >Stable - Android 5+</md-filled-tonal-button
+      >
+      <md-outlined-button
+        style="margin: 8px 12px"
+        onclick="location.href = 'https://nightly.link/Sketchware-Pro/Sketchware-Pro/workflows/android/main'"
+        >Nightly</md-outlined-button
+      >
+      <br />
+    </div>
+    <div>
+      <h2 style="padding-left: 20px">What's new</h2>
+      <ul>
+        <li>
+          Java 1.9, 10, and 11 compile support! This only works in minApi26
+          builds though.
+        </li>
+        <li>Syntax highlighting for Kotlin and even XML files.</li>
+        <li>
+          When Sketchware Pro crashes, you can now send the error message to us.
+          It's fully optional though, so please make sure to send them if you
+          want to help us fix bugs!
+        </li>
+        <li>
+          New features using root access: Auto-installing of projects, and also
+          launching of projects if auto-install is enabled and worked.
+        </li>
+        <li>
+          You can now use e.g. <code>tools:replace="android:id"</code> in a
+          View's inject property to remove <code>android:id</code> from its XML
+          code. This is a replacement for XML Command Blocks that change tiny
+          things like these.
+        </li>
+      </ul>
+      <h2 style="padding: 0px 20px">
+        Difference between Nightly and Release version
+      </h2>
+      <p style="padding: 0px 20px">
+        The Nightly builds are directly downloaded from the developers'
+        codebase. They are usually very unstable and not recommended. The
+        Release builds, however, are very stable to use and are chosen by
+        developers to be available to the public.
+      </p>
+      <h2 style="padding: 0px 20px">
+        Difference between Android 5+ and 8+ version
+      </h2>
+      <p style="padding: 0px 20px">
+        Just as the name states, the Android 5+ version is built for devices
+        running Android 5, 6, or 7. However, the Android 8+ version is built for
+        devices running Android 8 or above. The Android 8+ version has
+        additional capabilities, such as compiling Java 1.9, 10, 11, and D8.
+      </p>
+    </div>
 
     <footer>
-        <div id="footer">
-          <div class="footer_1">
-            <img src="img/logo.webp" alt="SWPro logo" style="height: 60px; width: 60px;">
-            <p style="font-size: 18px; width: 70%;">Sketchware Pro is a powerful app development tool that allows you to build apps without having to write even a single line of code.</p>
-          </div>
-          <div class="footer_col">
-            <h3>Sketchware Pro</h3>
-              <a href="https://sketchware-pro.vercel.app/download">Download</a>
-              <a href="https://sketchware-pro.vercel.app/docs">Documentation</a>
-              <a href="https://sketchware-pro.vercel.app/blog">Blog</a>
-          </div>
-          <div class="footer_col">
-            <h3>Community</h3>
-            
-            <a href="https://discord.gg/Dc8ZDBRK5V">Discord</a>
-              <a href="https://t.me/sketchwarepro">Telegram</a>
-              <a href="https://github.com/Sketchware-Pro/Sketchware-Pro/discussions">GitHub Discussions</a>
-              
-              </div>
-              <div class="footer_col">
-                <h3>More</h3>
-                
-                  <a href="https://github.com/Sketchware-Pro/Sketchware-Pro">GitHub</a>
-                  <a href="https://github.com/Sketchware-Pro/Sketchware-Pro-website">Website GitHub</a>
-               <a href="https://sketchware-pro.vercel.app/about">Disclaimer</a>
-                  
-                  </div>
-              </div>
-              <p>©2024-25 Sketchware Pro.</p>
-      </footer>
-<script src="/script/download-bundle.js"></script>
-        </body>
+      <div id="footer">
+        <div class="footer_1">
+          <img
+            src="img/logo.webp"
+            alt="SWPro logo"
+            style="height: 60px; width: 60px"
+          />
+          <p style="font-size: 18px; width: 70%">
+            Sketchware Pro is a powerful app development tool that allows you to
+            build apps without having to write even a single line of code.
+          </p>
+        </div>
+        <div class="footer_col">
+          <h3>Sketchware Pro</h3>
+          <a href="https://sketchware-pro.vercel.app/download">Download</a>
+          <a href="https://sketchware-pro.vercel.app/docs">Documentation</a>
+          <a href="https://sketchware-pro.vercel.app/blog">Blog</a>
+        </div>
+        <div class="footer_col">
+          <h3>Community</h3>
+
+          <a href="https://discord.gg/Dc8ZDBRK5V">Discord</a>
+          <a href="https://t.me/sketchwarepro">Telegram</a>
+          <a href="https://github.com/Sketchware-Pro/Sketchware-Pro/discussions"
+            >GitHub Discussions</a
+          >
+        </div>
+        <div class="footer_col">
+          <h3>More</h3>
+
+          <a href="https://github.com/Sketchware-Pro/Sketchware-Pro">GitHub</a>
+          <a href="https://github.com/Sketchware-Pro/Sketchware-Pro-website"
+            >Website GitHub</a
+          >
+          <a href="https://sketchware-pro.vercel.app/about">Disclaimer</a>
+        </div>
+      </div>
+      <p>©2024-25 Sketchware Pro.</p>
+    </footer>
+    <script src="/script/download-bundle.js"></script>
+  </body>
 </html>

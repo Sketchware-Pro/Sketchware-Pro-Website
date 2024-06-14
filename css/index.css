@@ -57,7 +57,7 @@
   margin-bottom: 20px;
   position: relative;
   animation: slideIn_bottom 0.5s ease-in-out forwards;
-  content: url(/img/tabshot.png);
+  content: url(https://proxyimg.com/img/623e424e83bf1a488b9316607fe0c2bc0e00989ee518f66903a96c6ea8b1ef1b72889000fc899160a7156b784dfda794ceb5abd53e40580b666b716c3b98a12151f03bd647e8f6d4fe7906ed29061b3ff17f5b810c760514a19f4997f164bba5.png);
 }
 
 #main {
@@ -347,6 +347,7 @@
     margin-top: 0px;
     content: url(/img/mockup.webp);
     width: 100%;
+    max-width: 400px;
     height: auto;
     position: relative;
   }
@@ -488,7 +489,7 @@
   }
   @media (prefers-color-scheme: dark) {
     .fallback-image {
-      content: url(/img/mockup_dark.webp);
+      content: url(https://proxyimg.com/img/623e424e83bf1a488b9316607fe0c2bc0e00989ee518f66903a96c6ea8b1ef1b72889000fc899160a7156b784dfda794ceb5abd53e40580b0028d87a5f273aad476afccee7dcad24f5836b08b9181aeeb39ee8f638b86a860de86d43d59a123d.webp);
     }
   }
 }

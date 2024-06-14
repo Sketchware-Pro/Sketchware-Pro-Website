@@ -3,97 +3,103 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preload" href="css/global-min.css" as="style">
-    <link rel="stylesheet" href="css/global-min.css">
+    <link rel="preload" href="css/global-min.css" as="style" />
+    <link rel="stylesheet" href="css/global-min.css" />
     <title>Team</title>
     <link rel="stylesheet" href="/css/light.css" />
-    <link rel="stylesheet" href="/css/dark.css">
+    <link rel="stylesheet" href="/css/dark.css" />
     <script src="script/team-bundle.js"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Gabarito:wght@400&family=Poppins:ital,wght@0,500&family=Roboto:ital,wght@0,400&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" /> 
-    <link rel="icon" type="image/x-icon" href="/img/logo.webp">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Gabarito:wght@400&family=Poppins:ital,wght@0,500&family=Roboto:ital,wght@0,400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/x-icon" href="/img/logo.webp" />
     <style>
       /* Styles for modders list */
-.modders-list {
-  list-style-type: none;
-  padding: 6px;
-  border-radius: 12px;
-  margin: 20px;
-  background-color: var(--md-sys-color-surface-container-low);
-}
-#main {
+      .modders-list {
+        list-style-type: none;
+        padding: 6px;
+        border-radius: 12px;
+        margin: 20px;
+        background-color: var(--md-sys-color-surface-container-low);
+      }
+      #main {
+        font-family: "Product Sans Regular";
+      }
+      .modder-item {
+        display: flex;
+        align-items: center;
+        padding: 20px;
+      }
 
-  font-family: 'Product Sans Regular';
-}
-.modder-item {
-  display: flex;
-  align-items: center;
-  padding: 20px;
-}
+      .modder-item img {
+        width: 48px;
+        height: 48px;
+        border-radius: 50%;
+        margin-right: 16px;
+      }
 
-.modder-item img {
-  width: 48px;
-  height: 48px;
-  border-radius: 50%;
-  margin-right: 16px;
-}
+      .modder-info {
+        flex: 1;
+      }
 
-.modder-info {
-  flex: 1;
-}
+      .modder-username {
+        font-weight: bold;
+      }
 
-.modder-username {
-  font-weight: bold;
-}
+      .modder-description {
+        color: var(--md-sys-color-on-surface-variant);
+      }
+      .loading-indicator {
+        text-align: center;
+        padding-top: 64px;
+      }
 
-.modder-description {
-  color: var(--md-sys-color-on-surface-variant);
-}
-.loading-indicator {
-  text-align: center;
-  padding-top: 64px;
-}
-
-.spinner {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  border: 4px solid var(--mdc-theme-primary);
-  border-top-color: transparent;
-  animation: spin 1s linear infinite;
-}
-.modders {
-  width: 50%;
-}
-#mainDiv {
-  display: flex;
-
-}
-@media (min-width: 100px) and (max-width: 1024px) {
-  #mainDiv {
-    flex-direction: column;
-  }
-  .modders {
-    width: 100%;
-  }
-}
-@keyframes spin {
-  to { transform: rotate(360deg); }
-}
-#main {
-  width: 100%;
-  box-sizing: border-box;
-  font-family: "Gabarito", sans-serif;
-}
-md-divider {
-  padding-left: 10px;
-  padding-right: 10px;
-  width: 100%;
-  box-sizing: border-box;
-  color: var(--md-sys-color-outline);
-}
+      .spinner {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        border: 4px solid var(--mdc-theme-primary);
+        border-top-color: transparent;
+        animation: spin 1s linear infinite;
+      }
+      .modders {
+        width: 50%;
+      }
+      #mainDiv {
+        display: flex;
+      }
+      @media (min-width: 100px) and (max-width: 1024px) {
+        #mainDiv {
+          flex-direction: column;
+        }
+        .modders {
+          width: 100%;
+        }
+      }
+      @keyframes spin {
+        to {
+          transform: rotate(360deg);
+        }
+      }
+      #main {
+        width: 100%;
+        box-sizing: border-box;
+        font-family: "Gabarito", sans-serif;
+      }
+      md-divider {
+        padding-left: 10px;
+        padding-right: 10px;
+        width: 100%;
+        box-sizing: border-box;
+        color: var(--md-sys-color-outline);
+      }
     </style>
     <script>
       var navOpen;
@@ -115,14 +121,19 @@ md-divider {
       }
     </script>
   </head>
-  <body class="light" style="width: 100%; box-sizing: border-box;">
+  <body class="light" style="width: 100%; box-sizing: border-box">
     <header>
       <nav>
         <div class="header-container">
           <div class="logo">
             <img src="img/logo.webp" alt="SW Pro Logo" onclick="openNav()" />
             <div style="display: flex; justify-content: center">
-              <p style="margin-left: 8px; font-weight: 400;" onclick="location.href = '/';">Sketchware Pro</p>
+              <p
+                style="margin-left: 8px; font-weight: 400"
+                onclick="location.href = '/';"
+              >
+                Sketchware Pro
+              </p>
             </div>
           </div>
           <ul class="nav-links">
@@ -137,7 +148,11 @@ md-divider {
       </nav>
     </header>
     <!-- this would work as the backdrop when navbar is open-->
-    <div class="backdrop-container" id="backdrop" onclick=" if(navOpen){closeNav()}"></div>
+    <div
+      class="backdrop-container"
+      id="backdrop"
+      onclick=" if(navOpen){closeNav()}"
+    ></div>
 
     <!--the would be the drawer and it's content-->
     <div id="mySidenav" class="sidenav-container">
@@ -168,7 +183,8 @@ md-divider {
         >
         <md-divider></md-divider>
         <p>About</p>
-        <a onclick="openLink('/team')" id="homeLink"><span class="material-symbols-outlined">groups</span>Team</a
+        <a onclick="openLink('/team')" id="homeLink"
+          ><span class="material-symbols-outlined">groups</span>Team</a
         >
         <a onclick="openLink('https://sketchware-pro.vercel.app/about')"
           ><span class="material-symbols-outlined">warning</span>Disclaimer</a
@@ -176,59 +192,93 @@ md-divider {
       </div>
     </div>
 
-
     <div id="main">
       <div id="loadingIndicator" class="loading-indicator">
         <div class="spinner"></div>
       </div>
-  
-      <div id="sec1" style="padding: 12px; padding-top: 64px; padding-bottom: 0px;">
-        <h1 style="font-size: 40px;">Meet the Team</h1>
-        <p style="font-size: 20px;">This vibrant crew isn't just passionate about coding, they're fueled by the thrill of helping others bring their app ideas to life. From seasoned developers to design wizards, they're the masterminds behind Sketchware Pro.</p>
-      </div>
-  <div id="mainDiv">
-      <!-- Separate div elements for Main Modders and Contributors lists -->
-      <div id="mainModders" class="modders">
-        <h3 style="padding: 8px; font-size: 16px; color: var(--md-sys-color-on-surface-variant); font-family: 'Product Sans Regular', sans-serif;">Main Modders</h3>
-        <ul id="mainModdersList" class="modders-list"></ul>
-      </div>
-      <div id="contributors" class="modders">
-        <h3 style="padding: 8px; font-size: 16px; color: var(--md-sys-color-on-surface-variant); font-family: 'Product Sans Regular', sans-serif;">Contributors</h3>
-        <ul id="contributorsList" class="modders-list"></ul>
-      </div></div>
-    </div>
 
+      <div
+        id="sec1"
+        style="padding: 12px; padding-top: 64px; padding-bottom: 0px"
+      >
+        <h1 style="font-size: 40px">Meet the Team</h1>
+        <p style="font-size: 20px">
+          This vibrant crew isn't just passionate about coding, they're fueled
+          by the thrill of helping others bring their app ideas to life. From
+          seasoned developers to design wizards, they're the masterminds behind
+          Sketchware Pro.
+        </p>
+      </div>
+      <div id="mainDiv">
+        <!-- Separate div elements for Main Modders and Contributors lists -->
+        <div id="mainModders" class="modders">
+          <h3
+            style="
+              padding: 8px;
+              font-size: 16px;
+              color: var(--md-sys-color-on-surface-variant);
+              font-family: 'Product Sans Regular', sans-serif;
+            "
+          >
+            Main Modders
+          </h3>
+          <ul id="mainModdersList" class="modders-list"></ul>
+        </div>
+        <div id="contributors" class="modders">
+          <h3
+            style="
+              padding: 8px;
+              font-size: 16px;
+              color: var(--md-sys-color-on-surface-variant);
+              font-family: 'Product Sans Regular', sans-serif;
+            "
+          >
+            Contributors
+          </h3>
+          <ul id="contributorsList" class="modders-list"></ul>
+        </div>
+      </div>
+    </div>
 
     <footer>
       <div id="footer">
         <div class="footer_1">
-          <img src="img/logo.webp" alt="SWPro logo" style="height: 60px; width: 60px;">
-          <p style="font-size: 18px; width: 70%;">Sketchware Pro is a powerful app development tool that allows you to build apps without having to write even a single line of code.</p>
+          <img
+            src="img/logo.webp"
+            alt="SWPro logo"
+            style="height: 60px; width: 60px"
+          />
+          <p style="font-size: 18px; width: 70%">
+            Sketchware Pro is a powerful app development tool that allows you to
+            build apps without having to write even a single line of code.
+          </p>
         </div>
         <div class="footer_col">
           <h3>Sketchware Pro</h3>
-            <a href="https://sketchware-pro.vercel.app/download">Download</a>
-            <a href="https://sketchware-pro.vercel.app/docs">Documentation</a>
-            <a href="https://sketchware-pro.vercel.app/blog">Blog</a>
+          <a href="https://sketchware-pro.vercel.app/download">Download</a>
+          <a href="https://sketchware-pro.vercel.app/docs">Documentation</a>
+          <a href="https://sketchware-pro.vercel.app/blog">Blog</a>
         </div>
         <div class="footer_col">
           <h3>Community</h3>
-          
+
           <a href="https://discord.gg/Dc8ZDBRK5V">Discord</a>
-            <a href="https://t.me/sketchwarepro">Telegram</a>
-            <a href="https://github.com/Sketchware-Pro/Sketchware-Pro/discussions">GitHub Discussions</a>
-            
-            </div>
-            <div class="footer_col">
-              <h3>More</h3>
-              
-                <a href="https://github.com/Sketchware-Pro/Sketchware-Pro">GitHub</a>
-                <a href="https://github.com/Sketchware-Pro/Sketchware-Pro-website">Website GitHub</a>
-             <a href="https://sketchware-pro.vercel.app/about">Disclaimer</a>
-                
-                </div>
-            </div>
-            <p>©2024-25 Sketchware Pro.</p>
+          <a href="https://t.me/sketchwarepro">Telegram</a>
+          <a href="https://github.com/Sketchware-Pro/Sketchware-Pro/discussions"
+            >GitHub Discussions</a
+          >
+        </div>
+        <div class="footer_col">
+          <h3>More</h3>
+
+          <a href="https://github.com/Sketchware-Pro/Sketchware-Pro">GitHub</a>
+          <a href="https://github.com/Sketchware-Pro/Sketchware-Pro-website"
+            >Website GitHub</a
+          >
+          <a href="https://sketchware-pro.vercel.app/about">Disclaimer</a>
+        </div>
+      </div>
+      <p>©2024-25 Sketchware Pro.</p>
     </footer>
     <script>
       let colorScheme = window.matchMedia("(prefers-color-scheme: dark)");
@@ -262,96 +312,96 @@ md-divider {
             // No need to explicitly remove "dark" here
           }
         });
-// Get loading indicator element
-const loadingIndicator = document.getElementById('loadingIndicator');
+      // Get loading indicator element
+      const loadingIndicator = document.getElementById("loadingIndicator");
 
-// Display loading indicator
-loadingIndicator.style.display = 'block';
+      // Display loading indicator
+      loadingIndicator.style.display = "block";
 
-// Fetch data from the provided URL
-fetch('https://sketchware-pro.github.io/Sketchware-Pro/aboutus.json')
-  .then(response => response.json())
-  .then(data => {
-    // Extract the 'moddersteam' array from the fetched data
-    const moddersTeam = data.moddersteam;
+      // Fetch data from the provided URL
+      fetch("https://sketchware-pro.github.io/Sketchware-Pro/aboutus.json")
+        .then((response) => response.json())
+        .then((data) => {
+          // Extract the 'moddersteam' array from the fetched data
+          const moddersTeam = data.moddersteam;
 
-    // Get the div elements for Main Modders and Contributors lists
-    const mainModdersList = document.getElementById('mainModdersList');
-    const contributorsList = document.getElementById('contributorsList');
+          // Get the div elements for Main Modders and Contributors lists
+          const mainModdersList = document.getElementById("mainModdersList");
+          const contributorsList = document.getElementById("contributorsList");
 
-    // Variable to track the index of the last main modder
-    let lastMainModderIndex = -1;
+          // Variable to track the index of the last main modder
+          let lastMainModderIndex = -1;
 
-    // Loop through the moddersTeam array and create list items
-    moddersTeam.forEach((modder, index) => {
-      // Create list item
-      const listItem = document.createElement('li');
-      listItem.classList.add('modder-item');
+          // Loop through the moddersTeam array and create list items
+          moddersTeam.forEach((modder, index) => {
+            // Create list item
+            const listItem = document.createElement("li");
+            listItem.classList.add("modder-item");
 
-      // Create and set modder image
-      const modderImage = document.createElement('img');
-      modderImage.src = modder.modder_img;
-      listItem.appendChild(modderImage);
+            // Create and set modder image
+            const modderImage = document.createElement("img");
+            modderImage.src = modder.modder_img;
+            listItem.appendChild(modderImage);
 
-      // Create modder info container
-      const modderInfo = document.createElement('div');
-      modderInfo.classList.add('modder-info');
+            // Create modder info container
+            const modderInfo = document.createElement("div");
+            modderInfo.classList.add("modder-info");
 
-      // Create and set modder username
-      const modderUsername = document.createElement('div');
-      modderUsername.classList.add('modder-username');
-      modderUsername.textContent = modder.modder_username;
-      modderInfo.appendChild(modderUsername);
+            // Create and set modder username
+            const modderUsername = document.createElement("div");
+            modderUsername.classList.add("modder-username");
+            modderUsername.textContent = modder.modder_username;
+            modderInfo.appendChild(modderUsername);
 
-      // Create and set modder description
-      const modderDescription = document.createElement('div');
-      modderDescription.classList.add('modder-description');
-      modderDescription.textContent = modder.modder_description;
-      modderInfo.appendChild(modderDescription);
+            // Create and set modder description
+            const modderDescription = document.createElement("div");
+            modderDescription.classList.add("modder-description");
+            modderDescription.textContent = modder.modder_description;
+            modderInfo.appendChild(modderDescription);
 
-      // Append modder info to list item
-      listItem.appendChild(modderInfo);
+            // Append modder info to list item
+            listItem.appendChild(modderInfo);
 
-      // Add padding to list item
-      listItem.style.padding = '12px';
+            // Add padding to list item
+            listItem.style.padding = "12px";
 
-      // Append list item to the appropriate list
-      if (modder.isMainModder) {
-        mainModdersList.appendChild(listItem);
-        // Update the index of the last main modder
-        lastMainModderIndex = index;
-      } else {
-        contributorsList.appendChild(listItem);
-      }
+            // Append list item to the appropriate list
+            if (modder.isMainModder) {
+              mainModdersList.appendChild(listItem);
+              // Update the index of the last main modder
+              lastMainModderIndex = index;
+            } else {
+              contributorsList.appendChild(listItem);
+            }
 
-      // Add md-divider between list items, except for the last one
-      if (index < moddersTeam.length - 1) {
-        const divider = document.createElement('md-divider');
-        if (modder.isMainModder) {
-          mainModdersList.appendChild(divider);
-        } else {
-          contributorsList.appendChild(divider);
-        }
-      }
-    });
+            // Add md-divider between list items, except for the last one
+            if (index < moddersTeam.length - 1) {
+              const divider = document.createElement("md-divider");
+              if (modder.isMainModder) {
+                mainModdersList.appendChild(divider);
+              } else {
+                contributorsList.appendChild(divider);
+              }
+            }
+          });
 
-    // Remove the md-divider from below the last main modder
-    if (lastMainModderIndex !== -1) {
-      const mainModdersDividers = mainModdersList.querySelectorAll('md-divider');
-      if (mainModdersDividers.length > 0) {
-        mainModdersDividers[mainModdersDividers.length - 1].remove();
-      }
-    }
+          // Remove the md-divider from below the last main modder
+          if (lastMainModderIndex !== -1) {
+            const mainModdersDividers =
+              mainModdersList.querySelectorAll("md-divider");
+            if (mainModdersDividers.length > 0) {
+              mainModdersDividers[mainModdersDividers.length - 1].remove();
+            }
+          }
 
-    // Hide loading indicator after processing data
-    document.getElementById('loadingIndicator').style.display = 'none';
-  })
-  .catch(error => {
-    // Handle errors
-    console.error('Error fetching data:', error);
-    document.getElementById('loadingIndicator').style.display = 'none';
-  });
-
+          // Hide loading indicator after processing data
+          document.getElementById("loadingIndicator").style.display = "none";
+        })
+        .catch((error) => {
+          // Handle errors
+          console.error("Error fetching data:", error);
+          document.getElementById("loadingIndicator").style.display = "none";
+        });
     </script>
   </body>
 </html>

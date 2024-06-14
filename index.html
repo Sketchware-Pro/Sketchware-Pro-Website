@@ -8,6 +8,8 @@
     <link rel="preload" href="/css/index-min.css" as="style" />
     <link rel="stylesheet" href="/css/index-min.css"/>
     <link rel="prefetch" href="/img/mockup_dark.webp">
+    <link rel="prefetch" href="/img/mockup.webp">
+    <link rel="prefetch" href="/script/bundle-min.js">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Gabarito:wght@400&family=Poppins:ital,wght@0,500&family=Roboto:ital,wght@0,500&display=swap" rel="stylesheet">
@@ -130,12 +132,15 @@ getRepoData();
         <p class="hideDesk">
             No code, all awesome. Craft epic apps with Sketchware Pro's magical blocks.
         </p>
-        <md-filled-button
-           style="z-index: 1;" onclick="openLink('https://sketchware-pro.vercel.app/docs')" class="hideDesk">
+       <div style="display: flex;">
+         <md-filled-button
+           style="z-index: 1; margin-right: 12px;" onclick="openLink('/download')" class="hideDesk">
             Get Started
           </md-filled-button>
-      </div>
-      <img class="fallback-image" src="img/tabshot.png" alt="Video not supported">
+          <md-outlined-button onclick="openLink('/docs')">View Docs</md-outlined-button>
+        </div>
+        </div>
+      <img class="fallback-image" src="https://proxyimg.com/img/623e424e83bf1a487d3616d383cfee56e4b4646ec813fbd2b74ec454a2b38383db7b29fae453710aa7156b784dfda7941c484a784d836ed3d3f37ae1a1393562866121cefe245d2df61f8a17b986ee5e4dff94247a25c9e2b2ec3a1d76dc6dbb.webp" alt="Video not supported">
     </div>
     <div id="main-2">
    <div id="sec2">
