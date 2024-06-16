@@ -128,6 +128,27 @@
       id="main"
       style="padding-top: 64px; padding-bottom: 12px; text-align: center"
     >
+
+    <div id="sec1">
+      <h1 id="download" style="margin-bottom: 0px;">Download</h1>
+      <p style="font-size: 1.5rem;">You can download the latest builds of Sketchware Pro from here.</p>
+      <md-filled-button
+        style="margin: 8px 12px"
+        onclick="location.href = 'https://github.com/Sketchware-Pro/Sketchware-Pro/releases/download/v6.4.0-rc05/Sketchware.Pro.v6.4.0-rc05-minApi26.apk';"
+        >Stable Android 8+</md-filled-button
+      >
+      <md-filled-tonal-button
+        style="margin: 8px 12px"
+        onclick="location.href = 'https://github.com/Sketchware-Pro/Sketchware-Pro/releases/download/v6.4.0-rc05/Sketchware.Pro.v6.4.0-rc05-minApi21.apk';"
+        >Stable - Android 5+</md-filled-tonal-button
+      >
+      <md-outlined-button
+        style="margin: 8px 12px"
+        onclick="location.href = 'https://nightly.link/Sketchware-Pro/Sketchware-Pro/workflows/android/main'"
+        >Nightly</md-outlined-button
+      >
+      <br />
+      <h1>Screenshots</h1>
 <!-- Slider main container -->
 <div class="swiper">
   <!-- Additional required wrapper -->
@@ -169,35 +190,119 @@
       object-fit: cover;
       border-radius: 24px;
     }
+    #main5 {
+  padding: 120px 0px;
+}
+#sec5 {
+  grid-template-columns: min(
+      calc(var(--col-width) * 12),
+      calc(100vw - 2 * var(--gutter))
+    ) auto;
+  -webkit-box-align: center;
+  align-items: center;
+  text-align: left;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  max-width: min(calc(var(--col-width) * 22), calc(100vw - 2 * var(--gutter)));
+  padding: 0px 70px;
+  display: flex;
+  place-items: start;
+  box-sizing: inherit;
+  unicode-bidi: isolate;
+  margin: auto;
+}
+#sec5 p {
+  width: 70%;
+  max-width: 700px;
+  font-size: 5rem;
+  font-weight: 400;
+  padding: 0px;
+  margin: 0px;
+  letter-spacing: -0.04em;
+}
+
+.material-button {
+  background-color: var(--md-sys-color-primary); /* Light background color */
+  color: var(--md-sys-color-on-primary); /* Text color */
+  border: 1px solid var(--md-sys-color-primary-container); /* Initial border */
+  border-radius: 9999px; /* Fully rounded corners */
+  padding: 24px 36px; /* Padding */
+  font-size: 40px; /* Font size */
+  font-weight: 500; /* Medium font weight */
+  cursor: pointer; /* Pointer cursor on hover */
+  display: flex;
+  align-items: center;
+  gap: 8px; /* Space between text and arrow */
+}
+.material-button .arrow {
+  font-size: 40px;
+}
+.material-button:hover {
+  background-color: var(
+    --md-sys-color-primary-container-dim
+  ); /* Background on hover */
+  color: var(--md-sys-color-primary);
+  border: 1px solid var(--md-sys-color-on-secondary-container); /* Border on hover */
+}
     /* CSS for desktops */
     @media (min-width: 1024px) {
       .swiper-slide img {
         width: 80%;
       }
+      div {
+        text-align: left;
+      }
+      #sec1 {
+        text-align: center;
+      }
+
+    }
+    h1 {
+        font-size: 4rem;
+      }
+      h2 {
+        font-size: 2.5rem;
+      }
+      p, li {
+        font-size: 1.2rem;
+      
+      }
       ul {
         text-align: left;
       }
+    @media (min-width: 100px) and (max-width: 950px) {
+      h1 {
+        font-size: 3rem;
+      }
+      p {
+        font-size: 1rem;
+      }
+      h2 {
+        font-size: 2rem;
+      }
+      #sec5 {
+    display: flex;
+    flex-direction: column;
+    padding: 0px 12px;
+  }
+  #sec5 p {
+    font-size: 3.25rem;
+    width: 100%;
+    max-width: unset;
+  }
+  .material-button {
+    font-size: 28px;
+    padding: 16px;
+  }
+  .material-button .arrow {
+    font-size: 24px;
+  }
+    }
+
+    html {
+      scroll-behavior: smooth;
     }
 </style>
-    <div>
-      <h1>Download</h1>
-      <p>You can download the latest builds of Sketchware Pro from here.</p>
-      <md-filled-button
-        style="margin: 8px 12px"
-        onclick="location.href = 'https://github.com/Sketchware-Pro/Sketchware-Pro/releases/download/v6.4.0-rc05/Sketchware.Pro.v6.4.0-rc05-minApi26.apk';"
-        >Stable Android 8+</md-filled-button
-      >
-      <md-filled-tonal-button
-        style="margin: 8px 12px"
-        onclick="location.href = 'https://github.com/Sketchware-Pro/Sketchware-Pro/releases/download/v6.4.0-rc05/Sketchware.Pro.v6.4.0-rc05-minApi21.apk';"
-        >Stable - Android 5+</md-filled-tonal-button
-      >
-      <md-outlined-button
-        style="margin: 8px 12px"
-        onclick="location.href = 'https://nightly.link/Sketchware-Pro/Sketchware-Pro/workflows/android/main'"
-        >Nightly</md-outlined-button
-      >
-      <br />
     </div>
     <div>
       <h2 style="padding: 0px 20px">What's new</h2>
@@ -242,7 +347,42 @@
         additional capabilities, such as compiling Java 1.9, 10, 11, and D8.
       </p>
     </div>
+    <div id="main5">
+      <div id="sec5">
+        <p>Start <span style="color: rgb(77, 119, 184);" id="dynamic-word">developing</span><br/> with Sketchware Pro<span class="vibrant" style="color: rgb(77, 119, 184);">.</span></p>
+        <div style="align-items: center; text-align: center; height: max-content; padding: 60px 0px;">
+          <a class="material-button vibrant" onclick="openLink('#download')">
+            Get Started
+          </a>
+      </div>
+      </div>
+    </div>
+    <script>
+      if (window.matchMedia('screen and (min-width: 950px)').matches) {
+        var slidePerView = 5;
+      } else {
+        var slidePerView = 1;
+      }
+      const swiper = new Swiper('.swiper', {
+  // Optional parameters
+  direction: 'horizontal',
+  rewind: true,
+  autoplay: {
+    delay: 3000,
+  },
+  grabCursor: true,
+  
+  slidesPerView: slidePerView,
 
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+
+});
+    </script>
     <footer>
       <div id="footer">
         <div class="footer_1">
@@ -283,32 +423,7 @@
       </div>
       <p>©2024-25 Sketchware Pro.</p>
     </footer>
-    <script>
-      if (window.matchMedia('screen and (min-width: 950px)').matches) {
-        var slidePerView = 5;
-      } else {
-        var slidePerView = 1;
-      }
-      const swiper = new Swiper('.swiper', {
-  // Optional parameters
-  direction: 'horizontal',
-  rewind: true,
-  autoplay: {
-    delay: 3000,
-  },
-  grabCursor: true,
-  
-  slidesPerView: slidePerView,
 
-
-  // Navigation arrows
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
-
-});
-    </script>
     <script src="/script/download-bundle.js"></script>
   </body>
 </html>

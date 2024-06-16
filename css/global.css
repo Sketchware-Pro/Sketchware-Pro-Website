@@ -53,6 +53,7 @@ header {
   box-shadow: 0 2px 8px 0 rgba(32,33,36,.08);
   z-index: 2;
   color: var(--md-sys-color-on-surface-container);
+  display: block;
 }
 
 .header-container {
