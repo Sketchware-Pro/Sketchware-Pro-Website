@@ -4,13 +4,15 @@
       "source": "/docs",
       "destination": "https://docs.sketchware.pro/"
     },
+  ]
+  "rewrites": [
     {
-      "source": "download.html",
-      "destination": "download"
+      "source": "download",
+      "destination": "download.html"
     },
         {
-      "source": "team.html",
-      "destination": "team"
-    }
+      "source": "team",
+      "destination": "team.html"
+        }
   ]
 }
