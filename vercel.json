@@ -1,10 +1,4 @@
 {
-  "redirects": [
-    {
-      "source": "/docs",
-      "destination": "https://docs.sketchware.pro/"
-    }
-  ],
     "rewrites": [
     {
       "source": "/download",
@@ -13,6 +7,10 @@
         {
       "source": "/team",
       "destination": "/team.html"
-        }
+        },
+          {
+      "source": "/docs",
+      "destination": "https://docs.sketchware.pro/"
+    }
   ]
 }
