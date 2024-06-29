@@ -3,8 +3,8 @@
     {
       "source": "/docs",
       "destination": "https://docs.sketchware.pro/"
-    },
-  ]
+    }
+  ],
     "rewrites": [
     {
       "source": "/download",
