@@ -11,8 +11,12 @@
     ],
     "redirects": [
           {
-      "source": "/docs",
-      "destination": "https://docs.sketchware.pro/"
-    }
+      "source": "/docs/:path*",
+      "destination": "https://docs.sketchware.pro/docs/:path*"
+    },
+                  {
+      "source": "/blog/:path*",
+      "destination": "https://docs.sketchware.pro/blog/:path*"
+                  }
   ]
 }
