@@ -7,7 +7,9 @@
         {
       "source": "/team",
       "destination": "/team.html"
-        },
+        }
+    ],
+    "redirects": [
           {
       "source": "/docs",
       "destination": "https://docs.sketchware.pro/"
