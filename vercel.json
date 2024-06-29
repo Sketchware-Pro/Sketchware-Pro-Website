@@ -1,5 +1,5 @@
 {
-  "rewrites": [
+  "redirects": [
     {
       "source": "/docs",
       "destination": "https://docs.sketchware.pro/"
