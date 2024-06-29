@@ -7,7 +7,7 @@
     {
       "source": "download.html",
       "destination": "download"
-    }
+    },
         {
       "source": "team.html",
       "destination": "team"
