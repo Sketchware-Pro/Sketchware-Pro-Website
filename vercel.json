@@ -1,0 +1,16 @@
+{
+  "rewrites": [
+    {
+      "source": "/docs",
+      "destination": "https://docs.sketchware.pro/"
+    },
+    {
+      "source": "download.html",
+      "destination": "download"
+    }
+        {
+      "source": "team.html",
+      "destination": "team"
+    }
+  ]
+}
