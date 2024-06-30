@@ -7,7 +7,11 @@
         {
       "source": "/team",
       "destination": "/team.html"
-        }
+        },
+                {
+      "source": "/disclaimer",
+      "destination": "/disclaimer.html"
+                }
     ],
     "redirects": [
           {
