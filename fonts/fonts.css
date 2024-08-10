@@ -1,8 +1,8 @@
 @font-face {
     font-family: 'Product Sans Regular';
-    font-style: normal;
-    font-weight: normal;
-    src: local('Product Sans Regular'), url('ProductSans-Regular.woff') format('woff');
+    font-style: bold;
+    font-weight: 800;
+    src: local('Gilroy Light'), url('Gilroy-Light.otf') format('otf');
     }
     
 /*
@@ -74,7 +74,7 @@
     font-family: 'Product Sans Bold';
     font-style: normal;
     font-weight: normal;
-    src: local('Product Sans Bold'), url('ProductSans-Bold.woff') format('woff');
+    src: local('Product Sans Bold'), url('Gilroy-ExtraBold.otf') format('otf');
     }
     
 /*
