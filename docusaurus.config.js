@@ -28,7 +28,7 @@ const config = {
   },
 
 
-  plugins: ['docusaurus-plugin-google-adsense',
+  plugins: [
     [
       '@docusaurus/plugin-client-redirects',
       {
