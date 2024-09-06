@@ -28,7 +28,7 @@ const config = {
   },
 
 
-  plugins: ['docusaurus-plugin-google-adsense',
+  plugins: [
     [
       '@docusaurus/plugin-client-redirects',
       {
@@ -76,14 +76,20 @@ const config = {
       }),
     ],
   ],
-
+scripts: [
+    {
+      src: 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2093114452213843',
+      async: true,
+      crossorigin: "anonymous",
+    },
+  ],
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     
     ({
-      googleAdsense: {
+     /* googleAdsense: {
       dataAdClient: 'ca-pub-2093114452213843',
-    },
+    },*/
       metadata: [{name: 'keywords', content: 'blog, ide, programming, coding, docs, sketchware, pro, android'}],
       navbar: {
         title: 'Sketchware Pro',
