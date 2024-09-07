@@ -12,7 +12,7 @@ const config = {
   tagline: 'The official documentation for Sketchware Pro.',
   url: 'https://docs.sketchware.pro',
   baseUrl: '/',
-  onBrokenLinks: 'throw',
+  onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/logo.png',
 

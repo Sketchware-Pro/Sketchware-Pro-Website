@@ -2,6 +2,7 @@
 title: List
 description: Documentation for built-in List blocks in Sketchware Pro.
 sidebar_position: 2
+slug: list
 tags:
  - Blocks
  - Built-in 

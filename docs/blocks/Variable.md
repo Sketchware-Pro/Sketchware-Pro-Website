@@ -2,6 +2,7 @@
 title: Variable
 description: Documentation for built-in variable blocks in Sketchware Pro.
 sidebar_position: 1
+slug: variable
 tags:
  - Blocks
  - Built-in 
