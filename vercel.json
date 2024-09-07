@@ -2,7 +2,7 @@
   "redirects": [
     {
       "source":"/download",
-      "destination":"https://sketchware-pro.vercel.app/download"
+      "destination":"https://sketchware.pro/download"
     },
     {
       "source": "/yo",

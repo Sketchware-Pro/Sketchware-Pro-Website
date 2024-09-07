@@ -42,7 +42,10 @@ const config = {
             to: '/docs/components/Google/Firebase/connect-to-firebase',
             from: '/docs/connect-to-firebase',
           },
-
+          {
+            to: 'https://sketchware.pro/download',
+            from: '/download',
+          },
         ],
       },
     ],
