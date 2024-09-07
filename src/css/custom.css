@@ -30,3 +30,9 @@
   --ifm-color-primary-lightest: #90CAF9;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
+
+@media (min-width: 768px) {
+  .screenshot img {
+    max-width: 45%; /* Limit size on larger screens */
+  }
+}

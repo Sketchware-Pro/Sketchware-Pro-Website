@@ -34,7 +34,7 @@ export default function NotFound() {
                 <p
                   id="theme.NotFound.p2"
                   description="The 2nd paragraph of the 404 page">
-                  You're lost. Please Contact Sketchware Pro team (or <Link to='https://discord.gg/Th9FP25TsK'>NiceSapien</Link>) if you think we made a mistake.
+                  You're lost. Please contact the Sketchware Pro team (or <Link to='https://discord.gg/Th9FP25TsK'>NiceSapien</Link>) if you think we made a mistake.
                 </p>
               </p>
             </div>

@@ -1,14 +1,16 @@
 // @ts-check
 // Note: type annotations allow type checking and IDEs autocompletion
 
-const lightCodeTheme = require('prism-react-renderer/themes/github');
-const darkCodeTheme = require('prism-react-renderer/themes/dracula');
+const {themes} = require('prism-react-renderer');
+const lightCodeTheme = themes.github;
+const darkCodeTheme = themes.dracula;
+
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'Sketchware Pro',
-  tagline: 'The official website of Sketchware Pro.',
-  url: 'https://sketchware-pro.vercel.app',
+  tagline: 'The official documentation for Sketchware Pro.',
+  url: 'https://docs.sketchware.pro',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
