@@ -8,14 +8,14 @@ slug: intro
 # Introduction
 The Sketchware Pro course is for complete beginners who have never programmed before. This course will walk you from being a complete beginner to a absolute pro, and you will be able to build apps of your own ideas by the end of this course. You will also get a free certificate for completing this free course!
 
-![certificate](img/certificate.png)
+![certificate](img/swprocourse_certify.png)
 
 ## Who am I
 Before telling you more about the course, I want to tell you about myself.
 I'm NiceSapien. A teenage developer from India. I am the one who created this course. Although I'm primarily a web developer now, my interest in coding and programming was caused by Sketchware. I will be your guide throughout the course.
 
 ## About the course
-Throughout the course, you will learn new things and features of Sketchware Pro. You will have to complete 6 projects to get your certificate. Once all 6 of them are made, DM the .swb files to @NiceSapien on [Discord](https://discord.gg/xX6aEsnZRt) to recieve your certificate!
+Throughout the course, you will learn several new things and features of Sketchware Pro. You will have to complete 6 projects to get your certificate. Once all 6 of them are made, DM the .swb files to @NiceSapien on [Discord](https://discord.gg/xX6aEsnZRt) to recieve your certificate!
 You can also join the Discord server if you have any questions or need help.
 
 ## Setup
