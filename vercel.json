@@ -19,6 +19,10 @@
     {
       "source": "/docs/components/Firebase/dynamic-links",
       "destination": "/docs/components/Google/Firebase/dynamic-links"
+    },
+    {
+      "source": "/builtinlib",
+      "destination": "/blog/extended-builtin-libraries"
     }
     ]
 }
