@@ -4,12 +4,17 @@
 This is the source code of Sketchware Pro website(and docs)!
 ### Installation
 This website/documentation is built with amazing [docusaurus](https://docusaurus.io)
+(I personally use bun)
 ```
 $ yarn
 ```
 or
 ```
 $ npm install
+```
+or
+```
+$ bun install
 ```
 
 ### Local Development
@@ -20,6 +25,10 @@ $ yarn start
 or
 ```
 npm start
+```
+or
+```
+bun start
 ```
 
 This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
@@ -32,6 +41,10 @@ $ yarn build
 or
 ```
 $ npm build
+```
+or
+```
+bun build
 ```
 
 This command generates static content into the `build` directory and can be served using any static contents hosting service.

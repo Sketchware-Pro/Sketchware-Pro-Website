@@ -1,6 +1,10 @@
 {
   "redirects": [
     {
+      "source":"/download",
+      "destination":"https://sketchware.pro/download"
+    },
+    {
       "source": "/yo",
       "destination": "https://youtu.be/dQw4w9WgXcQ"
     },

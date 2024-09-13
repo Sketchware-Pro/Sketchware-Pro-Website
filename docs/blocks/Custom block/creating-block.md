@@ -1,12 +1,14 @@
 ---
-title: Creating Block
-description: This is a guide for creating blocks in Sketchware pro.
+title: Creating a custom Block
+description: This is a guide for creating blocks in Sketchware Pro.
 sidebar_position: 1
+tags:
+  - Blocks
 ---
 To create a Block in Sketchware Pro, you need to know some terms related to Blocks.
 
-## Create a Block in Sketchware
-Step 1: Go to Sketchware and click on 3 dots.
+## Create a Block in Sketchware Pro
+Step 1: Go to Sketchware Pro and click on 3 dots.
 
 ![Open menu](assets/creating-block/open_menu.png)
 
@@ -49,12 +51,12 @@ Step 8: Fill in the fields as your need and click on Save.
 ## Properties
 | Field | Explanation | Required |
 | --- | --- | --- |
-| [Name](#name) | This is a unique name for your Block. Sketchware uses this to identify different Blocks. The name should not be the same as other blocks. | Yes |
+| [Name](#name) | This is a unique name for your Block. Sketchware Pro uses this to identify different Blocks. The name should not be the same as other blocks. | Yes |
 | [Type](#type) | Please enter value according to your block code(Eg. Void,If-then,If-else etc). | Yes |
 | [Type Name](#type-name) | Read [Type Name](#type-name) | If [Type](#type) is `c` then this field is required. |
 
 ### Name
-This is a unique name for a block in Sketchware pro. It functions as the ID of the block. When you use a Block in a project, Sketchware pro uses this property to identify each block and its associated code. The name should not be the same as other blocks to prevent potential errors.
+This is a unique name for a block in Sketchware Pro. It functions as the ID of the block. When you use a Block in a project, Sketchware Pro uses this property to identify each block and its associated code. The name should not be the same as other blocks to prevent potential errors.
 ### Type
 Study the data below:
 - regular
