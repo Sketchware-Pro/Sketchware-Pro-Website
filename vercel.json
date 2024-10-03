@@ -1,26 +1,30 @@
 {
-    "rewrites": [
+  "rewrites": [
     {
       "source": "/download",
       "destination": "/download.html"
     },
-        {
+    {
       "source": "/team",
       "destination": "/team.html"
-        },
-                {
+    },
+    {
       "source": "/disclaimer",
       "destination": "/disclaimer.html"
-                }
-    ],
-    "redirects": [
-          {
+    }
+  ],
+  "redirects": [
+    {
       "source": "/docs/:path*",
       "destination": "https://docs.sketchware.pro/docs/:path*"
     },
-                  {
+    {
       "source": "/blog/:path*",
       "destination": "https://docs.sketchware.pro/blog/:path*"
-                  }
+    },
+    {
+      "source": "/about",
+      "destination": "/disclaimer"
+    }
   ]
 }
