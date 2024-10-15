@@ -1,4 +1,6 @@
 # Redirects from what the browser requests to what we serve
 /docs/:path*         https://docs.sketchware.pro/docs/:path*
 /about               /disclaimer
-/blog/:path*         httpsL//docs.sketchware.pro/blog/:path*
+/blog/:path*         https://docs.sketchware.pro/blog/:path*
+/blog                https://docs.sketchware.pro/blog
+/docs                https://docs.sketchware.pro/docs
