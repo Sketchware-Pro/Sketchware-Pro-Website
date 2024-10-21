@@ -12,10 +12,10 @@ The Sketchware Pro course is for complete beginners who have never programmed be
 
 ## Who am I
 Before telling you more about the course, I want to tell you about myself.
-I'm NiceSapien. A teenage developer from India. I am the one who created this course. Although I'm primarily a web developer now, my interest in coding and programming was caused by Sketchware. I will be your guide throughout the course.
+I'm NiceSapien. A developer from India. I am the one who created this course. Although I'm primarily a web developer now, my interest in coding and programming was caused by Sketchware. I will be your guide throughout the course.
 
 ## About the course
-Throughout the course, you will learn several new things and features of Sketchware Pro. You will have to complete 6 projects to get your certificate. Once all 6 of them are made, DM the .swb files to @NiceSapien on [Discord](https://discord.gg/xX6aEsnZRt) to recieve your certificate!
+Throughout the course, you will learn several new things and features of Sketchware Pro. You will have to complete 4 projects to get your certificate. Once all the projects are made, DM the .swb files to @NiceSapien on [Discord](https://discord.gg/xX6aEsnZRt) or email [certificates@sketchware.pro](mailto:certificates@sketchware.pro) to recieve your certificate!
 You can also join the Discord server if you have any questions or need help.
 
 ## Setup
