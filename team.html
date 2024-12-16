@@ -233,7 +233,7 @@
               font-family: 'Product Sans Regular', sans-serif;
             "
           >
-            Main Modders
+            Core Team
           </h3>
           <ul id="mainModdersList" class="modders-list"></ul>
         </div>
@@ -326,95 +326,94 @@
           }
         });
       // Get loading indicator element
-      const loadingIndicator = document.getElementById("loadingIndicator");
+  const loadingIndicator = document.getElementById("loadingIndicator");
 
-      // Display loading indicator
-      loadingIndicator.style.display = "block";
+  // Display loading indicator
+  loadingIndicator.style.display = "block";
 
-      // Fetch data from the provided URL
-      fetch("https://sketchware-pro.github.io/Sketchware-Pro/aboutus.json")
-        .then((response) => response.json())
-        .then((data) => {
-          // Extract the 'moddersteam' array from the fetched data
-          const moddersTeam = data.moddersteam;
+  // Fetch data from the provided URL
+  fetch("https://sketchware-pro.github.io/Sketchware-Pro/about.json")
+    .then((response) => response.json())
+    .then((data) => {
+      // Extract the 'moddersteam' array from the fetched data
+      const archivedModders = data.archived_team;
+      let moddersTeam = data.team;
+      moddersTeam = archivedModders.concat(moddersTeam);
 
-          // Get the div elements for Main Modders and Contributors lists
-          const mainModdersList = document.getElementById("mainModdersList");
-          const contributorsList = document.getElementById("contributorsList");
+      // Sort the Core Team by user_username alphabetically
+      const sortedCoreTeam = moddersTeam
+        .filter((modder) => modder.is_core_team)
+        .sort((a, b) => a.user_username.localeCompare(b.user_username));
 
-          // Variable to track the index of the last main modder
-          let lastMainModderIndex = -1;
+      // Non-Core Team remains unsorted
+      const contributors = moddersTeam.filter(
+        (modder) => !modder.is_core_team
+      );
 
-          // Loop through the moddersTeam array and create list items
-          moddersTeam.forEach((modder, index) => {
-            // Create list item
-            const listItem = document.createElement("li");
-            listItem.classList.add("modder-item");
+      // Get the div elements for Main Modders and Contributors lists
+      const mainModdersList = document.getElementById("mainModdersList");
+      const contributorsList = document.getElementById("contributorsList");
 
-            // Create and set modder image
-            const modderImage = document.createElement("img");
-            modderImage.src = modder.modder_img;
-            listItem.appendChild(modderImage);
+      // Render sorted Core Team
+      sortedCoreTeam.forEach((modder, index) => {
+        const listItem = createModderListItem(modder);
+        mainModdersList.appendChild(listItem);
 
-            // Create modder info container
-            const modderInfo = document.createElement("div");
-            modderInfo.classList.add("modder-info");
+        // Add md-divider except for the last modder
+        if (index < sortedCoreTeam.length - 1) {
+          const divider = document.createElement("md-divider");
+          mainModdersList.appendChild(divider);
+        }
+      });
 
-            // Create and set modder username
-            const modderUsername = document.createElement("div");
-            modderUsername.classList.add("modder-username");
-            modderUsername.textContent = modder.modder_username;
-            modderInfo.appendChild(modderUsername);
+      // Render Contributors
+      contributors.forEach((modder, index) => {
+        const listItem = createModderListItem(modder);
+        contributorsList.appendChild(listItem);
 
-            // Create and set modder description
-            const modderDescription = document.createElement("div");
-            modderDescription.classList.add("modder-description");
-            modderDescription.textContent = modder.modder_description;
-            modderInfo.appendChild(modderDescription);
+        // Add md-divider except for the last contributor
+        if (index < contributors.length - 1) {
+          const divider = document.createElement("md-divider");
+          contributorsList.appendChild(divider);
+        }
+      });
 
-            // Append modder info to list item
-            listItem.appendChild(modderInfo);
+      // Hide loading indicator after processing data
+      loadingIndicator.style.display = "none";
+    })
+    .catch((error) => {
+      // Handle errors
+      console.error("Error fetching data:", error);
+      loadingIndicator.style.display = "none";
+    });
 
-            // Add padding to list item
-            listItem.style.padding = "12px";
+  // Function to create a modder list item
+  function createModderListItem(modder) {
+    const listItem = document.createElement("li");
+    listItem.classList.add("modder-item");
 
-            // Append list item to the appropriate list
-            if (modder.isMainModder) {
-              mainModdersList.appendChild(listItem);
-              // Update the index of the last main modder
-              lastMainModderIndex = index;
-            } else {
-              contributorsList.appendChild(listItem);
-            }
+    const modderImage = document.createElement("img");
+    modderImage.src = modder.user_img;
+    listItem.appendChild(modderImage);
 
-            // Add md-divider between list items, except for the last one
-            if (index < moddersTeam.length - 1) {
-              const divider = document.createElement("md-divider");
-              if (modder.isMainModder) {
-                mainModdersList.appendChild(divider);
-              } else {
-                contributorsList.appendChild(divider);
-              }
-            }
-          });
+    const modderInfo = document.createElement("div");
+    modderInfo.classList.add("modder-info");
 
-          // Remove the md-divider from below the last main modder
-          if (lastMainModderIndex !== -1) {
-            const mainModdersDividers =
-              mainModdersList.querySelectorAll("md-divider");
-            if (mainModdersDividers.length > 0) {
-              mainModdersDividers[mainModdersDividers.length - 1].remove();
-            }
-          }
+    const modderUsername = document.createElement("div");
+    modderUsername.classList.add("modder-username");
+    modderUsername.textContent = modder.user_username;
+    modderInfo.appendChild(modderUsername);
 
-          // Hide loading indicator after processing data
-          document.getElementById("loadingIndicator").style.display = "none";
-        })
-        .catch((error) => {
-          // Handle errors
-          console.error("Error fetching data:", error);
-          document.getElementById("loadingIndicator").style.display = "none";
-        });
-    </script>
+    const modderDescription = document.createElement("div");
+    modderDescription.classList.add("modder-description");
+    modderDescription.textContent = modder.description;
+    modderInfo.appendChild(modderDescription);
+
+    listItem.appendChild(modderInfo);
+    listItem.style.padding = "12px";
+
+    return listItem;
+  }
+</script>
   </body>
 </html>
