@@ -1,0 +1,8 @@
+{
+    "label": "Click Counter",
+    "position": 4,
+    "link": {
+      "type": "generated-index",
+      "description": "Build a app that counts the amount of times you click the screen in a period of time"
+    }
+  }

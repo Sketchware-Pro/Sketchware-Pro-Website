@@ -26,7 +26,7 @@ boolean usbCharge = chargePlug == BatteryManager.BATTERY_PLUGGED_USB; boolean ac
 
 See? Piece of cake.
 
-## Detecting and handeling yourself
+## Detecting and handling yourself
 Earlier it was a piece of cake, this time I'd say its a slice of pizza.
 ```java
 IntentFilter ifilter = new IntentFilter(Intent.ACTION_BATTERY_CHANGED); Intent batteryStatus = registerReceiver(null, ifilter); int chargePlug = batteryStatus.getIntExtra(BatteryManager.EXTRA_PLUGGED,-1);
