@@ -5,7 +5,7 @@ sidebar_position: 2
 slug: event
 ---
 
-A event is a code executed when certain something happens in the app or the user performs an action. It can be when the a button is clicked, when the app opens, or even when the app is closed.
+A event is a code executed when certain something happens in the app or the user performs an action. It can be when a button is clicked, when the app opens, or even when the app is closed.
 
 ## Creating a event
 It's time to create your first ever event! A event contains the code that is executed when a certain event happens inside your app.
