@@ -20,7 +20,7 @@ Introducing a new component: Shared Preferences.
 
 This component is used to permanently save some data into the user's device. You might have noticed that the notes app deletes the notes each time you close and open it, right? It's because we weren't saving it into the memory. Shared Preferences help us do exactly that.
 
-:::warning
+:::info
 
 Shared Preferences are a good way to store user data. However, if the user uninstalls your app, the data will be cleared. Since the data that we'll be storing is just high scores and they aren't very important, it's safe to use Shared Preferences!
 
@@ -33,9 +33,3 @@ Just enter `s`. When you have multiple shared preferences and don't want the dat
 
 
 Setup is done. Let's move ahead.
-
-:::warning
-
-"ahead" isn't ready yet. The course is under construction. Please come back later to move ahead! (Clicking next will take you to Views.)
-
-:::
