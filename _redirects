@@ -5,3 +5,4 @@
 /docs/components/Firebase/dynamic-links         /docs/components/Google/Firebase/dynamic-links
 /builtinlib                                     /blog/extended-builtin-libraries
 /course                                         /docs/course/intro
+/blog/extended-builtin-libraries                /blog/excluded-builtin-libraries
