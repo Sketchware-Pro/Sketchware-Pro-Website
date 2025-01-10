@@ -9,6 +9,7 @@ I see. I see you're here. And I also know the reason why you're here. Most proba
 Shall we work on the next blockbuster game now? Sure, let's go.
 <!--truncate-->
 ## Setup
+
 1. Create a new project in Sketchware.
 
 2. In VIEW area of main.xml add a TextView named `textview3` for displaying score of previous game, a TextView `textview4` for displaying high score, and a Button `button1` for starting game.
