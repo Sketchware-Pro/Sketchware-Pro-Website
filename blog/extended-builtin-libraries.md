@@ -1,5 +1,5 @@
 ---
-slug: extended-builtin-libraries
+slug: excluded-builtin-libraries
 title: How to use the Excluded built-in libraries screen
 authors: [jbk0]
 ---

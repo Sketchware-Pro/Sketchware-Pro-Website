@@ -3,5 +3,7 @@
 /docs/components/Firebase/connect-to-firebase   /docs/components/Google/Firebase/connect-to-firebase
 /docs/components/Firebase/cloud-messaging       /docs/components/Google/Firebase/cloud-messaging
 /docs/components/Firebase/dynamic-links         /docs/components/Google/Firebase/dynamic-links
-/builtinlib                                     /blog/extended-builtin-libraries
+/builtinlib                                     /blog/excluded-builtin-libraries
+/virus                                          /blog/false-virus-detection
 /course                                         /docs/course/intro
+/blog/extended-builtin-libraries                /blog/excluded-builtin-libraries
