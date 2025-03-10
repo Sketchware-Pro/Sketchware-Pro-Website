@@ -28,7 +28,7 @@ Press the back button to return to the main View editor.
 ### Button
 
 Now from the left, under Widgets, there should be a Widget called "Button". Drag and drop it into the editor.
-It should automatically be placed in the very bottom of the screen since we set the gravity of `linear1` to center horizontally and vertically.
+It should automatically be placed in the very center of the screen since we set the gravity of `linear1` to center horizontally and vertically.
 Click `See All` on the bottom of the screen again and scroll down till you see a option called `text`. Set the text to anything. I'll set it to 'Hello World'
 
 ![Text](img/text.png)
