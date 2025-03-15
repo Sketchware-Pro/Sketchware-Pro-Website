@@ -22,8 +22,13 @@ Here are a few cool resources about Sketchware Pro that you should know about!
 ## Cool Project tutorials
 Here are a few cool project tutorials on the official Sketchware Pro blog!
 
-- [Car Game](/blog/simple-car-game)
+- [Car Game](/blog/simple-car-game) (Highly recommended!)
 - [Web Page to PDF converter](/blog/webpage-to-pdf-app)
+
+## Other links
+- [Discord](https://discord.gg/Dc8ZDBRK5V)
+- [Telegram](https://t.me/sketchwarepro)
+- [GitHub](https://github.com/Sketchware-Pro)
 
 ## Sketchub
 Sketchub is the most popular Sketchware(Pro) store - not a merch or shopping store, a project store.
@@ -33,7 +38,7 @@ You can download various kinds of projects built by many people. And do you know
 Sketchware was founded by Sung Woo Park with his team, "Besome", in Korea. It first released in 2016. Due to funding issues, it shut down in 2021. Its last update came out in 2019. A new "Sketchware 2" was promised to be released in 2022, but it never came out. So people started using Sketchware Pro...
 
 ## Sketchware Pro's history
-Sketchware Pro was originally developed by a group of individuals (dubbed, "modders") during the downfall of Sketchware, in hopes of reviving it. It is the one of many attempts of Sketchware revival made by other modding groups. Sketchware Pro is arguably one of the most advanced, active, and oldest Sketchware mods out there. You can view and support our work [here].
+Sketchware Pro was originally developed by a group of individuals (dubbed, "modders") during the downfall of Sketchware, in hopes of reviving it. It is the one of many attempts of Sketchware revival made by other modding groups. Sketchware Pro is arguably one of the most advanced, active, and oldest Sketchware mods out there. You can view and support our work [here](https://sketchware.pro/download).
 
 While there has been a lot of controversy regarding Sketchware Pro being the catalyst of Sketchware's downfall, it is still under debate for years with zero resolution. As of now, the creators and developers of Sketchware Pro does not, and have never been asking for incentives to develop it further. We are simply helping people, and that's it :)
 

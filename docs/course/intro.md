@@ -8,13 +8,13 @@ slug: intro
 
 :::warning Course is incomplete
 
-Hello, while the content of the course is valid, you should know that it is still being written. Taking the course in its current condition will not get you a certificate. Even so, the course has a lot to teach right now aswell! It should be completely written by March 2025. 
+Hello, while the content of the course is valid, you should know that it is still being written. Taking the course in its current condition will not get you a certificate. Even so, the course has a lot to teach right now aswell! It should be completely written by May 2025. 
 
 :::
 
 
 # Introduction
-The Sketchware Pro course is for complete beginners who have never programmed before. This course will walk you from being a complete beginner to a absolute pro, and you will be able to build apps of your own ideas by the end of this course. You will also get a free certificate for completing this free course!
+The Sketchware Pro course is for complete beginners who have never programmed before. This course will walk you from being a complete beginner to an intermediate developer, and you will be able to build apps of your own ideas by the end of this course. You will also get a free certificate for completing this free course!
 
 ![certificate](img/swprocourse_certify.png)
 
@@ -23,7 +23,7 @@ Before telling you more about the course, I want to tell you about myself.
 I'm NiceSapien. A developer from India. I am the one who created this course. Although I'm primarily a web developer now, my interest in coding and programming was caused by Sketchware. I will be your guide throughout the course.
 
 ## About the course
-Throughout the course, you will learn several new things and features of Sketchware Pro. You will have to complete 4 projects to get your certificate. Once all the projects are made, DM the .swb files to @NiceSapien on [Discord](https://discord.gg/xX6aEsnZRt) or email [certificates@sketchware.pro](mailto:certificates@sketchware.pro) to recieve your certificate!
+Throughout the course, you will learn several new things and features of Sketchware Pro. You will have to complete 4 projects to get your certificate. The fourth project is going to be a project you'll build absolutely by yourself.
 You can also join the Discord server if you have any questions or need help.
 
 ## Setup
