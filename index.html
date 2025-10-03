@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <script src="https://fpyf8.com/88/tag.min.js" data-zone="175531" async data-cfasync="false"></script>
   <!-- Google Tag Manager -->
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
   new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -49,6 +50,8 @@ const repoUrl = 'https://api.github.com/repos/Sketchware-Pro/Sketchware-Pro';
 function formatNumber(num) {
     if (num >= 1000) {
         return Math.floor(num / 1000) + 'K+';
+    } else if (num >= 1000000)
+      return Math.floor(num / 1000000) + 'M+';
     }
     return num;
 }
