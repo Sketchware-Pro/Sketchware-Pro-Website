@@ -9,8 +9,8 @@ slug: /
 
 Let's discover **Sketchware Pro in less than 5 minutes**.
 You can download Sketchware Pro from [here](/download).
-## What Sketchware Pro is?
-Sketchware Pro is the ultimate Android app builder for developers of all skill levels. With its simple drag-and-drop method, you can create stunning apps with ease. And the best part? Sketchware Pro is completely free! That's right, from starting to end, you can build your dream app without spending a dime. And, if you're feeling adventurous, Sketchware Pro is also an open-source project on GitHub, so you can tweak and customize it to your heart's content. So why wait? Start building your dream app today with Sketchware Pro!
+## What's Sketchware Pro?
+Sketchware Pro is the ultimate Android app builder for developers of all skill levels. With its simple drag-and-drop method, you can create stunning apps with ease. And the best part? Sketchware Pro is completely free! That's right, from starting to end, you can build your dream app without spending a dime. And, if you're feeling adventurous, Sketchware Pro's source code is available on GitHub, so you can tweak and customize it to your heart's content. So why wait? Start building your dream app today with Sketchware Pro!
 From designing to programming, you can create a completely native Android application by simply drag and dropping.
 
 ### Features
