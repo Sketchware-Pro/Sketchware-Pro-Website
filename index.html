@@ -45,15 +45,32 @@ function openLink(link) {
 }
 const repoUrl = 'https://api.github.com/repos/Sketchware-Pro/Sketchware-Pro';
 
-// Function to format numbers over 1000 with 'K+'
+// Function to format numbers over 1000 with 'K+', 1,000,000 with 'M+' and 1,000,000,000 with 'B+'.
 function formatNumber(num) {
-    if (num >= 1000) {
-        return Math.floor(num / 1000) + 'K+';
-    } else if (num >= 1000000)
-      return Math.floor(num / 1000000) + 'M+';
+
+    const number = Number(num);
+
+    if (isNaN(number)) {
+        return num; 
     }
-    return num;
-}
+
+    if (number >= 1000000000) {
+
+        return (number / 1000000000).toFixed(1) + 'B';
+    }
+
+    if (number >= 1000000) {
+
+        return (number / 1000000).toFixed(1) + 'M';
+    }
+
+    if (number >= 1000) {
+
+        return (number / 1000).toFixed(1) + 'K';
+    }
+
+    return number.toLocaleString(); 
+          }
 
 async function getRepoData() {
     try {
