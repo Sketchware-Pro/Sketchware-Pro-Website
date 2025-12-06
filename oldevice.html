@@ -12,9 +12,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preload" href="css/global-min.css" as="style">
     <link rel="stylesheet" href="css/global-min.css">
-    <title>Disclaimer</title>
-    <link rel="stylesheet" href="css/light.css" />
-    <link rel="stylesheet" href="css/dark.css">
+    <title>Team</title>
+    <link rel="stylesheet" href="/css/light.css" />
+    <link rel="stylesheet" href="/css/dark.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Gabarito:wght@400&family=Poppins:ital,wght@0,500&family=Roboto:ital,wght@0,400&display=swap" rel="stylesheet">
@@ -47,12 +47,14 @@
         window.location.href = link;
       }
     </script>
+    <style>
+      #main {
+        margin: 12px;
+      }
+    </style>
+    <script async src="https://media.ethicalads.io/media/client/ethicalads.min.js"></script>
   </head>
   <body id="bodi" class="light" style="width: 100%; box-sizing: border-box;">
-    <!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NFZPPW6N"
-  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-  <!-- End Google Tag Manager (noscript) -->
     <header>
       <nav>
         <div class="header-container">
@@ -94,7 +96,8 @@
         <a href="/">
           <span class="material-symbols-outlined">home</span> Home</a
         >
-        <a onclick='openLink("/download");'><span class="material-symbols-outlined">get_app</span>Download</a
+        <a onclick='openLink("/download");'
+           id="homeLink"><span class="material-symbols-outlined">get_app</span>Download</a
         >
         <a onclick="openLink('https://sketchware-pro.vercel.app/docs')"
           ><span class="material-symbols-outlined">menu_book</span>Docs</a
@@ -106,26 +109,21 @@
         <p>About</p>
         <a onclick="openLink('/team')"><span class="material-symbols-outlined">groups</span>Team</a
         >
-        <a onclick="openLink('/disclaimer')"
-          id='homeLink'><span class="material-symbols-outlined">warning</span>Disclaimer</a
+        <a onclick="openLink('https://sketchware-pro.vercel.app/about')"
+          ><span class="material-symbols-outlined">warning</span>Disclaimer</a
         >
       </div>
     </div>
-<div id="main" style="padding: 64px 12px 12px;">
-<h1>Disclaimer</h1>
-<!--- Begin your body code from here! -->
-<p>This is a modification of a app which is no longer available. The app was not copyrighted and/or registered as a trademark or smth like that either. Additionally, the creator of the original version of the app called "Sketchware", has said that he is okay with the existence of Sketchware Pro. This mod was not meant for any harmful purposes, such as harming Sketchware; Quite the opposite actually. It was made to keep Sketchware alive by the community for the community. <br/><br/>We love Sketchware very much, and we are grateful to Sketchware's developers for making such an amazing app, but unfortunately, we haven't received updates for a long time. That's why we decided to keep Sketchware alive by making this mod, plus we don't demand any money, it's completely free :)</p>
- <!-- <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2093114452213843"
-     crossorigin="anonymous"></script>-->
-<ins class="adsbygoogle"
-     style="display:block; text-align:center;"
-     data-ad-layout="in-article"
-     data-ad-format="fluid"
-     data-ad-client="ca-pub-2093114452213843"
-     data-ad-slot="4994331135"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
+<div id="main" style="padding-top: 64px;">
+<div class="adaptive-css" data-ea-publisher="sketchwarepro" data-ea-type="text"></div>
+<h1>Using Sketchware Pro on devices lower than Android 7</h1>
+<p>You've arrived at the perfect place. If your device is running Android 5, 6, 7, or even lower, here's what you can do(in order from most preferred to least)</p>
+<ul>
+  <li>Update your device to a more recent Android version such as Android 8.</li>
+  <li>Install a older Sketchware Pro version which supports Android 5, 6, or 7 by clicking <a style="color: var(--md-sys-color-primary);" href="https://github.com/Sketchware-Pro/Sketchware-Pro/releases/download/v6.4.0-rc05/Sketchware.Pro.v6.4.0-rc05-minApi21.apk">here</a>.</li>
+  <li>If you're on a android version lower than Android 5, you are unable to run Sketchware Pro.</li>
+</ul>
+
 </div>
 
     <footer>
@@ -152,13 +150,13 @@
                 <h3>More</h3>
                 
                   <a href="https://github.com/Sketchware-Pro/Sketchware-Pro">GitHub</a>
-                  <a href="/privacy">Privacy Policy</a>
-               <a href="/disclaimer">Disclaimer</a>
+                  <a href="https://github.com/Sketchware-Pro/Sketchware-Pro-website">Website GitHub</a>
+               <a href="https://sketchware-pro.vercel.app/about">Disclaimer</a>
                   
                   </div>
               </div>
-              <p>Website by <a style="text-decoration: none; color:var(--md-sys-color-tertiary);" href="https://github.com/nicesapien">NiceSapien</a></p>
-      </footer>
+               <p>Website by <a style="text-decoration: none; color:var(--md-sys-color-tertiary);" href="https://github.com/nicesapien">NiceSapien</a></p>
+    </footer>
     <script>
       let colorScheme = window.matchMedia("(prefers-color-scheme: dark)");
 
@@ -193,4 +191,4 @@
         });
 </script>
         </body>
-  </html>
+</html>

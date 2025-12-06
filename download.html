@@ -131,7 +131,7 @@
         <a onclick="openLink('/team')"
           ><span class="material-symbols-outlined">groups</span>Team</a
         >
-        <a onclick="openLink('https://sketchware-pro.vercel.app/about')"
+        <a onclick="openLink('/about')"
           ><span class="material-symbols-outlined">warning</span>Disclaimer</a
         >
       </div>
@@ -141,18 +141,12 @@
       style="padding-top: 64px; padding-bottom: 12px; text-align: center"
     >
     <div id="sec1">
-      <div class="adaptive-css" data-ea-publisher="sketchwarepro" data-ea-type="text"></div>
       <h1 id="download" style="margin-bottom: 0px;">Download</h1>
       <p style="font-size: 1.2rem;">You can download the latest builds of Sketchware Pro from here.</p>
       <md-filled-button
         style="margin: 8px 12px"
-        onclick="openLink('#bottomLoad');"
-        >Stable Android 8+</md-filled-button
-      >
-      <md-filled-tonal-button
-        style="margin: 8px 12px"
-        onclick="location.href = 'https://github.com/Sketchware-Pro/Sketchware-Pro/releases/download/v6.4.0-rc05/Sketchware.Pro.v6.4.0-rc05-minApi21.apk';"
-        >Stable - Android 5+</md-filled-tonal-button
+        onclick="openLink('https://github.com/Sketchware-Pro/Sketchware-Pro/releases/download/v7.0.0/app-release.apk');"
+        >Download APK</md-filled-button
       >
       <md-outlined-button
         style="margin: 8px 12px"
@@ -160,6 +154,8 @@
         >Nightly</md-outlined-button
       >
       <br />
+      <div class="adaptive-css" data-ea-publisher="sketchwarepro" data-ea-type="image"></div>
+      <h4>Android 7 or lower? <a href="/oldevice" style="color: var(--md-sys-color-primary); text-decoration: none;">Click here</a>.</h4>
       <h1>Screenshots</h1>
 <!-- Slider main container -->
 <div class="swiper">
@@ -179,7 +175,6 @@
   <div class="swiper-button-next"><span class="material-symbols-outlined nextprev">arrow_forward</span></div>
 
 </div>
-      <div class="adaptive-css" data-ea-publisher="sketchwarepro" data-ea-type="text"></div>
 <style>
   .swiper-button-prev:after {
     content: "";
@@ -311,34 +306,23 @@
     font-size: 24px;
   }
     }
-
-    html {
-      scroll-behavior: smooth;
-    }
 </style>
     </div>
     <div style="background-color: var(--md-sys-color-surface-container); color: var(--md-sys-color-on-surface-container); margin: 12px; padding: 12px; border-radius: 24px;">
       <h2 style="padding: 0px 20px">What's new</h2>
       <ul style="padding: 0px 20px 0px 20px;">
         <li>
-          Java 1.9, 10, and 11 compile support! This only works in minApi26
-          builds though.
+          The app now supports Material You - Google's design style for beautiful interfaces!
         </li>
-        <li>Syntax highlighting for Kotlin and even XML files.</li>
+        <li>Removed Deprecated Libraries such as OneSignal, DynamicLinks, and Facebook ads.</li>
         <li>
-          When Sketchware Pro crashes, you can now send the error message to us.
-          It's fully optional though, so please make sure to send them if you
-          want to help us fix bugs!
+          Built-in libraries were updated to more recent versions!
         </li>
         <li>
-          New features using root access: Auto-installing of projects, and also
-          launching of projects if auto-install is enabled and worked.
+          Several crashes and bugs have been fixed!
         </li>
         <li>
-          You can now use e.g. <code>tools:replace="android:id"</code> in a
-          View's inject property to remove <code>android:id</code> from its XML
-          code. This is a replacement for XML Command Blocks that change tiny
-          things like these.
+          And so much more!
         </li>
       </ul>
     </div>
@@ -352,23 +336,13 @@
         Release builds, however, are very stable to use and are chosen by
         developers to be available to the public.
       </p>
-      <h2 style="padding: 0px 20px">
-        Difference between Android 5+ and 8+ version
-      </h2>
-      <p style="padding: 0px 20px">
-        Just as the name states, the Android 5+ version is built for devices
-        running Android 5, 6, or 7. However, the Android 8+ version is built for
-        devices running Android 8 or above. The Android 8+ version has
-        additional capabilities, such as compiling Java 1.9, 10, 11, and D8.
-      </p>
     </div>
- <div class="adaptive-css" data-ea-publisher="sketchwarepro" data-ea-type="text"></div>
     <div id="main5">
       <div id="sec5">
         <p id="bottomLoad">Start <span style="color: rgb(77, 119, 184);" id="dynamic-word">developing</span><br/> with Sketchware Pro<span class="vibrant" style="color: rgb(77, 119, 184);">.</span></p>
         <div style="align-items: center; text-align: center; height: max-content; padding: 60px 0px;">
-          <a class="material-button vibrant" onclick="openLink('https://github.com/Sketchware-Pro/Sketchware-Pro/releases/download/v7.0.0/app-release.apk')">
-            Download Now
+          <a class="material-button vibrant" onclick="openLink('#main')">
+            Download
           </a>
       </div>
       </div>
@@ -414,7 +388,7 @@
         </div>
         <div class="footer_col">
           <h3>Sketchware Pro</h3>
-          <a href="https://sketchware-pro.vercel.app/download">Download</a>
+          <a href="/download">Download</a>
           <a href="https://sketchware-pro.vercel.app/docs">Documentation</a>
           <a href="https://sketchware-pro.vercel.app/blog">Blog</a>
         </div>
@@ -435,7 +409,7 @@
           <a href="https://sketchware-pro.vercel.app/about">Disclaimer</a>
         </div>
       </div>
-          <p>Built by <a style="text-decoration: none; color:var(--md-sys-color-tertiary);" href="https://github.com/nicesapien">NiceSapien</a></p>
+          <p>Website by <a style="text-decoration: none; color:var(--md-sys-color-tertiary);" href="https://github.com/nicesapien">NiceSapien</a></p>
     </footer>
     <script src="/script/download-bundle.js"></script>
   </body>

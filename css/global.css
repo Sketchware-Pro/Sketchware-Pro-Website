@@ -2,8 +2,8 @@ html {
   font-family: "Gabarito",sans-serif;
   overflow-x: hidden;
   height: 100%;
+  scroll-behavior: smooth;
 }
-
 body {
   padding: 0;
   margin: 0;
