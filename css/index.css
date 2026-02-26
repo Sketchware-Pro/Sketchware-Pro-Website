@@ -509,22 +509,3 @@
     animation-timeline: scroll(root block);
   }
 }
-
-#kaoban {
-  background-color: var(--md-sys-color-tertiary-container);
-  color: var(--md-sys-color-on-tertiary-container);
-  padding: 10px 16px;
-  text-align: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 8px;
-  font-size: 15px;
-  font-weight: 500;
-  margin-top: 64px;
-}
-
-#kaoban a {
-  color: inherit;
-  text-decoration: underline;
-}
