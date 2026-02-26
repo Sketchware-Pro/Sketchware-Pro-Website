@@ -14,10 +14,12 @@ let colorScheme = window.matchMedia('(prefers-color-scheme: dark)');
 function toggleBodyClass(e) {
   // If the user prefers dark mode, add the 'dark' class to the body
   if (e.matches) {
+    document.body.classList.remove('light');
     document.body.classList.add('dark');
   } else {
     // Otherwise, remove the 'dark' class from the body
     document.body.classList.remove('dark');
+    document.body.classList.add('light');
   }
 }
 
