@@ -1,4 +1,3 @@
-
 OWNERDOMAIN=sketchware.pro
 MANAGERDOMAIN=themoneytizer.com
 themoneytizer.com,130008,DIRECT
@@ -810,3 +809,5 @@ smaato.com, 1100059691, RESELLER, 07bcf65f187117b4
 pubmatic.com, 156425, RESELLER, 5d62403b186f2ace
 conversantmedia.com, 100346, RESELLER, 03113cd04947736d
 loopme.com, 2896, RESELLER, 6c8d5f95897a5a3b
+improvedigital.com,1602_130008,DIRECT
+improvedigital.com,1033_130008,DIRECT
