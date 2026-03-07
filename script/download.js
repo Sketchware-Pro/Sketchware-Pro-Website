@@ -26,20 +26,7 @@ toggleBodyClass(colorScheme);
 
 // Add an event listener to the color scheme media query
 // This will call the function whenever the user changes their preference
-colorScheme.addListener(toggleBodyClass);
-
-
-// Optional: Event listener for dynamic changes
-window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', (event) => {
-  bodi.classList.remove('light');  // Always remove "light" first
-  if (event.matches) {
-    bodi.classList.add('dark');
-  } else {
-    // No need to explicitly remove "dark" here
-    bodi.classList.remove('dark');
-    bodi.classList.add('light');
-  }
-});
+colorScheme.addEventListener('change', toggleBodyClass);
 
 document.addEventListener("DOMContentLoaded", function() {
   const words = ["developing", "designing", "building", "creating", "coding", "crafting"];
