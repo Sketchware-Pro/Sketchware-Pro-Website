@@ -1,22 +1,4 @@
-OWNERDOMAIN=sketchware.pro
-MANAGERDOMAIN=themoneytizer.com
-themoneytizer.com,130008,DIRECT
-improvedigital.com, 1602_130008, DIRECT
-improvedigital.com, 1033_130008, DIRECT
-smartadserver.com, 1097, RESELLER
-pubmatic.com, 156439, RESELLER, 5d62403b186f2ace
-pubmatic.com, 154037, RESELLER, 5d62403b186f2ace
-rubiconproject.com, 16114, RESELLER, 0bfd66d529a55807
-openx.com, 537149888, RESELLER, 6a698e2ec38604c6
-appnexus.com, 3703, RESELLER, f5ab79cb980f11d1
-loopme.com, 5679, RESELLER, 6c8d5f95897a5a3b
-video.unrulymedia.com, 2564526802, RESELLER, 6f752381ad5ec0e5
-smaato.com, 1100044045, RESELLER, 07bcf65f187117b4
-pubnative.net, 1006576, RESELLER, d641df8625486a7b
-adyoulike.com, b4bf4fdd9b0b915f746f6747ff432bde, RESELLER, 4ad745ead2958bf7
-axonix.com, 57264, RESELLER, bc385f2b4a87b721
-admanmedia.com, 43, RESELLER
-sharethrough.com, OAW69Fon, RESELLER, d53b998a7bd4ecd2
+xandr.com,2741,RESELLER,f5ab79cb980f11d1sharethrough.com, OAW69Fon, RESELLER, d53b998a7bd4ecd2
 contextweb.com, 560288, RESELLER, 89ff185a4c4e857c
 contextweb.com, 563115, RESELLER, 89ff185a4c4e857c
 adcolony.com, 496220845654deec, RESELLER, 1ad675c9de6b5176
