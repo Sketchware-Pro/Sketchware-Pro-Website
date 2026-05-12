@@ -155,10 +155,56 @@
       >
       <br />
       <h4>Android 7 or lower? <a href="/oldevice" style="color: var(--md-sys-color-primary); text-decoration: none;">Click here</a>.</h4>
-      <script TYPE="text/javascript">
-window.__jscp=function(){if(window.parent==window)var a=document.URL;else if(a=document.referrer,!a)try{a=window.parent.location.href}catch(e){}if(a){var b=a.indexOf("://");0<=b&&(a=a.substring(b+3));b=a.indexOf("/");0<=b&&(a=a.substring(0,b))}b=0;for(var c=window;c!=c.parent;)++b,c=c.parent;a={pu:a,"if":b,rn:new Number(Math.floor(99999999*Math.random())+1)};b=[];for(var d in a)b.push(d+"="+encodeURIComponent(a[d]));return encodeURIComponent(b.join("&"))};
-document.write('<S' + 'CRIPT TYPE="text/javascript" SRC="//cpm.adbite.com/tag?zone_id=358278&size=300x250&j=' + __jscp() + '"></S' + 'CRIPT>');
+<!-- BEGIN JS EXT TAG - 300x250 sketchware_Tag - FIXED -->
+<script type="text/javascript">
+(function() {
+    // 1. Logic to gather page info (Modernized)
+    var getJscp = function() {
+        var url = "";
+        try {
+            url = (window.parent === window) ? document.URL : (document.referrer || window.parent.location.href);
+        } catch (e) {
+            url = document.URL;
+        }
+        
+        if (url) {
+            var protoIdx = url.indexOf("://");
+            if (protoIdx >= 0) url = url.substring(protoIdx + 3);
+            var pathIdx = url.indexOf("/");
+            if (pathIdx >= 0) url = url.substring(0, pathIdx);
+        }
+
+        var depth = 0;
+        var win = window;
+        while (win !== win.parent) {
+            depth++;
+            win = win.parent;
+        }
+
+        var params = {
+            pu: url,
+            "if": depth,
+            rn: Math.floor(Math.random() * 99999999) + 1
+        };
+
+        var query = [];
+        for (var key in params) {
+            query.push(key + "=" + encodeURIComponent(params[key]));
+        }
+        return encodeURIComponent(query.join("&"));
+    };
+
+    // 2. Modern Injection (Bypasses document.write restrictions)
+    var adScript = document.createElement('script');
+    adScript.type = 'text/javascript';
+    adScript.async = true; // Allows the page to keep loading while the ad fetches
+    adScript.src = 'https://cpm.adbite.com/tag?zone_id=358278&size=300x250&j=' + getJscp();
+    
+    // Append to head or body
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(adScript);
+})();
 </script>
+<!-- END TAG -->
       <h1>Screenshots</h1>
 <!-- Slider main container -->
 <div class="swiper">
