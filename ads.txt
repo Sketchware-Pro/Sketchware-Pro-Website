@@ -1,8 +1,17 @@
-yandex.com, 325591835, DIRECT
-google.com, pub-5533854580432370, RESELLER, f08c47fec0942fa0
-improvedigital.com, 2031, RESELLER
-uis.mobfox.com, 165, RESELLER
-hyperad.tech, 215, RESELLER
-betweendigital.com, 43554, RESELLER
-Contextweb.com, 562899, RESELLER, 89ff185a4c4e857c
-hyperad.tech, 150, RESELLER
+# SOVRN
+lijit.com, 611284, DIRECT, fafdf38b16bf6b2b #SOVRN
+lijit.com, 611284-eb, DIRECT, fafdf38b16bf6b2b #SOVRN
+openx.com, 538959099, RESELLER, 6a698e2ec38604c6
+pubmatic.com, 137711, RESELLER, 5d62403b186f2ace
+pubmatic.com, 156212, RESELLER, 5d62403b186f2ace
+rubiconproject.com, 17960, RESELLER, 0bfd66d529a55807
+appnexus.com, 1019, RESELLER, f5ab79cb980f11d1
+video.unrulymedia.com, 2444764291, RESELLER
+krushmedia.com, AJxF6R572a9M6CaTvK, RESELLER
+motorik.io, 100463, RESELLER
+smaato.com, 1100056344, RESELLER, 07bcf65f187117b4
+smartadserver.com, 4926, RESELLER, 060d053dcf45cbf3
+opera.com, pub10014056052800, RESELLER, 55a0c5fd61378de3
+axonix.com, 59143, RESELLER, bc385f2b4a87b721
+programmaticx.ai, 100464, RESELLER
+sharethrough.com, 4926, RESELLER, 060d053dcf45cbf3
