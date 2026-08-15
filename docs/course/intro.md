@@ -8,7 +8,7 @@ slug: intro
 
 :::warning Course is incomplete
 
-Hello, while the content of the course is valid, you should know that it is still being written. Taking the course in its current condition will not get you a certificate. Even so, the course has a lot to teach right now aswell! It should be completely written by May 2025. 
+Hello, while the content of the course is valid, you should know that it is still being written. Taking the course in its current condition will not get you a certificate. Even so, the course has a lot to teach right now aswell! So feel free to take it as is :) 
 
 :::
 
