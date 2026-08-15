@@ -78,3 +78,4 @@ richaudience.com,sSBkMXjbtB,reseller
 rubiconproject.com,13510,reseller
 tritondigital.com,7943,reseller,19b4454d0b87b58b
 google.com,pub-2776948722595256,reseller,f08c47fec0942fa0
+google.com, pub-9907361752335618, DIRECT, f08c47fec0942fa0
